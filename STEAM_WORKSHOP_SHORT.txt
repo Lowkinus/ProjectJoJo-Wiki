@@ -23,7 +23,7 @@ More Stands may be added in future updates.
 [hr][/hr]
 [h2]FULL WIKI — ไทย / ENGLISH[/h2]
 
-The full long-form guide, every Stand skill, Stand Arrow, Levels, Time systems, PvP rules, SHA, Sandbox settings, team tips and changelog are kept here:
+Full Stand skills, exact mechanics, PvP rules, SHA, Stand Arrow, Levels, Time systems, Sandbox settings, team tips and changelog:
 
 [url=https://lowkinus.github.io/ProjectJoJo-Wiki/][b]▶ OPEN PROJECT JOJO WIKI[/b][/url]
 

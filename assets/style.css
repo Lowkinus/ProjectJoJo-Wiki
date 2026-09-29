@@ -19,39 +19,25 @@ main{width:min(1200px,93vw);margin:auto}.eyebrow{color:var(--gold);font-size:11p
 @media(max-width:1000px){.hero-section{grid-template-columns:1fr}.hero-visual{height:430px;max-width:650px}.quick-grid,.system-grid{grid-template-columns:1fr 1fr}.stand-grid{grid-template-columns:1fr 1fr}.section-heading.split{grid-template-columns:1fr}.guide-cta{grid-template-columns:1fr}.stand-hero{grid-template-columns:1fr}.stand-hero-art{max-width:650px;width:100%}.guide-layout{grid-template-columns:1fr}.toc-panel{position:relative;top:0;max-height:none}.topnav{overflow:auto}}
 @media(max-width:650px){main{width:min(94vw,620px)}.topbar{gap:10px;flex-wrap:wrap}.topnav{order:3;width:100%}.brand-copy b{font-size:18px}.hero-section{padding-top:38px;min-height:auto}.hero-copy h1{font-size:68px}.hero-visual{height:365px}.portrait-main{width:68%;height:335px}.portrait-back{width:47%;height:215px}.jojo-sfx{font-size:55px}.hero-stamp{width:72px;height:72px;font-size:11px;left:25%}.quick-grid,.system-grid,.stand-grid,.lang-grid{grid-template-columns:1fr}.stand-image{height:390px}.change-row{grid-template-columns:1fr;gap:5px}.lang-art{width:52vw;opacity:.2}.language-gate{padding:14px}.lang-panel{padding:34px 20px}.stand-hero-art{height:430px}.stand-prevnext{grid-template-columns:1fr}.stand-prevnext a:last-child{text-align:left}.system-card{min-height:auto}.guide-cta{padding:24px}}
 
-/* =========================================================
-   PROJECT JOJO WIKI — VISITOR COUNTER v2
-   Small public badge shown on every page using this stylesheet.
-   Full stats page: /ProjectJoJo-Wiki/stats.html
-   ========================================================= */
-body::before{
-  content:"👁  LIVE VISITORS  " url("https://whos.amung.us/swidget/4wwb5vsza2.png");
-  position:fixed;
-  right:12px;
-  bottom:12px;
-  z-index:99999;
+/* Project JoJo — minimal page view counter */
+.view-counter{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  line-height:0;
+  opacity:.9;
+}
+.view-counter img{
   display:block;
-  min-width:150px;
-  min-height:30px;
-  padding:9px 11px;
-  border:1px solid rgba(255,214,74,.52);
-  border-radius:11px;
-  background:rgba(16,9,22,.92);
-  box-shadow:0 7px 22px rgba(0,0,0,.38);
-  color:#ffd64a;
-  font:800 10px/15px "Segoe UI",Arial,sans-serif;
-  letter-spacing:.08em;
-  white-space:nowrap;
-  pointer-events:none;
+  width:auto;
+  height:20px;
+  max-width:none;
+  border:0;
+}
+.lang-panel .view-counter{
+  margin:14px auto 0;
 }
 @media(max-width:650px){
-  body::before{
-    right:8px;
-    bottom:8px;
-    min-width:135px;
-    padding:7px 9px;
-    font-size:9px;
-    transform:scale(.92);
-    transform-origin:bottom right;
-  }
+  .view-counter img{height:18px}
 }

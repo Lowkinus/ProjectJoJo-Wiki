@@ -2,8 +2,8 @@
 const D=window.PJ_DATA;
 let lang=localStorage.getItem("pj-lang")||"";
 const UI={
-th:{nav:["หน้าแรก","Stand","ระบบ","อัปเดต","เครดิต"],search:"ค้นหา Stand / Skill...",k:"PROJECT ZOMBOID • BUILD 42+",hero:"PROJECT JOJO",desc:"Wiki ภายนอกสำหรับ Project JoJo — รายละเอียด Stand, Skill, ระบบเวลา, PvP, Stand Arrow, Sandbox และ Changelog โดยไม่ติดลิมิตคำอธิบาย Steam",browse:"ดู Stand ทั้งหมด",steam:"เปิด Steam Workshop",current:"เวอร์ชันปัจจุบัน",hero2:"9 STANDS • SP / HOST / MP",hero3:"อนาคตเพิ่ม Stand ใหม่ได้โดยเพิ่มข้อมูลอีกหนึ่งรายการ ไม่ต้องขยายหน้า Steam Workshop",stands:"STANDS",standsK:"PLAYABLE ROSTER",systems:"SYSTEMS",systemsK:"CORE MECHANICS",updates:"CHANGELOG",updatesK:"LATEST",credits:"CREDITS",creditsK:"MODELS / REFERENCES",skills:"Skills",special:"ระบบเฉพาะ",role:"บทบาท",source:"ภาพอ้างอิงโหลดจาก JoJo Wiki ภายนอก ไฟล์ภาพไม่ได้ถูกคัดลอกเข้าแพ็ก Wiki",},
-en:{nav:["Home","Stands","Systems","Updates","Credits"],search:"Search Stand / skill...",k:"PROJECT ZOMBOID • BUILD 42+",hero:"PROJECT JOJO",desc:"The external Project JoJo wiki — Stand details, skills, time systems, PvP rules, Stand Arrow, Sandbox settings and changelogs without Steam description limits.",browse:"Browse all Stands",steam:"Open Steam Workshop",current:"Current version",hero2:"9 STANDS • SP / HOST / MP",hero3:"Future Stands can be added here without expanding the Steam Workshop description.",stands:"STANDS",standsK:"PLAYABLE ROSTER",systems:"SYSTEMS",systemsK:"CORE MECHANICS",updates:"CHANGELOG",updatesK:"LATEST",credits:"CREDITS",creditsK:"MODELS / REFERENCES",skills:"Skills",special:"Stand System",role:"Role",source:"Reference art is loaded externally from JoJo Wiki. Those image files are not redistributed inside this Wiki package.",}
+th:{nav:["หน้าแรก","Stand","ระบบ","อัปเดต","เครดิต"],search:"ค้นหา Stand / Skill...",k:"PROJECT ZOMBOID • BUILD 42+",hero:"PROJECT JOJO",desc:"Wiki ภายนอกสำหรับ Project JoJo — รายละเอียด Stand, Skill, ระบบเวลา, PvP, Stand Arrow, Sandbox และ Changelog โดยไม่ติดลิมิตคำอธิบาย Steam",browse:"ดู Stand ทั้งหมด",steam:"เปิด Steam Workshop",current:"เวอร์ชันปัจจุบัน",hero2:"9 STANDS • SP / HOST / MP",hero3:"อนาคตเพิ่ม Stand ใหม่ได้โดยเพิ่มข้อมูลอีกหนึ่งรายการ ไม่ต้องขยายหน้า Steam Workshop",stands:"STANDS",standsK:"PLAYABLE ROSTER",systems:"SYSTEMS",systemsK:"CORE MECHANICS",updates:"CHANGELOG",updatesK:"LATEST",credits:"CREDITS",creditsK:"MODELS / REFERENCES",skills:"Skills",special:"ระบบเฉพาะ",role:"บทบาท",source:"ภาพอ้างอิงโหลดจาก JoJo Wiki ภายนอก หากต้นทางบล็อกการฝัง เว็บจะลองโหลดผ่าน fallback อัตโนมัติ",quick:["เรียก / เก็บ Stand","ใช้สกิลของ Stand","เล็ง / กำหนดทิศโจมตี","กดการ์ด Stand เพื่อดูรายละเอียด"],},
+en:{nav:["Home","Stands","Systems","Updates","Credits"],search:"Search Stand / skill...",k:"PROJECT ZOMBOID • BUILD 42+",hero:"PROJECT JOJO",desc:"The external Project JoJo wiki — Stand details, skills, time systems, PvP rules, Stand Arrow, Sandbox settings and changelogs without Steam description limits.",browse:"Browse all Stands",steam:"Open Steam Workshop",current:"Current version",hero2:"9 STANDS • SP / HOST / MP",hero3:"Future Stands can be added here without expanding the Steam Workshop description.",stands:"STANDS",standsK:"PLAYABLE ROSTER",systems:"SYSTEMS",systemsK:"CORE MECHANICS",updates:"CHANGELOG",updatesK:"LATEST",credits:"CREDITS",creditsK:"MODELS / REFERENCES",skills:"Skills",special:"Stand System",role:"Role",source:"Reference art is loaded externally from JoJo Wiki. If direct embedding is blocked, the site automatically tries a fallback image route.",quick:["Summon / Dismiss Stand","Use Stand Skills","Aim / attack direction","Click a Stand card for details"],}
 };
 const SYS={
 th:[
@@ -28,10 +28,57 @@ const CH={
 th:[["v0.23.0.232","SHA ระเบิดแรง 50% ของ KQ Detonate • ไม่มี idle HP drain • ทุก 2 ระเบิดเสีย 1 HP • PvP/Safety targeting"],["v0.23.0.231","ทำ SHA movement/facing ให้ลื่นขึ้นด้วย interpolation + prediction"],["v0.23.0.230","แก้ skill activation / resolveTarget ที่ทำให้ปุ่ม 1–4 ไม่ทำงาน"],["v0.23.0.229","แก้ client load blocker และ Stand Arrow native Condition 3-use"]],
 en:[["v0.23.0.232","SHA explosion = 50% of KQ Detonate • no idle HP drain • every 2 explosions costs 1 HP • PvP/Safety targeting"],["v0.23.0.231","Smoothed SHA movement/facing with interpolation + short prediction"],["v0.23.0.230","Fixed skill activation / resolveTarget regression affecting skills 1–4"],["v0.23.0.229","Fixed client load blocker and native 3-use Stand Arrow Condition"]]};
 function T(){return UI[lang||"en"]}function setLang(x){lang=x;localStorage.setItem("pj-lang",x);document.querySelector("#gate").classList.add("hidden");render()}
-function render(){if(!lang)return;let u=T();document.documentElement.lang=lang;["Home","Stands","Systems","Updates","Credits"].forEach((x,i)=>document.querySelector("#nav"+x).textContent=u.nav[i]);document.querySelector("#search").placeholder=u.search;document.querySelector("#heroK").textContent=u.k;document.querySelector("#heroTitle").textContent=u.hero;document.querySelector("#heroDesc").textContent=u.desc;document.querySelector("#browse").textContent=u.browse;document.querySelector("#steam").textContent=u.steam;document.querySelector("#cur").textContent=u.current;document.querySelector("#hero2").textContent=u.hero2;document.querySelector("#hero3").textContent=u.hero3;document.querySelector("#standsTitle").textContent=u.stands;document.querySelector("#standsK").textContent=u.standsK;document.querySelector("#systemsTitle").textContent=u.systems;document.querySelector("#systemsK").textContent=u.systemsK;document.querySelector("#updatesTitle").textContent=u.updates;document.querySelector("#updatesK").textContent=u.updatesK;document.querySelector("#creditsTitle").textContent=u.credits;document.querySelector("#creditsK").textContent=u.creditsK;document.querySelector("#lang").textContent=lang==="th"?"EN":"ไทย";renderStands();renderSystems();renderChanges();renderCredits()}
-function renderStands(){let g=document.querySelector("#standGrid");g.innerHTML="";D.stands.forEach(s=>{let c=s[lang],e=document.createElement("article");e.className="card";e.dataset.search=(s.name+" "+s.role+" "+c.summary+" "+c.skills.join(" ")).toLowerCase();e.innerHTML=`<img loading="lazy" src="${s.image}" alt="${s.name} reference art" onerror="this.style.display='none'"><div class="card-body"><div class="role">${s.role}</div><h3>${s.name}</h3><p>${c.summary}</p></div>`;e.onclick=()=>openStand(s);g.appendChild(e)})}
-function openStand(s){let c=s[lang],u=T(),d=document.querySelector("#dlg");document.querySelector("#dlgImg").src=s.image;document.querySelector("#dlgName").textContent=s.name;document.querySelector("#dlgRole").textContent=u.role+": "+s.role;document.querySelector("#dlgSummary").textContent=c.summary;document.querySelector("#dlgSkillsTitle").textContent=u.skills;document.querySelector("#dlgSkills").innerHTML=c.skills.map(x=>`<li>${x}</li>`).join("");document.querySelector("#dlgSystemTitle").textContent=u.special;document.querySelector("#dlgSystem").textContent=c.system;document.querySelector("#dlgSource").textContent=u.source;d.showModal()}
-function renderSystems(){let g=document.querySelector("#systemGrid");g.innerHTML="";SYS[lang].forEach(([h,p])=>{let e=document.createElement("article");e.className="system";e.innerHTML=`<h3>${h}</h3><p>${p}</p>`;g.appendChild(e)})}
+function render(){if(!lang)return;let u=T();document.documentElement.lang=lang;["Home","Stands","Systems","Updates","Credits"].forEach((x,i)=>document.querySelector("#nav"+x).textContent=u.nav[i]);document.querySelector("#search").placeholder=u.search;document.querySelector("#heroK").textContent=u.k;document.querySelector("#heroTitle").textContent=u.hero;document.querySelector("#heroDesc").textContent=u.desc;document.querySelector("#browse").textContent=u.browse;document.querySelector("#steam").textContent=u.steam;document.querySelector("#cur").textContent=u.current;document.querySelector("#hero2").textContent=u.hero2;document.querySelector("#hero3").textContent=u.hero3;document.querySelector("#standsTitle").textContent=u.stands;document.querySelector("#standsK").textContent=u.standsK;document.querySelector("#systemsTitle").textContent=u.systems;document.querySelector("#systemsK").textContent=u.systemsK;document.querySelector("#updatesTitle").textContent=u.updates;document.querySelector("#updatesK").textContent=u.updatesK;document.querySelector("#creditsTitle").textContent=u.credits;document.querySelector("#creditsK").textContent=u.creditsK;document.querySelector("#lang").textContent=lang==="th"?"EN":"TH";document.querySelector("#q1").textContent=u.quick[0];document.querySelector("#q2").textContent=u.quick[1];document.querySelector("#q3").textContent=u.quick[2];document.querySelector("#q4").textContent=u.quick[3];renderStands();renderSystems();renderChanges();renderCredits()}
+function imageFallback(url){
+  return "https://images.weserv.nl/?url="+encodeURIComponent(url)+"&w=760&fit=contain&output=webp";
+}
+function wireImage(img,url){
+  img.referrerPolicy="no-referrer";
+  img.addEventListener("error",()=>{
+    if(img.dataset.fallback==="1"){
+      img.classList.add("image-failed");
+      img.removeAttribute("src");
+      return;
+    }
+    img.dataset.fallback="1";
+    img.src=imageFallback(url);
+  },{once:false});
+}
+function renderStands(){
+  let g=document.querySelector("#standGrid");g.innerHTML="";
+  D.stands.forEach((s,i)=>{
+    let c=s[lang],e=document.createElement("article");
+    e.className="card";
+    e.dataset.search=(s.name+" "+s.role+" "+c.summary+" "+c.skills.join(" ")).toLowerCase();
+    e.innerHTML=`<div class="card-index">${String(i+1).padStart(2,"0")}</div><div class="art-wrap"><img loading="lazy" referrerpolicy="no-referrer" alt="${s.name} reference art"><div class="art-placeholder">${s.name}</div></div><div class="card-body"><div class="role">${s.role}</div><h3>${s.name}</h3><p>${c.summary}</p><div class="read-more">${lang==="th"?"ดูรายละเอียด →":"View details →"}</div></div>`;
+    let pic=e.querySelector("img");wireImage(pic,s.image);pic.src=s.image;
+    e.onclick=()=>openStand(s);
+    g.appendChild(e);
+  })
+}
+function openStand(s){
+  let c=s[lang],u=T(),d=document.querySelector("#dlg"),pic=document.querySelector("#dlgImg");
+  pic.dataset.fallback="";pic.classList.remove("image-failed");wireImage(pic,s.image);pic.src=s.image;
+  document.querySelector("#dlgName").textContent=s.name;
+  document.querySelector("#dlgRole").textContent=u.role+": "+s.role;
+  document.querySelector("#dlgSummary").textContent=c.summary;
+  document.querySelector("#dlgSkillsTitle").textContent=u.skills;
+  document.querySelector("#dlgSkills").innerHTML=c.skills.map(x=>`<li>${x}</li>`).join("");
+  document.querySelector("#dlgSystemTitle").textContent=u.special;
+  document.querySelector("#dlgSystem").textContent=c.system;
+  document.querySelector("#dlgSource").textContent=u.source;
+  d.showModal()
+}
+function renderSystems(){
+  let g=document.querySelector("#systemGrid");g.innerHTML="";
+  SYS[lang].forEach(([h,p],i)=>{
+    let e=document.createElement("details");
+    e.className="system";
+    if(i<2)e.open=true;
+    e.innerHTML=`<summary><span>${String(i+1).padStart(2,"0")}</span><b>${h}</b><i>＋</i></summary><p>${p}</p>`;
+    g.appendChild(e)
+  })
+}
 function renderChanges(){let g=document.querySelector("#changes");g.innerHTML="";CH[lang].forEach(([v,p])=>{let e=document.createElement("div");e.className="change";e.innerHTML=`<b>${v}</b><div>${p}</div>`;g.appendChild(e)})}
 function renderCredits(){let e=document.querySelector("#creditsBody");e.innerHTML=lang==="th"?`<p><strong>3D Model Credits:</strong> SomeoneSae • 20062020year • NeiL • และผู้สร้างต้นฉบับที่เกี่ยวข้อง โมเดลถูกดัดแปลงสำหรับ Project Zomboid ด้วย rig/bone adjustments, optimization และ custom animations</p><p><strong>Reference Art:</strong> การ์ด Stand ใช้ลิงก์ภาพอ้างอิงจาก <a href="https://jojowiki.com/" target="_blank" rel="noopener">JoJo Wiki</a> แบบ external reference และไม่ได้คัดลอกไฟล์รูปเข้า repo นี้</p><div class="notice">Project JoJo เป็นมอดแฟนเมด ไม่ได้เป็นผลิตภัณฑ์ทางการของ JoJo's Bizarre Adventure หรือ Project Zomboid</div>`:`<p><strong>3D Model Credits:</strong> SomeoneSae • 20062020year • NeiL • respective original creators. Models were adapted for Project Zomboid with rig/bone adjustments, optimization and custom animations.</p><p><strong>Reference Art:</strong> Stand cards load external references from <a href="https://jojowiki.com/" target="_blank" rel="noopener">JoJo Wiki</a>; image files are not copied into this repository.</p><div class="notice">Project JoJo is a fan-made mod and is not an official JoJo's Bizarre Adventure or Project Zomboid product.</div>`}
 document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#th").onclick=()=>setLang("th");document.querySelector("#en").onclick=()=>setLang("en");document.querySelector("#lang").onclick=()=>setLang(lang==="th"?"en":"th");document.querySelector("#close").onclick=()=>document.querySelector("#dlg").close();document.querySelector("#search").oninput=e=>{let q=e.target.value.trim().toLowerCase();document.querySelectorAll(".card").forEach(x=>x.classList.toggle("hidden-card",q&&!x.dataset.search.includes(q)))};if(lang){document.querySelector("#gate").classList.add("hidden");render()}});

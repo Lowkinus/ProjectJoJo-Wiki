@@ -1,26 +1,29 @@
-PROJECT JOJO WIKI — VISITOR COUNTER PATCH v2
-==============================================
+PROJECT JOJO WIKI — MINIMAL VIEW COUNTER v3
+=============================================
 
-เวอร์ชันนี้เพิ่มกล่องเล็กที่มุมขวาล่างของทุกหน้า:
-👁 LIVE VISITORS + จำนวนคนออนไลน์
+ตามที่ขอ เวอร์ชันนี้มีแค่อย่างเดียว:
+    view 1234
 
-วิธีลง
-------
-1) แตก ZIP
-2) GitHub repo > assets > อัปโหลด assets/style.css ทับไฟล์เดิม
-3) กลับ root repo แล้วอัปโหลด stats.html
-4) Commit changes
-5) รอ GitHub Pages อัปเดต
+ตำแหน่ง:
+- หน้า Wiki ปกติ: อยู่บนแถบบน ถัดจากปุ่มภาษา
+- หน้าเลือกภาษา: อยู่ใต้ตัวเลือกภาษาแบบเล็ก ๆ
+- ไม่มีกล่องลอย
+- ไม่มี LIVE VISITORS
+- ไม่มี Stats button
+- ไม่มีประเทศ / อุปกรณ์ / Sessions โชว์บนหน้าเว็บ
 
-หน้า Stats เต็มในเว็บ:
-https://lowkinus.github.io/ProjectJoJo-Wiki/stats.html
+ระบบนับ:
+- ใช้ hits.sh
+- นับ Page Views รวมของ Project JoJo Wiki
+- ทุกหน้าใช้ Counter ตัวเดียวกัน
+- การเข้าซ้ำ / เปิดหน้าเพิ่ม สามารถเพิ่มยอดได้
+- เริ่มนับเมื่ออัปโหลดไฟล์นี้ขึ้นเว็บ
 
-แดชบอร์ด:
-https://whos.amung.us/stats/4wwb5vsza2/
+วิธีติดตั้ง:
+1. แตก ZIP
+2. เข้า GitHub > ProjectJoJo-Wiki > assets
+3. อัปโหลดไฟล์ style.css นี้ทับไฟล์เดิม
+4. Commit changes
+5. รอ GitHub Pages อัปเดต
 
-หมายเหตุ
---------
-- กล่องมุมขวาล่างตั้งใจทำเล็ก ไม่บังเนื้อหา
-- ตัวเลขที่โชว์ตรงเว็บคือจำนวนผู้เข้าชมออนไลน์ ณ ตอนนั้น
-- หน้า stats.html มีปุ่มเปิดสถิติ Pageviews / Sessions / Popular pages / Countries / Devices
-- ใช้ Tracker ID เดียวกันทั้งเว็บ
+ไม่ต้องอัปโหลดไฟล์ HTML เพิ่ม

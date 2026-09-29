@@ -20,33 +20,44 @@ main{width:min(1200px,93vw);margin:auto}.eyebrow{color:var(--gold);font-size:11p
 @media(max-width:650px){main{width:min(94vw,620px)}.topbar{gap:10px;flex-wrap:wrap}.topnav{order:3;width:100%}.brand-copy b{font-size:18px}.hero-section{padding-top:38px;min-height:auto}.hero-copy h1{font-size:68px}.hero-visual{height:365px}.portrait-main{width:68%;height:335px}.portrait-back{width:47%;height:215px}.jojo-sfx{font-size:55px}.hero-stamp{width:72px;height:72px;font-size:11px;left:25%}.quick-grid,.system-grid,.stand-grid,.lang-grid{grid-template-columns:1fr}.stand-image{height:390px}.change-row{grid-template-columns:1fr;gap:5px}.lang-art{width:52vw;opacity:.2}.language-gate{padding:14px}.lang-panel{padding:34px 20px}.stand-hero-art{height:430px}.stand-prevnext{grid-template-columns:1fr}.stand-prevnext a:last-child{text-align:left}.system-card{min-height:auto}.guide-cta{padding:24px}}
 
 /* =========================================================
-   PROJECT JOJO WIKI — VISITOR COUNTER
-   Added 2026-09-29
-   One shared counter for every page that loads this stylesheet.
-   Stats dashboard: https://whos.amung.us/stats/4wwb5vsza2/
+   PROJECT JOJO WIKI — VIEW COUNTER v3
+   Minimal total page-view counter.
+   Repeated visits/page loads can increase the total.
    ========================================================= */
-body::before{
-  content:url("https://whos.amung.us/swidget/4wwb5vsza2.png");
-  position:fixed;
-  right:12px;
-  bottom:12px;
-  z-index:99999;
+
+/* Normal wiki pages: one small "view 123" badge beside the language button. */
+.topbar::after{
+  content:url("https://hits.sh/lowkinus.github.io/ProjectJoJo-Wiki.svg?label=view&color=8b34d8&labelColor=100916&style=flat-square");
   display:block;
-  width:80px;
-  min-height:15px;
-  padding:7px 8px;
-  border:1px solid rgba(255,214,74,.48);
-  border-radius:10px;
-  background:rgba(16,9,22,.90);
-  box-shadow:0 6px 20px rgba(0,0,0,.35);
+  flex:0 0 auto;
+  width:auto;
+  height:20px;
   line-height:0;
-  pointer-events:none;
+  margin-left:-12px;
+  opacity:.92;
 }
+
+/* Language-selection page has no topbar, so show the same single counter
+   quietly below the language selector. */
+.language-page .lang-panel::after{
+  content:url("https://hits.sh/lowkinus.github.io/ProjectJoJo-Wiki.svg?label=view&color=8b34d8&labelColor=100916&style=flat-square");
+  display:block;
+  width:max-content;
+  height:20px;
+  line-height:0;
+  margin:13px auto 0;
+  opacity:.82;
+}
+
 @media(max-width:650px){
-  body::before{
-    right:8px;
-    bottom:8px;
-    transform:scale(.92);
-    transform-origin:bottom right;
+  .topbar::after{
+    order:2;
+    margin-left:auto;
+    transform:scale(.9);
+    transform-origin:right center;
+  }
+  .language-page .lang-panel::after{
+    transform:scale(.9);
+    transform-origin:center;
   }
 }

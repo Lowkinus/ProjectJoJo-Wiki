@@ -1,6 +1,14 @@
 
-const D=window.PJ_DATA, G=window.PJ_GUIDE;
-let lang=localStorage.getItem("pj-lang")||"";
+const D=window.PJ_DATA||{stands:[]};
+const G=window.PJ_GUIDE||{th:[],en:[]};
+function safeStorageGet(key){
+ try{return window.localStorage ? localStorage.getItem(key) : null}catch(_){return null}
+}
+function safeStorageSet(key,value){
+ try{if(window.localStorage)localStorage.setItem(key,value)}catch(_){}
+}
+let lang=safeStorageGet("pj-lang")||"";
+if(lang!=="th"&&lang!=="en")lang="";
 let currentGuideTitle="";
 const T={
  th:{
@@ -64,8 +72,11 @@ const CH={
 };
 function ui(){return T[lang||"en"]}
 function setLang(x){
- lang=x;localStorage.setItem("pj-lang",x);
- document.querySelector("#gate").classList.add("hidden");
+ if(x!=="th"&&x!=="en")return;
+ lang=x;
+ safeStorageSet("pj-lang",x);
+ const gate=document.querySelector("#gate");
+ if(gate)gate.classList.add("hidden");
  currentGuideTitle="";
  render();
 }
@@ -92,11 +103,11 @@ function render(){
  document.querySelector("#langSwitch").textContent=lang==="th"?"EN":"TH";
  renderStart();renderStands();renderToc();renderChanges();renderCredits();
  if(!currentGuideTitle){
-   const preferred=G[lang].find(s=>s.group==="start")||G[lang][0];
+   const preferred=(G[lang]||[]).find(s=>s.group==="start")||(G[lang]||[])[0];
    if(preferred) showGuide(preferred.title,false);
  }else{
-   const found=G[lang].find(s=>s.title===currentGuideTitle);
-   if(!found){const preferred=G[lang].find(s=>s.group==="start")||G[lang][0];showGuide(preferred.title,false)}
+   const found=(G[lang]||[]).find(s=>s.title===currentGuideTitle);
+   if(!found){const preferred=(G[lang]||[]).find(s=>s.group==="start")||(G[lang]||[])[0];if(preferred)showGuide(preferred.title,false)}
    else showGuide(found.title,false);
  }
 }
@@ -132,7 +143,7 @@ function renderToc(filter=""){
  const q=filter.trim().toLowerCase();
  let last="";
  let found=0;
- G[lang].forEach(sec=>{
+ (G[lang]||[]).forEach(sec=>{
    if(q && !(sec.title.toLowerCase().includes(q) || sec.html.toLowerCase().includes(q)))return;
    found++;
    if(sec.group!==last){
@@ -145,7 +156,7 @@ function renderToc(filter=""){
  if(!found){const e=document.createElement("div");e.className="guide-empty";e.textContent=t.noResult;root.appendChild(e)}
 }
 function showGuide(title,focus){
- const sec=G[lang].find(s=>s.title===title);if(!sec)return;
+ const sec=(G[lang]||[]).find(s=>s.title===title);if(!sec)return;
  currentGuideTitle=title;
  const a=document.querySelector("#guideArticle");
  a.innerHTML=`<div class="article-tag">${ui().articleTag}</div><h1>${sec.title}</h1>${sec.html}`;
@@ -162,13 +173,22 @@ function renderCredits(){
  :`<p><strong>Stand images on this site:</strong> rendered directly from the 3D models packaged in Project JoJo v0.23.0.232, so the Wiki no longer depends on fragile image hotlinks.</p><p><strong>3D Model Credits:</strong> <a href="https://sketchfab.com/SomeoneSae" target="_blank" rel="noopener">SomeoneSae</a> • <a href="https://sketchfab.com/20062020year" target="_blank" rel="noopener">20062020year</a> • <a href="https://sketchfab.com/NeiL" target="_blank" rel="noopener">NeiL</a> • respective original creators. Models were adapted for Project Zomboid with rig/bone adjustments, optimization and custom animations.</p><p>The “JoJo reference” buttons open JoJo Wiki separately instead of embedding third-party images that may block hotlinking.</p>`;
 }
 document.addEventListener("DOMContentLoaded",()=>{
- document.querySelector("#thChoice").onclick=()=>setLang("th");
- document.querySelector("#enChoice").onclick=()=>setLang("en");
- document.querySelector("#langSwitch").onclick=()=>setLang(lang==="th"?"en":"th");
- document.querySelector("#standSearch").oninput=e=>{
+ const th=document.querySelector("#thChoice");
+ const en=document.querySelector("#enChoice");
+ const sw=document.querySelector("#langSwitch");
+ const standSearch=document.querySelector("#standSearch");
+ const guideSearch=document.querySelector("#guideSearch");
+ if(th)th.addEventListener("click",()=>setLang("th"));
+ if(en)en.addEventListener("click",()=>setLang("en"));
+ if(sw)sw.addEventListener("click",()=>setLang(lang==="th"?"en":"th"));
+ if(standSearch)standSearch.addEventListener("input",e=>{
    const q=e.target.value.trim().toLowerCase();
    document.querySelectorAll(".stand-card").forEach(c=>c.classList.toggle("hidden-card",q&&!c.dataset.search.includes(q)));
- };
- document.querySelector("#guideSearch").oninput=e=>renderToc(e.target.value);
- if(lang){document.querySelector("#gate").classList.add("hidden");render()}
+ });
+ if(guideSearch)guideSearch.addEventListener("input",e=>renderToc(e.target.value));
+ if(lang){
+   const gate=document.querySelector("#gate");
+   if(gate)gate.classList.add("hidden");
+   render();
+ }
 });

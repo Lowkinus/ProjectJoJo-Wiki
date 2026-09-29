@@ -1,27 +1,101 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#160b20"><meta name="description" content="Project JoJo — Project Zomboid Build 42+ mod wiki">
-<title>Project JoJo Wiki</title><link rel="stylesheet" href="assets/style.css"></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#120918">
+<meta name="description" content="Project JoJo — Project Zomboid Build 42+ Stand mod wiki">
+<title>Project JoJo Wiki</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
 <body>
-<div class="gate" id="gate"><div class="gatebox"><div class="eyebrow">PROJECT ZOMBOID • BUILD 42+</div><h1>PROJECT<br>JOJO</h1><p>CHOOSE LANGUAGE / เลือกภาษา</p><div class="langs"><button class="choice" id="th"><span class="lang-code">TH</span><b>ภาษาไทย</b><small>คู่มือภาษาไทย</small></button><button class="choice" id="en"><span class="lang-code">EN</span><b>English</b><small>English Wiki</small></button></div></div></div>
-<header class="top"><div class="brand"><div class="logo">PJ</div><div><b>PROJECT JOJO</b><small>BUILD 42+ WIKI</small></div></div>
-<nav class="nav"><a href="#home" id="navHome">Home</a><a href="#stands" id="navStands">Stands</a><a href="#systems" id="navSystems">Systems</a><a href="#updates" id="navUpdates">Updates</a><a href="#credits" id="navCredits">Credits</a></nav>
-<input class="search" id="search" type="search" placeholder="Search"><button class="lang" id="lang">ไทย</button></header>
-<main>
-<section class="hero" id="home"><div><div class="eyebrow" id="heroK"></div><h1 id="heroTitle">PROJECT JOJO</h1><p id="heroDesc"></p><div class="buttons"><a class="cta" id="browse" href="#stands">Browse Stands</a><a class="cta dark" id="steam" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3807750510" target="_blank" rel="noopener">Steam Workshop</a></div></div><aside class="hero-art"><div class="hero-inner"><span class="version"><span id="cur">Current version</span> • v0.23.0.232</span><h3 id="hero2">9 STANDS • SP / HOST / MP</h3><p id="hero3"></p><div class="chips"><span class="chip">CAPS LOCK + 1–4</span><span class="chip">LV.1–100</span><span class="chip">TIME STOP</span><span class="chip">BARRAGE CLASH</span><span class="chip">PVP / SAFETY</span></div></div></aside></section>
+<div class="gate" id="gate">
+  <div class="gatebox">
+    <div class="gate-kicker">PROJECT ZOMBOID • BUILD 42+</div>
+    <h1>PROJECT<br><span>JOJO</span></h1>
+    <p>เลือกภาษาคู่มือ / CHOOSE GUIDE LANGUAGE</p>
+    <div class="language-buttons">
+      <button id="thChoice"><span>TH</span><b>ภาษาไทย</b><small>คู่มือภาษาไทย</small></button>
+      <button id="enChoice"><span>EN</span><b>English</b><small>English guide</small></button>
+    </div>
+  </div>
+</div>
 
-<section class="quick-strip" id="quick">
-  <div class="quick-item"><span>01</span><div><b>CAPS LOCK</b><small id="q1">Summon / Dismiss Stand</small></div></div>
-  <div class="quick-item"><span>02</span><div><b>1–4</b><small id="q2">Use Stand Skills</small></div></div>
-  <div class="quick-item"><span>03</span><div><b>MOUSE</b><small id="q3">Aim / attack direction</small></div></div>
-  <div class="quick-item"><span>04</span><div><b>WIKI</b><small id="q4">Click a Stand card for details</small></div></div>
+<header class="topbar">
+  <a class="brand" href="#home"><span class="brandmark">PJ</span><span><b>PROJECT JOJO</b><small>BUILD 42+ WIKI</small></span></a>
+  <nav>
+    <a href="#start" id="navStart">Start</a>
+    <a href="#stands" id="navStands">Stands</a>
+    <a href="#guide" id="navGuide">Guide</a>
+    <a href="#updates" id="navUpdates">Updates</a>
+  </nav>
+  <button class="lang-switch" id="langSwitch">TH</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="kicker">PROJECT ZOMBOID • BUILD 42+</div>
+    <h1>PROJECT <span>JOJO</span></h1>
+    <p id="heroText"></p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#start" id="heroStart">Start here</a>
+      <a class="btn" href="#stands" id="heroStands">Choose a Stand</a>
+    </div>
+    <div class="hero-meta">v0.23.0.232 • Singleplayer / Host / Multiplayer</div>
+  </div>
+  <div class="hero-poster"><img src="assets/hero.png" alt="Project JoJo mod poster"></div>
 </section>
 
-<section class="section" id="stands"><div class="section-head"><div class="kicker" id="standsK"></div><h2 class="title" id="standsTitle">STANDS</h2></div><div class="grid" id="standGrid"></div></section>
-<section class="section" id="systems"><div class="section-head"><div class="kicker" id="systemsK"></div><h2 class="title" id="systemsTitle">SYSTEMS</h2></div><div class="systems" id="systemGrid"></div></section>
-<section class="section" id="updates"><div class="section-head"><div class="kicker" id="updatesK"></div><h2 class="title" id="updatesTitle">CHANGELOG</h2></div><div class="changes" id="changes"></div></section>
-<section class="section" id="credits"><div class="section-head"><div class="kicker" id="creditsK"></div><h2 class="title" id="creditsTitle">CREDITS</h2></div><div class="credits" id="creditsBody"></div></section>
+<section class="section" id="start">
+  <div class="section-head">
+    <div><div class="eyebrow" id="startEyebrow">NEW PLAYER</div><h2 id="startTitle">START HERE</h2></div>
+    <p id="startLead"></p>
+  </div>
+  <div class="start-grid" id="startGrid"></div>
+  <div class="important-row" id="importantRow"></div>
+</section>
+
+<section class="section" id="stands">
+  <div class="section-head">
+    <div><div class="eyebrow" id="standsEyebrow">PLAYABLE ROSTER</div><h2 id="standsTitle">STANDS</h2></div>
+    <p id="standsLead"></p>
+  </div>
+  <div class="stand-tools"><input id="standSearch" type="search" placeholder="Search Stand..."></div>
+  <div class="stand-grid" id="standGrid"></div>
+</section>
+
+<section class="section guide-section" id="guide">
+  <div class="section-head">
+    <div><div class="eyebrow" id="guideEyebrow">FULL GUIDE</div><h2 id="guideTitle">DETAILED WIKI</h2></div>
+    <p id="guideLead"></p>
+  </div>
+  <div class="guide-layout">
+    <aside class="guide-sidebar">
+      <input id="guideSearch" type="search" placeholder="Search guide...">
+      <div id="guideToc"></div>
+    </aside>
+    <article class="guide-article" id="guideArticle"></article>
+  </div>
+</section>
+
+<section class="section" id="updates">
+  <div class="section-head"><div><div class="eyebrow">LATEST</div><h2 id="updatesTitle">CHANGELOG</h2></div></div>
+  <div id="changeList" class="changes"></div>
+</section>
+
+<section class="section credits" id="credits">
+  <div class="section-head"><div><div class="eyebrow">CREDITS</div><h2>PROJECT INFO</h2></div></div>
+  <div id="creditsBody"></div>
+</section>
 </main>
-<dialog id="dlg"><div class="dlg"><div class="dlg-art"><img id="dlgImg" alt=""></div><div class="dlg-body"><button class="close" id="close">×</button><div class="role" id="dlgRole"></div><h2 id="dlgName"></h2><p id="dlgSummary"></p><h4 id="dlgSkillsTitle">Skills</h4><ul id="dlgSkills"></ul><h4 id="dlgSystemTitle">Stand System</h4><p id="dlgSystem"></p><div class="source" id="dlgSource"></div></div></div></dialog>
-<footer class="footer">Project JoJo • Workshop ID 3807750510 • Mod ID JoJoStandSystem0183Standalone</footer>
-<script src="assets/data.js"></script><script src="assets/app.js"></script></body></html>
+
+<footer>
+  <b>Project JoJo</b> • Workshop ID 3807750510 • Mod ID JoJoStandSystem0183Standalone
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/guide-data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

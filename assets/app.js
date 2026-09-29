@@ -1,84 +1,174 @@
 
-const D=window.PJ_DATA;
+const D=window.PJ_DATA, G=window.PJ_GUIDE;
 let lang=localStorage.getItem("pj-lang")||"";
-const UI={
-th:{nav:["หน้าแรก","Stand","ระบบ","อัปเดต","เครดิต"],search:"ค้นหา Stand / Skill...",k:"PROJECT ZOMBOID • BUILD 42+",hero:"PROJECT JOJO",desc:"Wiki ภายนอกสำหรับ Project JoJo — รายละเอียด Stand, Skill, ระบบเวลา, PvP, Stand Arrow, Sandbox และ Changelog โดยไม่ติดลิมิตคำอธิบาย Steam",browse:"ดู Stand ทั้งหมด",steam:"เปิด Steam Workshop",current:"เวอร์ชันปัจจุบัน",hero2:"9 STANDS • SP / HOST / MP",hero3:"อนาคตเพิ่ม Stand ใหม่ได้โดยเพิ่มข้อมูลอีกหนึ่งรายการ ไม่ต้องขยายหน้า Steam Workshop",stands:"STANDS",standsK:"PLAYABLE ROSTER",systems:"SYSTEMS",systemsK:"CORE MECHANICS",updates:"CHANGELOG",updatesK:"LATEST",credits:"CREDITS",creditsK:"MODELS / REFERENCES",skills:"Skills",special:"ระบบเฉพาะ",role:"บทบาท",source:"ภาพอ้างอิงโหลดจาก JoJo Wiki ภายนอก หากต้นทางบล็อกการฝัง เว็บจะลองโหลดผ่าน fallback อัตโนมัติ",quick:["เรียก / เก็บ Stand","ใช้สกิลของ Stand","เล็ง / กำหนดทิศโจมตี","กดการ์ด Stand เพื่อดูรายละเอียด"],},
-en:{nav:["Home","Stands","Systems","Updates","Credits"],search:"Search Stand / skill...",k:"PROJECT ZOMBOID • BUILD 42+",hero:"PROJECT JOJO",desc:"The external Project JoJo wiki — Stand details, skills, time systems, PvP rules, Stand Arrow, Sandbox settings and changelogs without Steam description limits.",browse:"Browse all Stands",steam:"Open Steam Workshop",current:"Current version",hero2:"9 STANDS • SP / HOST / MP",hero3:"Future Stands can be added here without expanding the Steam Workshop description.",stands:"STANDS",standsK:"PLAYABLE ROSTER",systems:"SYSTEMS",systemsK:"CORE MECHANICS",updates:"CHANGELOG",updatesK:"LATEST",credits:"CREDITS",creditsK:"MODELS / REFERENCES",skills:"Skills",special:"Stand System",role:"Role",source:"Reference art is loaded externally from JoJo Wiki. If direct embedding is blocked, the site automatically tries a fallback image route.",quick:["Summon / Dismiss Stand","Use Stand Skills","Aim / attack direction","Click a Stand card for details"],}
+let currentGuideTitle="";
+const T={
+ th:{
+  nav:["เริ่มเล่น","Stand","คู่มือ","อัปเดต"],
+  hero:"หา Stand Arrow ปลุกพลัง แล้วเลือกวิธีเล่นของนายเอง — ประชิด, Time Stop, ระเบิด, Support, Crowd Control หรือ Time Erase",
+  startBtn:"เริ่มเล่น",standsBtn:"เลือก Stand",
+  startEyebrow:"มือใหม่เริ่มตรงนี้",startTitle:"เริ่มเล่นในไม่กี่ขั้น",startLead:"ตัดข้อมูลที่ไม่จำเป็นออก เหลือสิ่งที่คนเพิ่งลงมอดต้องรู้ก่อนเข้าไปต่อยซอมบี้",
+  steps:[
+   ["STAND ARROW","หา Stand Arrow","ดรอปจากโลก/ซอมบี้ได้ และ Arrow ปกติ 1 ดอกใช้สำเร็จได้ 3 ครั้ง"],
+   ["CAPS LOCK","เรียก Stand","กด CAPS LOCK เพื่อเรียกหรือเก็บ Stand ของตัวเอง"],
+   ["1 – 4","ใช้สกิล","ใช้เลขแถวบน 1–4 ไม่ใช่ Numpad หลายสกิลกดค้างเพื่อชาร์จเต็ม"],
+   ["MOUSE","เล็งการโจมตี","Stand ตามทิศเมาส์ ระบบประชิดมีตัวช่วยเล็ง แต่ยังต้องหันให้ถูกทาง"]
+  ],
+  important:"จำง่าย ๆ: บางปุ่มมีทั้งกดปกติและกดค้าง เช่น KQ Skill 3 = First Bomb / Sheer Heart Attack และ SP/TW Skill 4 = Time Dash / Time Stop",
+  standsEyebrow:"เลือกตามสไตล์การเล่น",standsTitle:"9 STANDS",standsLead:"กด “เปิดคู่มือเต็ม” เพื่อกระโดดไปยังคู่มือเดิมแบบละเอียด ไม่ได้ตัดเนื้อหาเหลือแค่สรุปสั้น ๆ แล้ว",
+  searchStand:"ค้นหา Stand...",
+  fullGuide:"เปิดคู่มือเต็ม",reference:"รูปอ้างอิง JoJo",
+  guideEyebrow:"เนื้อหาจากไกด์ฉบับเต็ม",guideTitle:"คู่มือแบบละเอียด",guideLead:"รวมไกด์ยาวที่ทำไว้เดิมทั้งหมด แล้วอัปเดต Stand Arrow / SHA / PvP ให้ตรง v0.23.0.232",
+  searchGuide:"ค้นหาหัวข้อ...",
+  groups:{intro:"ภาพรวม",start:"เริ่มต้น",systems:"ระบบหลัก",stands:"คู่มือ Stand",more:"ทีม / เซิร์ฟ / อื่น ๆ"},
+  articleTag:"PROJECT JOJO GUIDE",
+  updatesTitle:"อัปเดตล่าสุด",
+  noResult:"ไม่พบหัวข้อที่ค้นหา",
+ },
+ en:{
+  nav:["Start","Stands","Guide","Updates"],
+  hero:"Find a Stand Arrow, awaken a Stand and choose your playstyle — melee, Time Stop, bombs, support, crowd control or Time Erase.",
+  startBtn:"Start here",standsBtn:"Choose a Stand",
+  startEyebrow:"NEW PLAYER",startTitle:"START PLAYING",startLead:"Only the information a new player actually needs before jumping into the game.",
+  steps:[
+   ["STAND ARROW","Find an Arrow","World/zombie loot. A normal Arrow has 3 successful uses."],
+   ["CAPS LOCK","Summon your Stand","CAPS LOCK summons or dismisses your current Stand."],
+   ["1 – 4","Use skills","Use the top-row 1–4 keys. Many skills have a full-charge version."],
+   ["MOUSE","Aim attacks","Stand attacks follow mouse direction. Close-range attacks have soft assistance, but you still need to aim."]
+  ],
+  important:"Remember: some buttons have tap and full-charge behavior. KQ Skill 3 = First Bomb / SHA; SP/TW Skill 4 = Time Dash / Time Stop.",
+  standsEyebrow:"CHOOSE BY PLAYSTYLE",standsTitle:"9 STANDS",standsLead:"Use “Full guide” to open the original long-form guide for that Stand. The Wiki is no longer just a short summary.",
+  searchStand:"Search Stand...",
+  fullGuide:"Full guide",reference:"JoJo reference",
+  guideEyebrow:"FULL LONG-FORM GUIDE",guideTitle:"DETAILED WIKI",guideLead:"The full original guide is preserved here and updated for v0.23.0.232 Stand Arrow / SHA / PvP behavior.",
+  searchGuide:"Search guide...",
+  groups:{intro:"Overview",start:"Getting Started",systems:"Core Systems",stands:"Stand Guides",more:"Team / Server / More"},
+  articleTag:"PROJECT JOJO GUIDE",
+  updatesTitle:"Latest Updates",
+  noResult:"No matching guide section",
+ }
 };
-const SYS={
-th:[
-["CONTROLS","CAPS LOCK — เรียก/เก็บ Stand • 1–4 — Skills • เมาส์กำหนดทิศ/ระยะ หลายสกิลชาร์จค้างเพื่อเพิ่มผลหรือเปิดเวอร์ชันพิเศษ"],
-["STAND ARROW","Stand Arrow ใช้ Condition แบบ native: 3/3 → 2/3 → 1/3 → หาย ใช้แล้วสุ่ม Stand และไม่ลบ Progress ของ Stand ตัวเก่า Infinite Arrow จะไม่เสีย Condition"],
-["STAND LEVEL","แต่ละ Stand มี LV.1–100 แยกกัน LV.1 เริ่มประมาณ 50% ดาเมจเต็มและ LV.100 = 100% เฉพาะซอมบี้ที่ Stand ฆ่าเองถึงให้ EXP การตายรีเซ็ต progression ของตัวละครนั้น"],
-["HIT DETECTION","เมาส์กำหนดทิศและระยะ ส่วนการโจมตีที่รองรับใช้ physical first-contact / swept-contact เพื่อลดอาการภาพโดนแต่ดาเมจวืด"],
-["TIME SYSTEM","Star Platinum และ The World ใช้ Time Stop ส่วน King Crimson ใช้ Time Erase ทั้งสองเป็นระบบเวลาแยกกันและมี interaction ของมอดเมื่อเกิดพร้อมกัน"],
-["PVP / SAFETY","ดาเมจผู้เล่นเคารพ Project Zomboid PvP / Safety ส่วน Utility/CC ที่ออกแบบให้ใช้กับเพื่อนได้ เช่น Space Pull หรือ THREE FREEZE ยังทำงานได้ SHA จะไม่เลือกผู้เล่นที่ PvP/Safety ป้องกันเป็นเป้า"],
-["BARRAGE CLASH","Barrage ที่รองรับสามารถชนกันเป็น Barrage Clash ได้"],
-["SANDBOX","Sound 0–100% • Arrow Drops 0x–10x • Stand Damage • Stand Levels ON/OFF • Arrow on Join • Infinite Stand Arrow"]],
-en:[
-["CONTROLS","CAPS LOCK — Summon/Dismiss • 1–4 — Skills • Mouse controls direction/reach. Many skills can be held for charged or alternate effects."],
-["STAND ARROW","Stand Arrow uses native Condition: 3/3 → 2/3 → 1/3 → removed. Each successful use rolls a Stand without deleting old Stand progression. Infinite Arrow does not lose Condition."],
-["STAND LEVEL","Each Stand has its own LV.1–100. LV.1 starts at about 50% full Stand damage and LV.100 reaches 100%. Only zombie kills made by that Stand grant EXP. Character death resets Stand progression."],
-["HIT DETECTION","Mouse controls direction/reach while supported attacks use physical first-contact / swept-contact logic to reduce visible-contact misses."],
-["TIME SYSTEM","Star Platinum and The World use Time Stop. King Crimson uses Time Erase. They are separate temporal systems with defined mod interactions."],
-["PVP / SAFETY","Hostile player damage respects Project Zomboid PvP/Safety. Designed utility/CC such as Space Pull or THREE FREEZE can still work. SHA will not acquire PvP/Safety-protected players."],
-["BARRAGE CLASH","Supported Barrages can collide in a Barrage Clash."],
-["SANDBOX","Sound 0–100% • Arrow Drops 0x–10x • Stand Damage • Stand Levels ON/OFF • Arrow on Join • Infinite Stand Arrow"]]};
 const CH={
-th:[["v0.23.0.232","SHA ระเบิดแรง 50% ของ KQ Detonate • ไม่มี idle HP drain • ทุก 2 ระเบิดเสีย 1 HP • PvP/Safety targeting"],["v0.23.0.231","ทำ SHA movement/facing ให้ลื่นขึ้นด้วย interpolation + prediction"],["v0.23.0.230","แก้ skill activation / resolveTarget ที่ทำให้ปุ่ม 1–4 ไม่ทำงาน"],["v0.23.0.229","แก้ client load blocker และ Stand Arrow native Condition 3-use"]],
-en:[["v0.23.0.232","SHA explosion = 50% of KQ Detonate • no idle HP drain • every 2 explosions costs 1 HP • PvP/Safety targeting"],["v0.23.0.231","Smoothed SHA movement/facing with interpolation + short prediction"],["v0.23.0.230","Fixed skill activation / resolveTarget regression affecting skills 1–4"],["v0.23.0.229","Fixed client load blocker and native 3-use Stand Arrow Condition"]]};
-function T(){return UI[lang||"en"]}function setLang(x){lang=x;localStorage.setItem("pj-lang",x);document.querySelector("#gate").classList.add("hidden");render()}
-function render(){if(!lang)return;let u=T();document.documentElement.lang=lang;["Home","Stands","Systems","Updates","Credits"].forEach((x,i)=>document.querySelector("#nav"+x).textContent=u.nav[i]);document.querySelector("#search").placeholder=u.search;document.querySelector("#heroK").textContent=u.k;document.querySelector("#heroTitle").textContent=u.hero;document.querySelector("#heroDesc").textContent=u.desc;document.querySelector("#browse").textContent=u.browse;document.querySelector("#steam").textContent=u.steam;document.querySelector("#cur").textContent=u.current;document.querySelector("#hero2").textContent=u.hero2;document.querySelector("#hero3").textContent=u.hero3;document.querySelector("#standsTitle").textContent=u.stands;document.querySelector("#standsK").textContent=u.standsK;document.querySelector("#systemsTitle").textContent=u.systems;document.querySelector("#systemsK").textContent=u.systemsK;document.querySelector("#updatesTitle").textContent=u.updates;document.querySelector("#updatesK").textContent=u.updatesK;document.querySelector("#creditsTitle").textContent=u.credits;document.querySelector("#creditsK").textContent=u.creditsK;document.querySelector("#lang").textContent=lang==="th"?"EN":"TH";document.querySelector("#q1").textContent=u.quick[0];document.querySelector("#q2").textContent=u.quick[1];document.querySelector("#q3").textContent=u.quick[2];document.querySelector("#q4").textContent=u.quick[3];renderStands();renderSystems();renderChanges();renderCredits()}
-function imageFallback(url){
-  return "https://images.weserv.nl/?url="+encodeURIComponent(url)+"&w=760&fit=contain&output=webp";
+ th:[
+  ["v0.23.0.232","SHA = 50% ของ KQ Detonate • ไม่มี idle HP drain • ทุก 2 ระเบิดเสีย 1 HP • PvP/Safety protected players ไม่ถูก SHA เลือกเป็นเป้า"],
+  ["v0.23.0.231","ปรับ SHA movement / facing ให้ลื่นขึ้น ลดอาการนิ่งแล้ววาร์ป"],
+  ["v0.23.0.230","แก้ resolveTarget ที่ทำให้สกิล 1–4 ไม่ทำงาน"],
+  ["v0.23.0.229","Stand Arrow เปลี่ยนเป็น native Condition 3-use และแก้ client load blocker"]
+ ],
+ en:[
+  ["v0.23.0.232","SHA = 50% of KQ Detonate • no idle HP drain • every 2 explosions costs 1 HP • PvP/Safety-protected players are not SHA targets"],
+  ["v0.23.0.231","Smoother SHA movement / facing; reduced stop-and-warp behavior"],
+  ["v0.23.0.230","Fixed resolveTarget regression that broke skills 1–4"],
+  ["v0.23.0.229","Native 3-use Stand Arrow Condition + client load blocker fix"]
+ ]
+};
+function ui(){return T[lang||"en"]}
+function setLang(x){
+ lang=x;localStorage.setItem("pj-lang",x);
+ document.querySelector("#gate").classList.add("hidden");
+ currentGuideTitle="";
+ render();
 }
-function wireImage(img,url){
-  img.referrerPolicy="no-referrer";
-  img.addEventListener("error",()=>{
-    if(img.dataset.fallback==="1"){
-      img.classList.add("image-failed");
-      img.removeAttribute("src");
-      return;
-    }
-    img.dataset.fallback="1";
-    img.src=imageFallback(url);
-  },{once:false});
+function render(){
+ if(!lang)return;
+ const t=ui();
+ document.documentElement.lang=lang;
+ ["Start","Stands","Guide","Updates"].forEach((x,i)=>document.querySelector("#nav"+x).textContent=t.nav[i]);
+ document.querySelector("#heroText").textContent=t.hero;
+ document.querySelector("#heroStart").textContent=t.startBtn;
+ document.querySelector("#heroStands").textContent=t.standsBtn;
+ document.querySelector("#startEyebrow").textContent=t.startEyebrow;
+ document.querySelector("#startTitle").textContent=t.startTitle;
+ document.querySelector("#startLead").textContent=t.startLead;
+ document.querySelector("#standsEyebrow").textContent=t.standsEyebrow;
+ document.querySelector("#standsTitle").textContent=t.standsTitle;
+ document.querySelector("#standsLead").textContent=t.standsLead;
+ document.querySelector("#standSearch").placeholder=t.searchStand;
+ document.querySelector("#guideEyebrow").textContent=t.guideEyebrow;
+ document.querySelector("#guideTitle").textContent=t.guideTitle;
+ document.querySelector("#guideLead").textContent=t.guideLead;
+ document.querySelector("#guideSearch").placeholder=t.searchGuide;
+ document.querySelector("#updatesTitle").textContent=t.updatesTitle;
+ document.querySelector("#langSwitch").textContent=lang==="th"?"EN":"TH";
+ renderStart();renderStands();renderToc();renderChanges();renderCredits();
+ if(!currentGuideTitle){
+   const preferred=G[lang].find(s=>s.group==="start")||G[lang][0];
+   if(preferred) showGuide(preferred.title,false);
+ }else{
+   const found=G[lang].find(s=>s.title===currentGuideTitle);
+   if(!found){const preferred=G[lang].find(s=>s.group==="start")||G[lang][0];showGuide(preferred.title,false)}
+   else showGuide(found.title,false);
+ }
+}
+function renderStart(){
+ const t=ui(),g=document.querySelector("#startGrid");g.innerHTML="";
+ t.steps.forEach(([key,title,body])=>{
+  const e=document.createElement("article");e.className="start-card";
+  e.innerHTML=`<span class="key">${key}</span><h3>${title}</h3><p>${body}</p>`;g.appendChild(e);
+ });
+ document.querySelector("#importantRow").textContent=t.important;
 }
 function renderStands(){
-  let g=document.querySelector("#standGrid");g.innerHTML="";
-  D.stands.forEach((s,i)=>{
-    let c=s[lang],e=document.createElement("article");
-    e.className="card";
-    e.dataset.search=(s.name+" "+s.role+" "+c.summary+" "+c.skills.join(" ")).toLowerCase();
-    e.innerHTML=`<div class="card-index">${String(i+1).padStart(2,"0")}</div><div class="art-wrap"><img loading="lazy" referrerpolicy="no-referrer" alt="${s.name} reference art"><div class="art-placeholder">${s.name}</div></div><div class="card-body"><div class="role">${s.role}</div><h3>${s.name}</h3><p>${c.summary}</p><div class="read-more">${lang==="th"?"ดูรายละเอียด →":"View details →"}</div></div>`;
-    let pic=e.querySelector("img");wireImage(pic,s.image);pic.src=s.image;
-    e.onclick=()=>openStand(s);
-    g.appendChild(e);
-  })
+ const t=ui(),g=document.querySelector("#standGrid");g.innerHTML="";
+ D.stands.forEach(s=>{
+  const e=document.createElement("article");e.className="stand-card";
+  const summary=lang==="th"?s.th:s.en;
+  e.dataset.search=(s.name+" "+s.role+" "+summary).toLowerCase();
+  e.innerHTML=`<div class="stand-art"><img src="${s.image}" alt="${s.name} Project JoJo model render"></div>
+   <div class="stand-body"><div class="stand-role">${s.role}</div><h3>${s.name}</h3><p>${summary}</p>
+   <div class="stand-actions"><button class="mini-btn primary guide-open">${t.fullGuide}</button>
+   <a class="mini-btn" href="${s.ref}" target="_blank" rel="noopener">${t.reference}</a></div></div>`;
+  e.querySelector(".guide-open").onclick=()=>openStandGuide(s);
+  g.appendChild(e);
+ });
 }
-function openStand(s){
-  let c=s[lang],u=T(),d=document.querySelector("#dlg"),pic=document.querySelector("#dlgImg");
-  pic.dataset.fallback="";pic.classList.remove("image-failed");wireImage(pic,s.image);pic.src=s.image;
-  document.querySelector("#dlgName").textContent=s.name;
-  document.querySelector("#dlgRole").textContent=u.role+": "+s.role;
-  document.querySelector("#dlgSummary").textContent=c.summary;
-  document.querySelector("#dlgSkillsTitle").textContent=u.skills;
-  document.querySelector("#dlgSkills").innerHTML=c.skills.map(x=>`<li>${x}</li>`).join("");
-  document.querySelector("#dlgSystemTitle").textContent=u.special;
-  document.querySelector("#dlgSystem").textContent=c.system;
-  document.querySelector("#dlgSource").textContent=u.source;
-  d.showModal()
+function openStandGuide(s){
+ const title=lang==="th"?s.guideTh:s.guideEn;
+ showGuide(title,true);
+ document.querySelector("#guide").scrollIntoView({behavior:"smooth",block:"start"});
 }
-function renderSystems(){
-  let g=document.querySelector("#systemGrid");g.innerHTML="";
-  SYS[lang].forEach(([h,p],i)=>{
-    let e=document.createElement("details");
-    e.className="system";
-    if(i<2)e.open=true;
-    e.innerHTML=`<summary><span>${String(i+1).padStart(2,"0")}</span><b>${h}</b><i>＋</i></summary><p>${p}</p>`;
-    g.appendChild(e)
-  })
+function renderToc(filter=""){
+ const t=ui(),root=document.querySelector("#guideToc");root.innerHTML="";
+ const q=filter.trim().toLowerCase();
+ let last="";
+ let found=0;
+ G[lang].forEach(sec=>{
+   if(q && !(sec.title.toLowerCase().includes(q) || sec.html.toLowerCase().includes(q)))return;
+   found++;
+   if(sec.group!==last){
+     last=sec.group;
+     const label=document.createElement("div");label.className="toc-group";label.textContent=t.groups[last]||last;root.appendChild(label);
+   }
+   const b=document.createElement("button");b.className="toc-btn"+(sec.title===currentGuideTitle?" active":"");
+   b.textContent=sec.title;b.onclick=()=>showGuide(sec.title,true);root.appendChild(b);
+ });
+ if(!found){const e=document.createElement("div");e.className="guide-empty";e.textContent=t.noResult;root.appendChild(e)}
 }
-function renderChanges(){let g=document.querySelector("#changes");g.innerHTML="";CH[lang].forEach(([v,p])=>{let e=document.createElement("div");e.className="change";e.innerHTML=`<b>${v}</b><div>${p}</div>`;g.appendChild(e)})}
-function renderCredits(){let e=document.querySelector("#creditsBody");e.innerHTML=lang==="th"?`<p><strong>3D Model Credits:</strong> SomeoneSae • 20062020year • NeiL • และผู้สร้างต้นฉบับที่เกี่ยวข้อง โมเดลถูกดัดแปลงสำหรับ Project Zomboid ด้วย rig/bone adjustments, optimization และ custom animations</p><p><strong>Reference Art:</strong> การ์ด Stand ใช้ลิงก์ภาพอ้างอิงจาก <a href="https://jojowiki.com/" target="_blank" rel="noopener">JoJo Wiki</a> แบบ external reference และไม่ได้คัดลอกไฟล์รูปเข้า repo นี้</p><div class="notice">Project JoJo เป็นมอดแฟนเมด ไม่ได้เป็นผลิตภัณฑ์ทางการของ JoJo's Bizarre Adventure หรือ Project Zomboid</div>`:`<p><strong>3D Model Credits:</strong> SomeoneSae • 20062020year • NeiL • respective original creators. Models were adapted for Project Zomboid with rig/bone adjustments, optimization and custom animations.</p><p><strong>Reference Art:</strong> Stand cards load external references from <a href="https://jojowiki.com/" target="_blank" rel="noopener">JoJo Wiki</a>; image files are not copied into this repository.</p><div class="notice">Project JoJo is a fan-made mod and is not an official JoJo's Bizarre Adventure or Project Zomboid product.</div>`}
-document.addEventListener("DOMContentLoaded",()=>{document.querySelector("#th").onclick=()=>setLang("th");document.querySelector("#en").onclick=()=>setLang("en");document.querySelector("#lang").onclick=()=>setLang(lang==="th"?"en":"th");document.querySelector("#close").onclick=()=>document.querySelector("#dlg").close();document.querySelector("#search").oninput=e=>{let q=e.target.value.trim().toLowerCase();document.querySelectorAll(".card").forEach(x=>x.classList.toggle("hidden-card",q&&!x.dataset.search.includes(q)))};if(lang){document.querySelector("#gate").classList.add("hidden");render()}});
+function showGuide(title,focus){
+ const sec=G[lang].find(s=>s.title===title);if(!sec)return;
+ currentGuideTitle=title;
+ const a=document.querySelector("#guideArticle");
+ a.innerHTML=`<div class="article-tag">${ui().articleTag}</div><h1>${sec.title}</h1>${sec.html}`;
+ document.querySelectorAll(".toc-btn").forEach(b=>b.classList.toggle("active",b.textContent===title));
+ if(focus)a.focus?.();
+}
+function renderChanges(){
+ const g=document.querySelector("#changeList");g.innerHTML="";
+ CH[lang].forEach(([v,p])=>{const e=document.createElement("div");e.className="change";e.innerHTML=`<b>${v}</b><p>${p}</p>`;g.appendChild(e)});
+}
+function renderCredits(){
+ document.querySelector("#creditsBody").innerHTML=lang==="th"
+ ?`<p><strong>ภาพ Stand บนเว็บ:</strong> เรนเดอร์จากโมเดล 3D ที่อยู่ใน Project JoJo v0.23.0.232 โดยตรง จึงไม่ต้องพึ่ง hotlink และไม่เกิดปัญหารูปหายแบบเว็บก่อน</p><p><strong>3D Model Credits:</strong> <a href="https://sketchfab.com/SomeoneSae" target="_blank" rel="noopener">SomeoneSae</a> • <a href="https://sketchfab.com/20062020year" target="_blank" rel="noopener">20062020year</a> • <a href="https://sketchfab.com/NeiL" target="_blank" rel="noopener">NeiL</a> • ผู้สร้างต้นฉบับที่เกี่ยวข้อง โมเดลถูกปรับ rig/bone, optimize และทำ animation สำหรับ Project Zomboid</p><p>ลิงก์ “รูปอ้างอิง JoJo” เปิด JoJo Wiki แยกหน้าแทนการฝังรูปจากเว็บอื่น เพื่อไม่ให้รูปโดนบล็อกอีก</p>`
+ :`<p><strong>Stand images on this site:</strong> rendered directly from the 3D models packaged in Project JoJo v0.23.0.232, so the Wiki no longer depends on fragile image hotlinks.</p><p><strong>3D Model Credits:</strong> <a href="https://sketchfab.com/SomeoneSae" target="_blank" rel="noopener">SomeoneSae</a> • <a href="https://sketchfab.com/20062020year" target="_blank" rel="noopener">20062020year</a> • <a href="https://sketchfab.com/NeiL" target="_blank" rel="noopener">NeiL</a> • respective original creators. Models were adapted for Project Zomboid with rig/bone adjustments, optimization and custom animations.</p><p>The “JoJo reference” buttons open JoJo Wiki separately instead of embedding third-party images that may block hotlinking.</p>`;
+}
+document.addEventListener("DOMContentLoaded",()=>{
+ document.querySelector("#thChoice").onclick=()=>setLang("th");
+ document.querySelector("#enChoice").onclick=()=>setLang("en");
+ document.querySelector("#langSwitch").onclick=()=>setLang(lang==="th"?"en":"th");
+ document.querySelector("#standSearch").oninput=e=>{
+   const q=e.target.value.trim().toLowerCase();
+   document.querySelectorAll(".stand-card").forEach(c=>c.classList.toggle("hidden-card",q&&!c.dataset.search.includes(q)));
+ };
+ document.querySelector("#guideSearch").oninput=e=>renderToc(e.target.value);
+ if(lang){document.querySelector("#gate").classList.add("hidden");render()}
+});

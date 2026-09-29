@@ -19,45 +19,25 @@ main{width:min(1200px,93vw);margin:auto}.eyebrow{color:var(--gold);font-size:11p
 @media(max-width:1000px){.hero-section{grid-template-columns:1fr}.hero-visual{height:430px;max-width:650px}.quick-grid,.system-grid{grid-template-columns:1fr 1fr}.stand-grid{grid-template-columns:1fr 1fr}.section-heading.split{grid-template-columns:1fr}.guide-cta{grid-template-columns:1fr}.stand-hero{grid-template-columns:1fr}.stand-hero-art{max-width:650px;width:100%}.guide-layout{grid-template-columns:1fr}.toc-panel{position:relative;top:0;max-height:none}.topnav{overflow:auto}}
 @media(max-width:650px){main{width:min(94vw,620px)}.topbar{gap:10px;flex-wrap:wrap}.topnav{order:3;width:100%}.brand-copy b{font-size:18px}.hero-section{padding-top:38px;min-height:auto}.hero-copy h1{font-size:68px}.hero-visual{height:365px}.portrait-main{width:68%;height:335px}.portrait-back{width:47%;height:215px}.jojo-sfx{font-size:55px}.hero-stamp{width:72px;height:72px;font-size:11px;left:25%}.quick-grid,.system-grid,.stand-grid,.lang-grid{grid-template-columns:1fr}.stand-image{height:390px}.change-row{grid-template-columns:1fr;gap:5px}.lang-art{width:52vw;opacity:.2}.language-gate{padding:14px}.lang-panel{padding:34px 20px}.stand-hero-art{height:430px}.stand-prevnext{grid-template-columns:1fr}.stand-prevnext a:last-child{text-align:left}.system-card{min-height:auto}.guide-cta{padding:24px}}
 
-/* =========================================================
-   PROJECT JOJO WIKI — VIEW COUNTER v3
-   Minimal total page-view counter.
-   Repeated visits/page loads can increase the total.
-   ========================================================= */
-
-/* Normal wiki pages: one small "view 123" badge beside the language button. */
-.topbar::after{
-  content:url("https://hits.sh/lowkinus.github.io/ProjectJoJo-Wiki.svg?label=view&color=8b34d8&labelColor=100916&style=flat-square");
-  display:block;
+/* Project JoJo — minimal page view counter */
+.view-counter{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
   flex:0 0 auto;
+  line-height:0;
+  opacity:.9;
+}
+.view-counter img{
+  display:block;
   width:auto;
   height:20px;
-  line-height:0;
-  margin-left:-12px;
-  opacity:.92;
+  max-width:none;
+  border:0;
 }
-
-/* Language-selection page has no topbar, so show the same single counter
-   quietly below the language selector. */
-.language-page .lang-panel::after{
-  content:url("https://hits.sh/lowkinus.github.io/ProjectJoJo-Wiki.svg?label=view&color=8b34d8&labelColor=100916&style=flat-square");
-  display:block;
-  width:max-content;
-  height:20px;
-  line-height:0;
-  margin:13px auto 0;
-  opacity:.82;
+.lang-panel .view-counter{
+  margin:14px auto 0;
 }
-
 @media(max-width:650px){
-  .topbar::after{
-    order:2;
-    margin-left:auto;
-    transform:scale(.9);
-    transform-origin:right center;
-  }
-  .language-page .lang-panel::after{
-    transform:scale(.9);
-    transform-origin:center;
-  }
+  .view-counter img{height:18px}
 }

@@ -1,4 +1,3 @@
-
 :root{--bg:#0b0710;--panel:#181020;--panel2:#22122e;--text:#fff8e9;--muted:#c5b5cf;--purple:#8b34d8;--pink:#ff4fb8;--gold:#ffd64a;--cyan:#64e8ff;--line:#573867;--shadow:0 20px 55px rgba(0,0,0,.45)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:"Noto Sans Thai","Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 8% 0%,rgba(126,41,185,.28),transparent 32%),radial-gradient(circle at 92% 12%,rgba(255,79,184,.16),transparent 30%),repeating-linear-gradient(122deg,rgba(255,255,255,.025) 0 2px,transparent 2px 21px),var(--bg)}
 a{color:inherit}img{display:block;max-width:100%}body:after{content:"ゴゴゴ";position:fixed;right:-18px;bottom:-10px;z-index:-1;color:rgba(255,255,255,.035);font:900 105px Impact,sans-serif;transform:rotate(-11deg);pointer-events:none}
@@ -19,3 +18,40 @@ main{width:min(1200px,93vw);margin:auto}.eyebrow{color:var(--gold);font-size:11p
 .guide-page-hero{padding:65px 0 35px}.guide-page-hero h1{font-size:clamp(52px,7vw,88px);margin:10px 0 20px}.guide-page-hero p{max-width:760px;color:#d1c1d9;line-height:1.65}.guide-layout{display:grid;grid-template-columns:285px minmax(0,1fr);gap:20px;align-items:start}.toc-panel{position:sticky;top:84px;max-height:calc(100vh - 105px);overflow:auto;padding:13px;border:1px solid #4d3058;border-radius:14px;background:#100817}.toc-title{position:sticky;top:-13px;z-index:2;background:#100817;padding:10px 8px;color:var(--gold);font-weight:900}.toc-label{margin:14px 8px 5px;color:var(--pink);font-size:10px;font-weight:900;letter-spacing:1.5px}.toc-panel a{display:block;padding:8px 9px;border-left:2px solid transparent;color:#bdaac7;text-decoration:none;font-size:12px;line-height:1.3}.toc-panel a:hover{background:#23132d;color:#fff;border-left-color:var(--gold)}.full-guide{min-width:0}.guide-block{scroll-margin-top:86px;margin-bottom:18px;padding:clamp(21px,4vw,40px);border:1px solid #50335d;border-radius:16px;background:#130c1a;box-shadow:0 10px 28px rgba(0,0,0,.16)}.guide-block-top{display:flex;justify-content:space-between;gap:15px;color:#a892b4;font-size:9px;font-weight:900;letter-spacing:1.5px}.guide-block-top a{color:var(--cyan);text-decoration:none}.guide-block>h2{font:italic 900 clamp(32px,5vw,51px) Impact;color:var(--gold);margin:8px 0 24px}
 @media(max-width:1000px){.hero-section{grid-template-columns:1fr}.hero-visual{height:430px;max-width:650px}.quick-grid,.system-grid{grid-template-columns:1fr 1fr}.stand-grid{grid-template-columns:1fr 1fr}.section-heading.split{grid-template-columns:1fr}.guide-cta{grid-template-columns:1fr}.stand-hero{grid-template-columns:1fr}.stand-hero-art{max-width:650px;width:100%}.guide-layout{grid-template-columns:1fr}.toc-panel{position:relative;top:0;max-height:none}.topnav{overflow:auto}}
 @media(max-width:650px){main{width:min(94vw,620px)}.topbar{gap:10px;flex-wrap:wrap}.topnav{order:3;width:100%}.brand-copy b{font-size:18px}.hero-section{padding-top:38px;min-height:auto}.hero-copy h1{font-size:68px}.hero-visual{height:365px}.portrait-main{width:68%;height:335px}.portrait-back{width:47%;height:215px}.jojo-sfx{font-size:55px}.hero-stamp{width:72px;height:72px;font-size:11px;left:25%}.quick-grid,.system-grid,.stand-grid,.lang-grid{grid-template-columns:1fr}.stand-image{height:390px}.change-row{grid-template-columns:1fr;gap:5px}.lang-art{width:52vw;opacity:.2}.language-gate{padding:14px}.lang-panel{padding:34px 20px}.stand-hero-art{height:430px}.stand-prevnext{grid-template-columns:1fr}.stand-prevnext a:last-child{text-align:left}.system-card{min-height:auto}.guide-cta{padding:24px}}
+
+/* =========================================================
+   PROJECT JOJO WIKI — VISITOR COUNTER v2
+   Small public badge shown on every page using this stylesheet.
+   Full stats page: /ProjectJoJo-Wiki/stats.html
+   ========================================================= */
+body::before{
+  content:"👁  LIVE VISITORS  " url("https://whos.amung.us/swidget/4wwb5vsza2.png");
+  position:fixed;
+  right:12px;
+  bottom:12px;
+  z-index:99999;
+  display:block;
+  min-width:150px;
+  min-height:30px;
+  padding:9px 11px;
+  border:1px solid rgba(255,214,74,.52);
+  border-radius:11px;
+  background:rgba(16,9,22,.92);
+  box-shadow:0 7px 22px rgba(0,0,0,.38);
+  color:#ffd64a;
+  font:800 10px/15px "Segoe UI",Arial,sans-serif;
+  letter-spacing:.08em;
+  white-space:nowrap;
+  pointer-events:none;
+}
+@media(max-width:650px){
+  body::before{
+    right:8px;
+    bottom:8px;
+    min-width:135px;
+    padding:7px 9px;
+    font-size:9px;
+    transform:scale(.92);
+    transform-origin:bottom right;
+  }
+}

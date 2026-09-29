@@ -6,19 +6,31 @@
 <meta name="theme-color" content="#100916">
 <title>Project JoJo Wiki — Visitor Stats</title>
 <style>
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0b0710;color:#fff8e9;font-family:Segoe UI,Arial,sans-serif}
-.card{width:min(680px,90vw);padding:34px;border:1px solid #573867;border-radius:18px;background:#181020;text-align:center;box-shadow:0 20px 55px rgba(0,0,0,.45)}
-h1{margin:0 0 12px;color:#ffd64a}p{color:#c5b5cf;line-height:1.6}
-a{display:inline-block;margin-top:14px;padding:13px 18px;background:#ffd64a;color:#16051c;text-decoration:none;font-weight:900;border-radius:8px;box-shadow:5px 5px 0 #ff4fb8}
-small{display:block;margin-top:22px;color:#8f7a9e}
+:root{--bg:#0b0710;--panel:#181020;--text:#fff8e9;--muted:#c5b5cf;--gold:#ffd64a;--pink:#ff4fb8;--line:#573867}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 50% 15%,rgba(139,52,216,.24),transparent 45%),var(--bg);color:var(--text);font-family:"Noto Sans Thai","Segoe UI",Arial,sans-serif}
+.card{width:min(720px,94vw);padding:38px;border:1px solid var(--line);border-radius:18px;background:rgba(24,16,32,.96);text-align:center;box-shadow:0 20px 55px rgba(0,0,0,.45)}
+.eyebrow{color:var(--pink);font-size:11px;font-weight:900;letter-spacing:2px}
+h1{margin:8px 0 14px;color:var(--gold);font-size:clamp(30px,6vw,52px)}
+p{color:var(--muted);line-height:1.7}
+.live{display:inline-flex;align-items:center;gap:10px;margin:8px 0 4px;padding:10px 14px;border:1px solid rgba(255,214,74,.35);border-radius:12px;background:#100916}
+.live b{color:var(--gold)}
+.live img{display:block;border:0}
+a.btn{display:inline-block;margin-top:18px;padding:13px 18px;background:var(--gold);color:#16051c;text-decoration:none;font-weight:900;border-radius:8px;box-shadow:5px 5px 0 var(--pink)}
+a.back{display:block;margin-top:20px;color:#64e8ff;text-decoration:none;font-weight:700}
+small{display:block;margin-top:24px;color:#8f7a9e;line-height:1.6}
 </style>
 </head>
 <body>
 <div class="card">
-<h1>PROJECT JOJO WIKI — VISITOR STATS</h1>
-<p>ดูผู้เข้าชมออนไลน์, ประวัติ, หน้ายอดนิยม, Pageviews, Visitor Sessions, ประเทศ และอุปกรณ์จากแดชบอร์ดสถิติ</p>
-<a href="https://whos.amung.us/stats/4wwb5vsza2/" target="_blank" rel="noopener noreferrer">OPEN LIVE STATS →</a>
-<small>สถิติเริ่มสะสมหลังติดตั้ง visitor counter</small>
+<div class="eyebrow">PROJECT JOJO WIKI</div>
+<h1>VISITOR STATS</h1>
+<p>ขอบคุณทุกคนที่เข้ามาอ่าน Wiki 💜<br>ด้านล่างคือจำนวนคนที่กำลังออนไลน์อยู่ตอนนี้</p>
+<div class="live"><b>LIVE VISITORS</b><img src="https://whos.amung.us/swidget/4wwb5vsza2.png" width="80" height="15" alt="Project JoJo visitors online"></div>
+<p>อยากดู Pageviews, Visitor Sessions, หน้ายอดนิยม, ประเทศ และอุปกรณ์ กดปุ่มด้านล่างได้เลย</p>
+<a class="btn" href="https://whos.amung.us/stats/4wwb5vsza2/" target="_blank" rel="noopener noreferrer">OPEN FULL STATS →</a>
+<a class="back" href="./">← กลับหน้า Project JoJo Wiki</a>
+<small>สถิติเริ่มสะสมตั้งแต่ติด visitor counter และไม่สามารถย้อนนับผู้เข้าชมก่อนหน้านั้นได้</small>
 </div>
 </body>
 </html>

@@ -1,0 +1,61 @@
+[h1]PROJECT JOJO — BUILD 42+[/h1]
+
+Want a little more color in the apocalypse?
+
+Find a [b]Stand Arrow[/b], awaken a Stand, fight hordes, stop time, erase time, heal friends, control crowds — or settle things in Multiplayer.
+
+[b]SP / Host / MP supported[/b]
+
+[hr][/hr]
+[h2]CONTROLS[/h2]
+
+[b]CAPS LOCK[/b] — Summon / Dismiss
+[b]1–4[/b] — Skills
+[b]Mouse[/b] — Aim / attack direction
+
+Many skills can be held for charged or alternate effects.
+
+[hr][/hr]
+[h2]9 PLAYABLE STANDS[/h2]
+
+[b]Star Platinum[/b] • Brawler / Crit / Time Stop
+[b]The World[/b] • Heavy Melee / Knives / Time Stop
+[b]King Crimson[/b] • Counter / Epitaph / Time Erase
+[b]Crazy Diamond[/b] • Fighter / Restore / Glass Homing
+[b]The Hand[/b] • Mobility / Pull / ERASE
+[b]Killer Queen[/b] • Bombs / AOE / Sheer Heart Attack
+[b]Silver Chariot[/b] • Hit & Run / Speed Gauge
+[b]Magician's Red[/b] • Fire / AOE / Horde Control
+[b]Echoes ACT 3[/b] • THREE FREEZE / Single-Target Control
+
+More Stands may be added in future updates.
+
+[hr][/hr]
+[h2]CORE SYSTEMS[/h2]
+
+• Native [b]3-use Stand Arrow[/b]
+• Separate [b]LV.1–100[/b] progression for every Stand/player
+• Mouse-directed combat + physical contact hit detection
+• Time Stop / Time Erase
+• Barrage Clash
+• PvP / Safety support
+• Sandbox Damage / Levels / Arrow Drops / Sound settings
+
+[hr][/hr]
+[h2]FULL WIKI — ไทย / ENGLISH[/h2]
+
+Full Stand skills, exact mechanics, PvP rules, SHA systems, changelog and future Stand documentation:
+
+[url=PROJECT_JOJO_WIKI_URL][b]▶ OPEN PROJECT JOJO WIKI[/b][/url]
+
+Choose [b]ภาษาไทย[/b] or [b]English[/b] when you enter.
+
+[hr][/hr]
+[h2]3D MODEL CREDITS[/h2]
+
+[url=https://sketchfab.com/SomeoneSae]SomeoneSae[/url] • [url=https://sketchfab.com/20062020year]20062020year[/url] • [url=https://sketchfab.com/NeiL]NeiL[/url] • respective original creators.
+
+Models were adapted for Project Zomboid with rig/bone adjustments, optimization and custom animations.
+
+Workshop ID: [b]3807750510[/b]
+Mod ID: [b]JoJoStandSystem0183Standalone[/b]

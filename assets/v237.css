@@ -15,16 +15,99 @@ main{width:min(1180px,93vw);margin:auto}.hero{display:grid;grid-template-columns
 
 .beginner-card{max-width:460px}.guide-cover{height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column;background:radial-gradient(circle at 50% 35%,#5d227d 0,#25122f 46%,#08050b 100%);overflow:hidden;position:relative}.guide-cover:before{content:"ゴゴゴ";position:absolute;font:italic 900 72px Impact,sans-serif;color:#ff4fb81a;transform:rotate(-10deg);letter-spacing:-8px}.guide-cover .big{position:relative;font:italic 900 74px/.8 Impact,sans-serif;text-align:center;color:var(--gold);text-shadow:5px 5px 0 #34104a}.guide-cover .small{position:relative;margin-top:16px;color:var(--pink);font-weight:900;letter-spacing:4px}.beginner-page{max-width:960px;margin:auto}.beginner-step{margin:16px 0;padding:22px;border:1px solid #50335d;border-radius:14px;background:#17101f}.beginner-step .num{color:var(--pink);font:900 12px/1 "Segoe UI",Arial,sans-serif;letter-spacing:2px}.beginner-step h2{font:italic 900 31px Impact,sans-serif;color:var(--gold);margin:8px 0 10px}.beginner-step p,.beginner-step li{color:#d5c5dc;line-height:1.8}.beginner-next{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.beginner-next a{display:block;padding:20px;border:1px solid #50335d;border-radius:14px;background:#1d1127;text-decoration:none}.beginner-next b{display:block;color:var(--gold);font:italic 900 25px Impact,sans-serif}.beginner-next span{display:block;color:#cbb9d4;margin-top:7px;line-height:1.6}@media(max-width:620px){.beginner-next{grid-template-columns:1fr}.guide-cover{height:250px}.guide-cover .big{font-size:60px}}
 
-/* v4.3.3 — restore the original two-Stand hero presentation */
-.hero-showcase{height:460px;position:relative;min-width:0;isolation:isolate}
-.hero-portrait{position:absolute;overflow:hidden;border:1px solid #684578;border-radius:18px;box-shadow:0 22px 50px rgba(0,0,0,.52);background:#020203}
-.hero-portrait img{width:100%;height:100%;object-fit:cover}
-.hero-portrait-main{right:1%;top:20px;width:62%;height:425px;transform:rotate(2deg);z-index:2}
-.hero-portrait-back{left:1%;bottom:18px;width:48%;height:292px;transform:rotate(-5deg);opacity:.88;z-index:1}
-.hero-portrait-main:after,.hero-portrait-back:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,5,15,.42),transparent 55%);pointer-events:none}
-.jojo-sfx{position:absolute;right:-10px;top:-10px;color:rgba(255,214,74,.22);font:900 82px Impact,sans-serif;transform:rotate(-8deg);z-index:4;pointer-events:none}
-.hero-stamp{position:absolute;left:34%;top:48px;z-index:5;width:94px;height:94px;display:grid;place-items:center;text-align:center;border:3px solid var(--gold);border-radius:50%;background:#120918;color:var(--gold);font:italic 900 14px Impact;letter-spacing:1px;transform:rotate(10deg);box-shadow:5px 5px 0 var(--pink)}
+/* v4.3.4 — classic Project JoJo visual language restored */
+body{
+  background:
+    radial-gradient(circle at 8% 0%,rgba(126,41,185,.28),transparent 32%),
+    radial-gradient(circle at 92% 12%,rgba(255,79,184,.16),transparent 30%),
+    repeating-linear-gradient(122deg,rgba(255,255,255,.025) 0 2px,transparent 2px 21px),
+    var(--bg);
+}
+body:after{
+  content:"ゴゴゴ";position:fixed;right:-18px;bottom:-10px;z-index:-1;
+  color:rgba(255,255,255,.035);font:900 105px Impact,sans-serif;
+  transform:rotate(-11deg);pointer-events:none
+}
+.brand-classic{display:flex;align-items:center;gap:11px;text-decoration:none;white-space:nowrap;font:inherit}
+.brand-classic .brand-mark{
+  width:44px;height:44px;display:grid;place-items:center;background:var(--gold);color:#17051d!important;
+  border:3px solid #fff;box-shadow:5px 5px 0 var(--pink);font:900 21px Impact,sans-serif;
+  transform:rotate(-6deg)
+}
+.brand-classic .brand-copy b{font:italic 900 22px Impact,sans-serif;letter-spacing:1.2px;color:#fff}
+.brand-classic .brand-copy small{display:block;color:#a993b5;font-size:9px;letter-spacing:2px;margin-top:3px}
+.hero-section{
+  min-height:600px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;
+  gap:35px;padding:44px 0 54px
+}
+.hero-copy{position:relative;z-index:5}
+.hero-copy h1{
+  font:italic 900 clamp(70px,9vw,118px)/.88 Impact,"Arial Black",sans-serif;
+  letter-spacing:1.5px;text-transform:uppercase;text-shadow:5px 5px 0 #34104a;
+  margin:13px 0 22px
+}
+.hero-copy h1 span{color:var(--pink)}
+.hero-copy>p{max-width:650px;color:#dfd1e7;font-size:18px;line-height:1.72}
+.hero-actions{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin:26px 0 20px}
+.hero-actions .btn{transform:skew(-5deg)}
+.hero-actions .btn.gold{box-shadow:6px 6px 0 var(--pink)}
+.hero-actions .btn.purple{box-shadow:6px 6px 0 #5c1e7e}
+.text-link{color:var(--cyan);font-weight:800;text-decoration:none}
+.hero-tags{display:flex;gap:7px;flex-wrap:wrap}
+.hero-tags span{
+  border:1px solid #5d3c6c;border-radius:999px;padding:6px 9px;
+  color:#bca9c7;font-size:10px;font-weight:900
+}
+.hero-visual{height:500px;position:relative;min-width:0;isolation:isolate}
+.portrait{
+  position:absolute;overflow:hidden;border:1px solid #684578;border-radius:18px;
+  box-shadow:0 22px 50px rgba(0,0,0,.52);background:#000;text-decoration:none
+}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 18%}
+.portrait-main{right:1%;top:22px;width:62%;height:455px;transform:rotate(2deg);z-index:2}
+.portrait-back{left:1%;bottom:18px;width:47%;height:300px;transform:rotate(-5deg);opacity:.86;z-index:1}
+.portrait-back:after,.portrait-main:after{
+  content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,5,15,.4),transparent 50%);
+  pointer-events:none
+}
+.portrait:hover{border-color:var(--gold)}
+.jojo-sfx{
+  position:absolute;right:-12px;top:-4px;color:rgba(255,214,74,.2);
+  font:900 82px Impact,sans-serif;transform:rotate(-8deg);z-index:3;pointer-events:none
+}
+.hero-stamp{
+  position:absolute;left:34%;top:50px;z-index:4;width:94px;height:94px;display:grid;
+  place-items:center;text-align:center;border:3px solid var(--gold);border-radius:50%;
+  background:#120918;color:var(--gold);font:italic 900 14px Impact;letter-spacing:1px;
+  transform:rotate(10deg);box-shadow:5px 5px 0 var(--pink)
+}
+
+/* Bring back the numbered/hover Stand-card flavor without bringing the old beginner clutter back. */
+#stands .grid{counter-reset:stand-card}
+#stands .card{counter-increment:stand-card;position:relative;box-shadow:0 12px 32px rgba(0,0,0,.28);transition:.2s}
+#stands .card:hover{transform:translateY(-5px);border-color:var(--gold)}
+#stands .card:before{
+  content:counter(stand-card, decimal-leading-zero);position:absolute;left:14px;top:9px;z-index:4;
+  color:rgba(255,255,255,.22);font:italic 900 44px Impact,sans-serif;pointer-events:none
+}
+#stands .card-img{position:relative}
+
+/* Existing site-wide counter */
 .view-counter{display:inline-flex;align-items:center;justify-content:center;line-height:0;opacity:.92;margin-left:2px}
 .view-counter img{display:block;width:auto;height:20px;max-width:none;border:0}
-@media(max-width:900px){.hero-showcase{height:420px;max-width:680px;width:100%}}
-@media(max-width:620px){.hero-showcase{height:355px}.hero-portrait-main{width:68%;height:330px}.hero-portrait-back{width:49%;height:215px}.jojo-sfx{font-size:56px}.hero-stamp{width:72px;height:72px;font-size:11px;left:25%}.view-counter img{height:18px}}
+
+@media(max-width:1000px){
+  .hero-section{grid-template-columns:1fr}
+  .hero-visual{height:430px;max-width:650px}
+}
+@media(max-width:650px){
+  .brand-classic .brand-copy b{font-size:18px}
+  .hero-section{padding-top:38px;min-height:auto}
+  .hero-copy h1{font-size:68px}
+  .hero-visual{height:365px}
+  .portrait-main{width:68%;height:335px}
+  .portrait-back{width:47%;height:215px}
+  .jojo-sfx{font-size:55px}
+  .hero-stamp{width:72px;height:72px;font-size:11px;left:25%}
+  .view-counter img{height:18px}
+}

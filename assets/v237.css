@@ -309,3 +309,36 @@ body:after{
   #stands .card h3{font-size:29px}
   #stands .card p{font-size:13px}
 }
+
+/* v4.3.8 — leaked addon Stand cards */
+#stands .addon-card{
+  cursor:default;
+}
+#stands .addon-card .card-body{
+  padding-top:92px;
+  padding-bottom:20px;
+}
+#stands .addon-card .card-body h3{
+  margin:0;
+}
+#stands .addon-badge{
+  position:absolute;
+  top:13px;
+  right:13px;
+  z-index:7;
+  padding:7px 10px 6px;
+  border:1px solid rgba(255,214,74,.78);
+  border-radius:999px;
+  background:rgba(16,8,22,.88);
+  color:var(--gold);
+  font-size:10px;
+  font-weight:1000;
+  letter-spacing:1.4px;
+  line-height:1;
+  box-shadow:0 5px 18px rgba(0,0,0,.45);
+  backdrop-filter:blur(5px);
+}
+#stands .addon-card:hover .card-img img{
+  transform:scale(1.035);
+  filter:brightness(1.05) saturate(1.05);
+}

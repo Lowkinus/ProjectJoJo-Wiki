@@ -1,9 +1,22 @@
-# Project JoJo Wiki v4.0
+# Project JoJo Wiki v4.2
 
-Major visual rebuild:
-- Stronger early-version JoJo look: purple / pink / gold / ゴゴゴ.
-- Static TH / EN language links. No JavaScript/localStorage is required to choose a language.
-- Uses the exact 9 Stand images supplied by the author, stored locally as WebP.
-- Home hierarchy: Start → Stands → Core Systems → Full Guide → Changelog.
-- Each Stand has its own detailed page.
-- The complete Thai/English long guide remains available and is updated to v0.23.0.232.
+Updated for Project JoJo v0.23.0.237.
+
+Included in this READY overwrite pack:
+- Thai + English home pages
+- Thai + English full guide pages
+- 9 Stand pages in both languages
+- Directional First-Contact Aim documentation
+- Barrage Guard / projectile deflection documentation
+- Echoes ACT 3 Barrage buff
+- Current SP/TW/KC Time Dash distances
+- The Hand Pull 21.875-tile range
+- Magician's Red Fireball Gauge update
+- Crazy Diamond Restore gain update
+- Changelog through v0.23.0.237
+
+Important:
+- This is an OVERWRITE pack for the existing GitHub repository.
+- Keep the existing `assets/stands/` image files in the repository.
+- Delete `ProjectJoJo_Wiki_v237_updater.py` from the repo; GitHub Pages does not run it.
+- Vanilla firearm Barrage Guard support has a native hook but still needs live Build 42 validation.

@@ -1,10 +1,10 @@
 (() => {
   const stands = {
     "star-platinum": ["STAR PLATINUM", "star-platinum.webp"],
-    "the-world": ["THE WORLD", "the-world.webp"],
+    "the-world": ["THE WORLD", "the-world-v440.webp"],
     "king-crimson": ["KING CRIMSON", "king-crimson.webp"],
     "crazy-diamond": ["CRAZY DIAMOND", "crazy-diamond.webp"],
-    "the-hand": ["THE HAND", "the-hand.webp"],
+    "the-hand": ["THE HAND", "the-hand-v440.webp"],
     "killer-queen": ["KILLER QUEEN", "killer-queen.webp"],
     "silver-chariot": ["SILVER CHARIOT", "silver-chariot.webp"],
     "magicians-red": ["MAGICIAN'S RED", "magicians-red.webp"],

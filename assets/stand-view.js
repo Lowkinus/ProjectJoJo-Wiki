@@ -8,6 +8,40 @@
   ]);
   if (!allowed.has(stand)) return;
 
+  const lang = (document.documentElement.lang || "").toLowerCase();
+  const kicker = document.querySelector(".article .kicker");
+  const updateBox = document.querySelector(".article .updatebox");
+  const footer = document.querySelector(".footer");
+
+  if (lang.startsWith("th")) {
+    if (kicker) kicker.textContent = "คู่มือ Stand แบบละเอียด";
+    if (updateBox && /รีเช็กกับโค้ด|ไม่ได้ดึงเลขเก่าจาก Wiki|v0\.23\.0\.237|v237/i.test(updateBox.textContent || "")) {
+      updateBox.remove();
+    }
+  } else if (lang.startsWith("en")) {
+    if (kicker) kicker.textContent = "Detailed Stand Guide";
+    if (updateBox && /rebuilt against|older Wiki snapshot|v0\.23\.0\.237|v237/i.test(updateBox.textContent || "")) {
+      updateBox.remove();
+    }
+
+    // Keep current values on the Stand page; history belongs in CHANGELOG.
+    if (stand === "echoes-act-3") {
+      document.querySelectorAll(".article p").forEach((p) => {
+        const t = p.textContent || "";
+        if (/v237 raised base Barrage damage per hit from 0\.026 to 0\.060/i.test(t)) {
+          p.innerHTML = p.innerHTML.replace(
+            /v237 raised base Barrage damage per hit from 0\.026 to 0\.060\./i,
+            "Base Barrage damage per hit is <strong>0.060</strong>."
+          );
+        }
+      });
+    }
+  }
+
+  if (footer && footer.firstChild && footer.firstChild.nodeType === Node.TEXT_NODE) {
+    footer.firstChild.textContent = "PROJECT JOJO • WIKI";
+  }
+
   // TH + EN use the same synthetic key, so both languages contribute to one Stand rank.
   const img = new Image(1, 1);
   img.alt = "";

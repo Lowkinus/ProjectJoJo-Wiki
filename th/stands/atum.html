@@ -1,54 +1,112 @@
 <!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATUM — Project JoJo</title><link rel="stylesheet" href="../../assets/v237.css?v=438"><link rel="icon" type="image/png" sizes="32x32" href="../../project-jojo-favicon-32x32.png?v=431"><link rel="icon" type="image/png" sizes="16x16" href="../../project-jojo-favicon-16x16.png?v=431"><link rel="shortcut icon" href="../../project-jojo-favicon.ico?v=431"><link rel="apple-touch-icon" sizes="180x180" href="../../project-jojo-apple-touch-icon.png?v=431"><link rel="manifest" href="../../site.webmanifest?v=431"><meta name="theme-color" content="#0b0710"></head><body><header class="topbar"><a class="brand" href="../../th/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../../th/index.html">หน้าแรก</a><a href="../../th/index.html#stands">Stand</a><a href="../../th/guide.html">คู่มือเต็ม</a><a href="../../th/index.html#updates">อัปเดต</a></nav><a class="lang" href="../../en/stands/atum.html">ENGLISH</a></header><main>
-<section class="stand-hero"><div class="stand-hero-art"><img src="../../assets/stands/atum.png" alt="ATUM"></div><div><a href="../index.html#stands" style="color:#64e8ff;text-decoration:none">← กลับไปเลือก Stand</a><div class="eyebrow" style="margin-top:15px">ADDON • อ่านใจ / พนัน / มินิเกม</div><h1 class="stand-title">ATUM</h1><p class="summary">Stand สายอ่านเกมและเดิมพัน จุดเด่นไม่ใช่การแลกดาเมจตรง ๆ แต่คือการอ่านใจคู่ต่อสู้ สะสม Mind Gauge และบังคับเป้าหมายเข้าสู่มินิเกมของ ATUM</p><div class="buttons"><a class="btn gold" href="../guide.html">คู่มือระบบหลัก</a><a class="btn purple" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058" target="_blank" rel="noopener">Addon Workshop ↗</a></div></div></section>
 
-<section class="article"><div class="kicker">คู่มือ Stand Addon</div><h2>ATUM</h2>
-<div class="updatebox"><b>ADDON — ต้องใช้ Project JoJo ตัวหลัก</b><p>ATUM ใช้ Stand Arrow และระบบกลางของ Project JoJo ไม่ได้สร้างระบบ Stand แยกอีกชุด จึงใช้ระบบ Level, PvP/Safety, HUD, Targeting และ Multiplayer ร่วมกับมอดหลัก</p></div>
+<section class="stand-hero"><div class="stand-hero-art"><img src="../../assets/stands/atum.png" alt="ATUM"></div><div><a href="../index.html#stands" style="color:#64e8ff;text-decoration:none">← กลับไปเลือก Stand</a><div class="eyebrow" style="margin-top:15px">ADDON • อ่านใจ / พนัน / มินิเกม</div><h1 class="stand-title">ATUM</h1><p class="summary">Stand สายอ่านเกมของ D'Arby ที่ไม่ได้ชนะด้วยหมัดแรงอย่างเดียว จุดแข็งจริงคือ Mind Read, การทาย YES / NO และ Skill 4 ที่ลากคู่ต่อสู้เข้าเกมเดิมพัน ถ้าเจ้าของ ATUM ชนะ เป้าหมายจะถูก “ดึงวิญญาณ” ด้วย Finisher ของ ATUM</p><div class="buttons"><a class="btn gold" href="../guide.html">คู่มือระบบเต็ม</a><a class="btn purple" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058" target="_blank" rel="noopener">Addon Workshop ↗</a></div></div></section>
+
+<section class="article"><div class="kicker">คู่มือ Stand แบบละเอียด • Addon v0.24.0.042</div><h2>ATUM</h2>
+<div class="updatebox"><b>รีเช็กกับโค้ด Addon v0.24.0.042 + Project JoJo Core v0.23.0.237</b><p>ตัวเลขด้านล่างมาจากค่าจริงใน Addon ปัจจุบัน ATUM ใช้ระบบ Damage / Level / PvP / Safety / First-Contact / Multiplayer ของมอดหลัก ไม่ได้สร้าง Combat resolver แยกอีกชุด</p></div>
 
 <div class="quickfacts">
-<div class="fact"><span>แนวเล่น</span><b>Mind Games / Gambling</b></div>
-<div class="fact"><span>ทรัพยากร</span><b>Mind Gauge 0/100</b></div>
-<div class="fact"><span>เกมหลัก</span><b>RPS / Baseball / Racing</b></div>
-<div class="fact"><span>Workshop</span><b>3811605058</b></div>
-<div class="fact"><span>Mod ID</span><b>ProjectJoJoAddonATUM</b></div>
+<div class="fact"><span>ความยาก</span><b>สูง</b></div>
+<div class="fact"><span>เหมาะกับ</span><b>คนที่ชอบอ่านคู่ต่อสู้ บริหาร Gauge และเล่นเกมจิตวิทยา</b></div>
+<div class="fact"><span>Mind Gauge</span><b>0 / 100</b></div>
+<div class="fact"><span>เกม Skill 4</span><b>RPS / Baseball / Racing = 1/3 เท่ากัน</b></div>
+<div class="fact"><span>ผลชนะ</span><b>SOUL EXTRACTION / FINISHER</b></div>
 </div>
 
-<section class="skillbox"><h3>สกิล 1 — PUNCH</h3><p>หมัดพื้นฐานของ ATUM ใช้แนว First-Contact และระบบเล็งของ Project JoJo ตัวหลัก เหมาะสำหรับต่อสู้ปกติระหว่างที่ยังไม่ได้เปิดเกมเดิมพัน</p></section>
+<section class="skillbox"><h3>สกิล 1 — PUNCH</h3>
+<div class="specs"><span>CD 0.44 วิ</span><span>ระยะ 2.80</span><span>Base Damage 0.12</span><span>ชาร์จเต็ม 1.15 วิ</span></div>
+<p>หมัดพื้นฐาน ใช้ First-Contact ของ Project JoJo ตรง ๆ: Target Radius 1.05, Aim Snap 1.35 และมี Hit Delay 155 ms ก่อนตรวจสัมผัสจริง ชาร์จเต็มเพิ่มดาเมจ ×1.85 และแรงกระแทก ×1.45</p>
+<p><b>ดาเมจชาร์จเต็ม:</b> 0.12 × 1.85 = <b>0.222</b> ก่อน Level / Sandbox / PvP / Crit scaling ของมอดหลัก</p>
+</section>
 
-<section class="skillbox"><h3>สกิล 2 — BARRAGE</h3><p>หมัดรัวตามทิศเมาส์ ใช้ระบบ Rush / First-Contact ของมอดหลัก ATUM ยังตั้งใจให้เด่นด้าน Mind Game มากกว่าการยืนแลกตรง ๆ กับ Stand สาย Brawler</p></section>
+<section class="skillbox"><h3>สกิล 2 — BARRAGE</h3>
+<div class="specs"><span>CD 5.1 วิ</span><span>ระยะ 3.10</span><span>0.034 / hit</span><span>14 hit</span><span>ชาร์จเต็ม 1.65 วิ</span></div>
+<p>Rush เลี้ยวตามเมาส์สด ใช้ First-Contact และระบบเป้าหมายของมอดหลัก Interval ระหว่าง hit = 140 ms และ Start Delay = 120 ms</p>
+<p><b>ปกติ:</b> 14 × 0.034 = <b>0.476</b> theoretical raw total ถ้าโดนครบทุก hit</p>
+<p><b>ชาร์จเต็ม:</b> 22 hit และดาเมจต่อ hit ×1.18 → 0.04012 ต่อ hit หรือประมาณ <b>0.88264</b> theoretical raw total ก่อน Level / Sandbox / PvP / Crit</p>
+</section>
 
-<section class="skillbox"><h3>สกิล 3 — MIND READ / YES–NO</h3><p>เปิดสถานะอ่านใจโดยใช้แต้มจาก Mind Gauge ถ้ากดซ้ำขณะสถานะยังทำงานจะปิดเองโดยไม่เสียแต้มเพิ่ม ใช้เพื่ออ่านการตัดสินใจก่อน Skill 4 และใช้เป็นระบบหลบการโจมตีที่เข้าเงื่อนไขได้ด้วย</p></section>
+<section class="skillbox"><h3>สกิล 3 — MIND READ / YES–NO</h3>
+<div class="specs"><span>CD 0 วิ</span><span>ระยะเวลา 10 วิ</span><span>ใช้ 1 Mind Point</span><span>Dodge Grace 0.5 วิ</span></div>
+<p>เปิด Future Read เป็นเวลา 10 วิ ถ้า Gauge = 0 จะกดไม่ได้ กด Skill 3 ซ้ำในระหว่างที่ยังทำงานอยู่จะ <b>ปิดฟรี</b> ไม่เสียแต้มเพิ่มและไม่มีคูลดาวน์</p>
+<p>Mind Read เป็น one-use dodge ด้วย เมื่อการโจมตี Stand ที่รองรับ commit มาถึง ATUM สถานะจะถูกใช้เพื่อหลบ 1 ครั้ง แล้วขยับผู้โจมตีออกด้านข้างใกล้จุดเดิมของเขา — <b>ไม่ดึงมือปืนหรือผู้เล่นระยะไกลเข้าหา ATUM</b></p>
+<p>ระยะตรวจ attacker ปกติสูงสุด 4.25 ช่อง ส่วนผู้เล่นรองรับได้ไกลถึง 35 ช่องเพื่อให้กระสุน/ท่าระยะไกลใช้ Future Read ได้ โดยการขยับ attacker อยู่ใกล้ตำแหน่งเดิมของตัวเอง</p>
+</section>
 
-<section class="skillbox"><h3>MIND GAUGE</h3><p>เริ่มที่ 0/100 การชนะเกมของ ATUM จะสุ่มให้แต้มเพิ่ม 0–3 หากอ่านใจถูกและชนะเกม ระบบจะการันตีอย่างน้อย 1 แต้ม เพื่อมีโอกาสคืนแต้มที่ใช้เปิด Mind Read</p></section>
+<section class="skillbox"><h3>MIND GAUGE</h3>
+<div class="specs"><span>เริ่ม 0</span><span>สูงสุด 100</span><span>S3 ใช้ 1</span><span>ชนะเกม +0 ถึง +3</span></div>
+<p>ทุกครั้งที่เจ้าของ ATUM <b>ชนะ Skill 4</b> หลังผลแพ้ชนะถูก resolve แล้ว จะสุ่มแต้ม Mind Gauge 0–3 และเล่น Finish Point</p>
+<p>ถ้าใช้ S3 → S4 แล้วทายใจถูก จากนั้นยังชนะเกมอยู่ รางวัลจะถูกบังคับให้ได้อย่างน้อย <b>+1</b> เพื่อมีโอกาสคืนแต้มที่ใช้เปิด Mind Read</p>
+</section>
 
-<section class="skillbox"><h3>สกิล 4 — GAMBLE</h3><p>ATUM ต้องพุ่งไปสัมผัสเป้าหมายจริงก่อน เกมจึงเริ่ม จากนั้นจะสุ่มหนึ่งใน 3 เกม: <b>Rock Paper Scissors, Baseball หรือ Racing</b> ระหว่างเกมผู้เล่นที่เกี่ยวข้องจะถูกแยกออกจากการต่อสู้ปกติและป้องกันดาเมจจากภายนอกจนจบเกม</p></section>
+<section class="skillbox"><h3>สกิล 4 — GAMBLE</h3>
+<div class="specs"><span>CD 3 วิ</span><span>ระยะ 2.80</span><span>Contact Damage 0</span><span>Hit Delay 155 ms</span></div>
+<p>ATUM พุ่งหมัดด้วยค่า First-Contact เดียวกับ Skill 1 ทุกอย่าง — Range 2.80 / Target Radius 1.05 / Aim Snap 1.35 / Hit Delay 155 ms — แต่ contact นี้ทำดาเมจ 0 และใช้เพื่อเปิดเกมเท่านั้น</p>
+<p>เมื่อโดนเป้าหมายจริง เซิร์ฟเวอร์จะสุ่ม <b>Rock Paper Scissors / Baseball / Racing</b> ด้วยโอกาสเท่ากัน 1/3 ต่อเกม และเมื่อเกมเริ่มแล้ว <b>กด 4 ซ้ำเพื่อ Cancel ไม่ได้</b></p>
+</section>
+
+<h3 class="deep-title">SOUL EXTRACTION — ถ้า ATUM ชนะเกิดอะไรขึ้น?</h3>
+<div class="strategy-grid">
+<div class="combo"><b>ม็อบ / NPC</b><p>ผู้แพ้ที่เป็นเป้าหมายจะโดน ATUM Finisher ค่า 9999 ผ่าน damageLivingTarget — ในคอนเซปคือ <b>ATUM ดึงวิญญาณของผู้แพ้</b> และเป้าหมายตาย</p></div>
+<div class="combo"><b>ผู้เล่นที่ PvP อนุญาต</b><p>ถ้า PvP / Safety อนุญาต HP damage ผู้เล่นที่แพ้จะโดน Finisher แบบเดียวกันและเสียชีวิต</p></div>
+<div class="combo"><b>ผู้เล่นที่ Safety ป้องกัน</b><p>ถ้ากฎ PvP ป้องกัน HP damage จะ <b>ไม่ถูกฆ่า</b> แต่โดน Blackout 3 วิแทน เพื่อไม่ให้ Skill 4 ข้ามกฎ PvP/Safety ของมอดหลัก</p></div>
+<div class="combo"><b>ถ้าเจ้าของ ATUM แพ้</b><p>เจ้าของ ATUM จะไม่ถูก Finisher ของตัวเอง แต่ Skill ทั้ง 4 ถูก Silence/Lock เป็นเวลา <b>7 วิ</b> และตอน resolve จะโดน Blackout <b>3 วิ</b></p></div>
+</div>
+
+<div class="updatebox"><b>ลำดับจบเกมปัจจุบัน</b><p>แสดงผลแพ้/ชนะประมาณ 0.5 วิ → ปิด UI จริง → ยังซ่อน/กันดาเมจต่อ 0.5 วิ → คืนผู้เล่นกลับโลก → อีก 0.5 วิจึง resolve ผู้แพ้ / Soul Finisher → ถ้า ATUM ชนะจึงเล่น Finish Point และสุ่ม Mind Gauge 0–3</p></div>
 
 <h3 class="deep-title">ROCK PAPER SCISSORS</h3>
-<div class="strategy-grid"><div class="combo"><b>เป่ายิ้งฉุบ</b><p>เลือก Rock / Paper / Scissors เพื่อชนะอีกฝ่าย ถ้าเป้าหมายเป็นซอมบี้ระบบจะสุ่มคำตอบ ถ้าเป็นผู้เล่นอีกฝ่ายจะมี UI ของตัวเอง</p></div><div class="combo"><b>อ่านใจ</b><p>ถ้าเข้าด้วย Skill 3 จะมีช่วงทายแยกก่อนเกมจริง ทายถูกขึ้น YES ทายผิดขึ้น NO แล้วค่อยเริ่มเวลาของเกม</p></div></div>
+<div class="strategy-grid">
+<div class="combo"><b>เวลาเลือก</b><p>ฝั่งที่ถูกท้าได้เวลา 8 วิในการเลือก Rock / Paper / Scissors ถ้าเป็นซอมบี้ เซิร์ฟเวอร์จะสุ่มคำตอบแทน</p></div>
+<div class="combo"><b>เจ้าของ ATUM</b><p>มีตัวจับเวลา 8 วิบน UI เพื่อสร้างแรงกดดัน แต่ในโค้ดปัจจุบัน timer ฝั่งเจ้าของเป็น visual pressure ไม่ได้ auto-forfeit แบบฝั่งผู้ถูกท้า</p></div>
+<div class="combo"><b>S3 → S4</b><p>มีช่วงทายใจแยก 5 วิ ถ้าทายถูกขึ้น <b>YES</b> และรู้คำตอบจริง ถ้าทายผิดขึ้น <b>NO</b> และอย่างน้อยรู้ว่าตัวเลือกที่เพิ่งทาย “ไม่ใช่” คำตอบ</p></div>
+<div class="combo"><b>เสมอ</b><p>ถ้าออกเหมือนกันจะเป็น Tie ไม่มี Soul Finisher และไม่มีรางวัล Mind Gauge จากการชนะ</p></div>
+</div>
 
 <h3 class="deep-title">BASEBALL</h3>
-<div class="strategy-grid"><div class="combo"><b>HIGH / MIDDLE / LOW</b><p>เลือกตำแหน่งตีให้ตรงกับตำแหน่งที่เป้าหมายเลือก ถ้าตรงถือว่าตีโดน ถ้าผิดถือว่าพลาด</p></div><div class="combo"><b>HOME RUN</b><p>ตีถูกมีโอกาสเกิด Home Run และการตีถูกในช่วงท้ายของเวลาเป็นจังหวะพิเศษที่ให้ Home Run ตามระบบของเกม</p></div></div>
+<div class="strategy-grid">
+<div class="combo"><b>Intro</b><p>เปิดภาพ/เสียงก่อนประมาณ <b>6.6 วิ</b> แล้วค่อยเริ่มช่วงเลือกจริง ไม่หักเวลาตัดสินระหว่าง Intro</p></div>
+<div class="combo"><b>HIGH / MIDDLE / LOW</b><p>ช่วงเลือกจริง 8 วิ เป้าหมายเลือกตำแหน่งลูก และ ATUM ต้องเลือกตีให้ตรง ถ้าตรง = Hit / ATUM ชนะ ถ้าผิด = Miss / ATUM แพ้</p></div>
+<div class="combo"><b>HOME RUN</b><p>ถ้าตีถูก มีโอกาส Home Run <b>10%</b> ตามปกติ และถ้าตีถูกใน <b>2 วินาทีสุดท้าย</b> จะการันตี Home Run</p></div>
+<div class="combo"><b>ผลเชิงระบบ</b><p>Hit และ Home Run ต่างเป็น “ATUM ชนะ” เหมือนกันในระบบ Soul Finisher / Gauge; Home Run คือผลพิเศษด้านภาพและเสียง ไม่ได้สุ่มแต้มเพิ่มต่างหาก</p></div>
+</div>
 
 <h3 class="deep-title">RACING</h3>
-<div class="strategy-grid">
-<div class="combo"><b>BOOST</b><p>กดค้างเพื่อเร่งความเร็วโดยแลกกับ HP รถ ยิ่งใช้มากยิ่งต้องบริหาร HP ให้ดี</p></div>
-<div class="combo"><b>ATTACK</b><p>ชาร์จก่อนพุ่งชนอัตโนมัติ ใช้ทำดาเมจและรบกวนความเร็วของอีกคัน</p></div>
-<div class="combo"><b>BLOCK</b><p>เสีย HP เล็กน้อยเพื่อเปิดช่วงป้องกันเต็ม ใช้เคาน์เตอร์ ATTACK ได้ถ้ากดถูกจังหวะ</p></div>
-<div class="combo"><b>FINAL STRETCH</b><p>เมื่อช่วงแข่งหลักจบ จะเข้าสู่ช่วงเข้าเส้นชัยโดยจำระยะนำ–ตามไว้ แล้วแข่งกันด้วย BOOST / ATTACK / BLOCK ต่อจนมีรถเข้าเส้นชัย</p></div>
+<div class="quickfacts">
+<div class="fact"><span>Intro</span><b>8.8 วิ</b></div>
+<div class="fact"><span>Ready</span><b>4.5 วิ</b></div>
+<div class="fact"><span>Main Race</span><b>36 วิ</b></div>
+<div class="fact"><span>Vehicle HP</span><b>100</b></div>
+<div class="fact"><span>Base Speed</span><b>5.7</b></div>
 </div>
+
+<div class="strategy-grid">
+<div class="combo"><b>1 — BOOST</b><p>กดค้าง ไม่มีคูลดาวน์ ใช้ HP ประมาณ <b>2.2 → 4.6 ต่อวินาที</b> ตามเวลาที่ค้าง Ramp เต็มใน 2.2 วิ ความเร็วตัวเองไล่จาก ×1.28 ถึง ×1.95 และทำให้อีกคันเสีย relative pace ถ้ามีแค่ฝ่ายเดียว Boost ถ้าทั้งสอง Boost พร้อมกัน ความได้เปรียบด้านความเร็วจะหักล้าง แต่ทั้งคู่ยังเสีย HP</p></div>
+<div class="combo"><b>Launch Boost ลับ</b><p>ช่วง Ready กด BOOST รัวให้ครบ <b>5 ครั้งในหน้าต่าง 1.4 วิ</b> จะได้บูสฟรีตอนเริ่มประมาณ <b>2 วิ</b> ถ้า S3 ทาย Boost/No Boost ของคู่แข่งถูก จะเพิ่มโบนัสอีก <b>+2 วิ</b></p></div>
+<div class="combo"><b>2 — ATTACK</b><p>ชาร์จเตือน <b>1.5 วิ</b> → Dash 260 ms → Return 350 ms, CD <b>4.8 วิ</b> ถ้าโดนปกติทำดาเมจรถ <b>16</b> และลด progress 0.55 พร้อม Slow 1.1 วิที่ ×0.78</p></div>
+<div class="combo"><b>ATTACK vs BLOCK</b><p>ถ้าอีกคัน Block ถูกจังหวะ ผู้โจมตีโดน Counter Damage <b>12</b> แทน ถ้าทั้งสอง Attack ชนกันจะ Clash และทั้งสองเสีย <b>8 HP</b></p></div>
+<div class="combo"><b>3 — BLOCK</b><p>เสีย <b>4 HP</b> ตอนกด เปิด 100% protection window <b>0.75 วิ</b> และมี CD <b>5 วิ</b></p></div>
+<div class="combo"><b>ชนกันด้วยเมาส์</b><p>การเอารถเบียดกันปกติ <b>ไม่ทำดาเมจ</b> ระบบจะแยกรถออกจากกันเท่านั้น ดาเมจรถมาจาก ATTACK / Counter / HP cost / ตกถนน</p></div>
+<div class="combo"><b>แพ้ทันที</b><p>HP รถเหลือ 0 = แพ้ทันที และถ้าออกนอกถนนในช่วงที่ยังบังคับเมาส์ได้ จะถูกตั้ง HP เป็น 0 และแพ้ทันที</p></div>
+<div class="combo"><b>Final Stretch</b><p>Main Race ต้องวิ่งครบ <b>36 วิ</b> ก่อน Finish Road ถึงจะมา ระบบ Fade 0.76 วิและจำระยะห่างจริงไว้ รถตามถูกวางเป็นจุดเริ่ม รถนำอยู่หน้าตาม gap เดิม แล้วเส้นชัยอยู่ห่างจากรถนำอีก <b>26</b> progress โดยช่วง Final ปิดการเลี้ยวเมาส์ เหลือ BOOST / ATTACK / BLOCK แข่งกันเข้าเส้นจริง</p></div>
+<div class="combo"><b>AI Difficulty</b><p>สุ่ม EASY 10% / MEDIUM 20% / HARD 30% / HARDCORE 40% ระดับสูงจะตัดสินใจเรื่อง Boost / Attack / Block และการบริหาร HP ดีกว่า</p></div>
+</div>
+
+<h3 class="deep-title">DAMAGE / LEVEL หมายความว่ายังไง?</h3>
+<div class="updatebox"><p>ตัวเลข Damage ด้านบนคือ <b>raw skill damage</b> ใน Config ก่อนระบบกลางของ Project JoJo คูณเพิ่ม/ลด ระดับ Stand ใช้ Damage Multiplier จาก <b>50% ที่ Lv.1 → 100% ที่ Lv.100</b> แบบเส้นตรง ถ้าปิด Stand Level จะนับเป็น Max Level ทันที และยังมี Sandbox Stand Damage, PvP multiplier และ Critical ที่อาจเปลี่ยนดาเมจจริงอีกชั้น</p></div>
 
 <h3 class="deep-title">วิธีเล่นจริง / กลยุทธ์</h3>
 <div class="strategy-grid">
-<div class="combo"><b>S3 → S4</b><p>แกนหลักของ ATUM คือเปิดอ่านใจ ก่อนใช้ Gamble เพื่อเอาข้อมูล YES/NO มาลดความเสี่ยงในมินิเกม</p></div>
-<div class="combo"><b>อย่าเผา Gauge ทิ้ง</b><p>Mind Gauge ไม่ได้ฟรี ถ้าไม่มีเหตุผลจะอ่านใจ เก็บแต้มไว้ก่อนมักคุ้มกว่า</p></div>
-<div class="combo"><b>Racing ต้องบริหาร HP</b><p>BOOST ใช้ HP แลกความเร็ว, ATTACK ใช้ดาเมจ+ขัดจังหวะ และ BLOCK ใช้ตอบโต้ จึงไม่ควรกดท่าเดียวตลอดเกม</p></div>
-<div class="combo"><b>ไม่ใช่ Brawler</b><p>Punch/Barrage ทำให้ ATUM สู้โลกปกติได้ แต่จุดแข็งจริงคือการอ่านคนและบังคับอีกฝ่ายเข้าสู่เกมของตัวเอง</p></div>
+<div class="combo"><b>อย่าเผา Mind Point</b><p>S3 ไม่มีคูลดาวน์ก็จริง แต่แต้มไม่ฟรี ถ้ายังไม่มีภัยหรือยังไม่พร้อมกด S4 เก็บ Gauge ไว้ก่อนจะคุ้มกว่า</p></div>
+<div class="combo"><b>S3 → S4 คือหัวใจ</b><p>อ่านใจ → สัมผัสเป้าด้วย Gamble → ใช้ YES/NO ลดความเสี่ยง → ชนะเกม → ดึงวิญญาณ → ลุ้นแต้มคืน 0–3</p></div>
+<div class="combo"><b>Baseball เล่นกับเวลา</b><p>เลือกให้ถูกสำคัญที่สุด แต่ถ้ามั่นใจแล้ว การรอเข้า 2 วิสุดท้ายแล้วยังตีถูกจะเปลี่ยนเป็น Home Run การันตี</p></div>
+<div class="combo"><b>Racing อย่ากดแต่ Boost</b><p>HP คือทั้งพลังชีวิตและเชื้อเพลิง ถ้าเผา Boost จนต่ำมาก คุณจะเปิดช่องให้ ATTACK ปิดงานทันที</p></div>
 </div>
 
-<div class="dangerbox"><b>จำไว้:</b> ATUM เป็น Addon ของ Project JoJo ต้องเปิดมอดหลักด้วย และ Skill 4 ต้องสัมผัสเป้าหมายจริงก่อนเกมถึงจะเริ่ม</div>
+<div class="dangerbox"><b>จำไว้:</b> Skill 4 เป็นเกมเดิมพันจริง — ถ้า ATUM ชนะ เป้าหมายที่กฎ PvP อนุญาตจะโดน Soul Finisher; ถ้า ATUM แพ้ เจ้าของจะถูกปิด Skill 7 วิ และเสียจังหวะหนักมาก</div>
 
-<h3 class="deep-title">MODEL CREDIT</h3>
-<div class="updatebox"><p>โมเดล ATUM ต้นฉบับ: <a href="https://models.spriters-resource.com/mobile/jojosbizarreadventurediamondrecordsreversal/asset/313882/" target="_blank" rel="noopener">The Models Resource — JoJo's Bizarre Adventure: Diamond Records Reversal</a><br>นำมาปรับ rig / animation / optimization สำหรับ Project Zomboid เพิ่มเติม</p></div>
+<h3 class="deep-title">ADDON / MODEL CREDIT</h3>
+<div class="updatebox"><b>Project JoJo — Addon ATUM</b><p>Workshop ID <b>3811605058</b> • Mod ID <b>ProjectJoJoAddonATUM</b><br>Required Core: Project JoJo <b>v0.23.0.237+</b> • Workshop ID 3807750510 • Mod ID JoJoStandSystem0183Standalone</p><p>โมเดล ATUM ต้นฉบับ: <a href="https://models.spriters-resource.com/mobile/jojosbizarreadventurediamondrecordsreversal/asset/313882/" target="_blank" rel="noopener">The Models Resource — JoJo's Bizarre Adventure: Diamond Records Reversal</a><br>นำมาปรับ rig / animation / optimization สำหรับ Project Zomboid เพิ่มเติม</p></div>
 
 <nav class="stand-nav"><a href="echoes-act-3.html">← Stand หลัก<br>ECHOES ACT 3</a><a href="../index.html#stands">กลับหน้าเลือก Stand →<br>PROJECT JOJO</a></nav>
-</section></main>
-<footer class="footer">PROJECT JOJO • ATUM ADDON WIKI<br><small>Workshop ID 3811605058 • Mod ID ProjectJoJoAddonATUM</small></footer></body></html>
+</section></main><footer class="footer">PROJECT JOJO • ATUM Addon v0.24.0.042<br><small>Workshop ID 3811605058 • Mod ID ProjectJoJoAddonATUM</small></footer></body></html>

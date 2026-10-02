@@ -8,7 +8,8 @@
     "killer-queen": ["KILLER QUEEN", "killer-queen.webp"],
     "silver-chariot": ["SILVER CHARIOT", "silver-chariot.webp"],
     "magicians-red": ["MAGICIAN'S RED", "magicians-red.webp"],
-    "echoes-act-3": ["ECHOES ACT 3", "echoes-act-3.webp"]
+    "echoes-act-3": ["ECHOES ACT 3", "echoes-act-3.webp"],
+    "atum": ["ATUM", "atum.png"]
   };
 
   function apply() {

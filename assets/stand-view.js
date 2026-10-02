@@ -4,7 +4,7 @@
   const stand = m[1].toLowerCase();
   const allowed = new Set([
     "star-platinum","the-world","king-crimson","crazy-diamond","the-hand",
-    "killer-queen","silver-chariot","magicians-red","echoes-act-3"
+    "killer-queen","silver-chariot","magicians-red","echoes-act-3","atum"
   ]);
   if (!allowed.has(stand)) return;
 
@@ -24,7 +24,6 @@
       updateBox.remove();
     }
 
-    // Keep current values on the Stand page; history belongs in CHANGELOG.
     if (stand === "echoes-act-3") {
       document.querySelectorAll(".article p").forEach((p) => {
         const t = p.textContent || "";
@@ -42,7 +41,6 @@
     footer.firstChild.textContent = "PROJECT JOJO • WIKI";
   }
 
-  // TH + EN use the same synthetic key, so both languages contribute to one Stand rank.
   const img = new Image(1, 1);
   img.alt = "";
   img.setAttribute("aria-hidden", "true");

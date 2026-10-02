@@ -4,7 +4,7 @@ from pathlib import Path
 
 STANDS = [
     "star-platinum","the-world","king-crimson","crazy-diamond","the-hand",
-    "killer-queen","silver-chariot","magicians-red","echoes-act-3"
+    "killer-queen","silver-chariot","magicians-red","echoes-act-3","atum"
 ]
 OUT = Path("assets/stand-ranking.js")
 
@@ -23,12 +23,10 @@ def read_count(stand):
     with urllib.request.urlopen(req, timeout=20) as r:
         svg = r.read().decode("utf-8", "replace")
 
-    # Modern shields-style SVG normally exposes `aria-label="views: 123"`.
     m = re.search(r'aria-label="[^"]*?:\s*([0-9][0-9.,]*[kKmM]?)"', svg)
     if m:
         return parse_num(m.group(1))
 
-    # Fallback: inspect SVG text nodes and take the last numeric-looking value.
     values = re.findall(r'>([0-9][0-9.,]*[kKmM]?)<', svg)
     if values:
         return parse_num(values[-1])
@@ -51,7 +49,6 @@ top2 = ranked[:2]
 
 new = "window.PJ_STAND_RANKING=" + json.dumps(top2, separators=(",",":")) + ";\n"
 
-# Avoid a commit every hour just because counts changed. Commit only when the Top 2 order changes.
 old = OUT.read_text(encoding="utf-8") if OUT.exists() else ""
 if old != new:
     OUT.write_text(new, encoding="utf-8")

@@ -1,0 +1,12 @@
+Project JoJo Wiki patch — Core v0.23.0.250
+
+OVERWRITE FROM REPOSITORY ROOT
+
+Updated TH + EN:
+- Beginner Guide: Super Arrow OFF-by-default selection mode, registered-addon behavior, 3-use Condition interaction.
+- Full Guide: Super Arrow authority rules, current targeting/client options, Heaven's Door integration.
+- ATUM v0.24.0.062: Super Arrow registration note + Core v0.23.0.250 baseline.
+- HARVEST v0.4.16: Super Arrow registration note + current modded-item compatibility + Core v0.23.0.250 baseline.
+- NEW Heaven's Door v0.1.62 pages in TH + EN, grounded in the release build: REWRITE, skills, Book/Command UI, Scripted Written-Zombie AI, Target Ownership hotfix, physics polish, Core targeting/HUD/audio/damage integration.
+
+Heaven's Door functional Book/Command UI intentionally remains visible in Minimal/Hidden Stand HUD because it is gameplay UI.

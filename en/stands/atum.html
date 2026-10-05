@@ -1,66 +1,13 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATUM — Project JoJo</title><link rel="stylesheet" href="../../assets/v237.css?v=246"><link rel="icon" type="image/png" sizes="32x32" href="../../project-jojo-favicon-32x32.png"><meta name="theme-color" content="#0b0710"></head><body><header class="topbar"><a class="brand" href="../../en/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../../en/index.html">Home</a><a href="../../en/index.html#stands">Stand</a><a href="../../en/guide.html">Full Guide</a></nav><a class="lang" href="../../th/stands/atum.html">ไทย</a></header><main><section class="stand-hero"><div class="stand-hero-art"><img src="../../assets/stands/atum.png" alt="ATUM"></div><div><a href="../index.html#stands" style="color:#64e8ff;text-decoration:none">← Back</a><div class="eyebrow" style="margin-top:15px">ADDON • Mind Reading / Soul Marks / Gambling</div><h1 class="stand-title">ATUM</h1><p class="summary">D’Arby’s mind-game Stand: read attacks, mark souls and turn contact into RPS, Baseball or Racing wagers.</p></div></section><section class="article"><p>Do you trust your instincts?</p>
-<p><b>ATUM</b> is a Project JoJo addon built around mind games, prediction, Soul Marks and gambling rather than raw physical power.</p>
-<p><b>Singleplayer / Host / Multiplayer supported.</b></p>
-<p><b>Requires Project JoJo v0.23.0.246+</b></p>
-<h2>WIKI</h2>
-<p><b>🇹🇭 ภาษาไทย / EN English</b></p>
-<h2>HOW TO GET ATUM</h2>
-<p>Use the normal Stand Arrow from Project JoJo. ATUM is part of the existing Stand pool; there is no separate ATUM Arrow.</p>
-<h2>CONTROLS</h2>
-<p><b>CAPS LOCK</b> — Summon / Dismiss</p>
-<p><b>1</b> — Punch</p>
-<p><b>2</b> — Barrage</p>
-<p><b>3</b> — Mind Read</p>
-<p><b>4</b> — Gamble</p>
-<p>ATUM follows the Core's personal <b>Mouse / Facing Direction / Controller Aim</b> targeting mode.</p>
-<h2>SKILL 3 — MIND READ</h2>
-<p><b>Tap / release before FULL — DODGE READ</b></p>
-<p>Costs 1 Mind Point and arms a 10-second defensive read. A supported incoming attack can trigger the dodge.</p>
-<p>A successful DODGE READ against a <b>non-player attacker</b> applies a <b>Soul Mark for 3 minutes</b>. Players are never Soul Marked.</p>
-<p><b>Hold until FULL — GAMBLE READ</b></p>
-<p>Costs 1 point and prepares the YES / NO prediction route for Skill 4. It is consumed when Gamble makes real contact. The YES/NO presentation is mouse-through and does not block the minigame controls underneath it.</p>
-<p>Cancelling an unused active read before timeout refunds the 1 Mind Point.</p>
-<h2>SOUL MARK / MULTI-SOUL GAMBLE</h2>
-<p>Soul Marks are tracked independently per ATUM owner.</p>
-<p>When a Gamble begins, ATUM binds every still-marked living non-player target within roughly <b>18 tiles</b> and the allowed Z range into the same wager. The minigame UI still plays against the main target only.</p>
-<ul>
-<li>ATUM wins → the normal target and every bound marked soul receive Soul Extraction</li>
-<li>ATUM loses → 3-second blackout remains, while Skill Silence scales by <b>7 seconds × number of wager targets</b></li>
-<li>The bound target count is locked when the Gamble starts</li>
-</ul>
-<p>Skill 4's HUD can show how many marked targets are currently eligible to be pulled into a Gamble. AUTO GAMBLE PASSIVE state is shown on the same Skill 4 area.</p>
-<h2>SKILL 4 — GAMBLE / AUTO GAMBLE</h2>
-<p><b>Tap 4</b> lunges using the same contact reach as Punch. On real contact the server chooses one of three games with equal 1/3 odds:</p>
-<ul>
-<li>Rock Paper Scissors</li>
-<li>Baseball</li>
-<li>Racing</li>
-</ul>
-<p><b>Hold 4 to FULL</b> toggles AUTO GAMBLE PASSIVE. While active, normal Tap 4 is disabled. A successful Tap-S3 DODGE READ automatically challenges the exact attacker that triggered the dodge.</p>
-<p><b>FULL S3 → Tap 4</b> is the prediction combo.</p>
-<h2>GAMES</h2>
-<p><b>RPS</b> — challenged side has 8 seconds; zombies choose server-side. FULL-S3 prediction adds the YES/NO read phase.</p>
-<p><b>BASEBALL</b> — Pitcher chooses HIGH / MIDDLE / LOW. If a player does not answer in time the server automatically randomizes the pitch. Correct swing wins; correct swing in the final 2 seconds guarantees HOME RUN, otherwise a correct hit has a 10% Home Run chance.</p>
-<p><b>RACING</b> — 8.8s intro + 4.5s READY + 36s main race. Manage 100 vehicle HP with BOOST, ATTACK and BLOCK. A hidden Launch Mash can begin as soon as the Racing screen opens; 5+ rapid Skill-1 taps arm an opening speed bonus with diminishing returns and a hard cap.</p>
-<p>Racing is longer than the other games, so its base Mind reward is higher.</p>
-<h2>MIND GAUGE & REWARDS</h2>
-<p><b>Mind Gauge: 0 / 100</b></p>
-<p>Skill 3 costs 1 point.</p>
-<ul>
-<li>RPS / Baseball ATUM win: <b>+0 to +3</b></li>
-<li>Racing ATUM win: <b>+2 to +5</b></li>
-<li>Correct FULL-S3 prediction + win: <b>+1 additional Mind Point</b></li>
-<h2>WINNER'S HIGH</h2>
-</ul>
-<p>The actual <b>human winner</b> of an ATUM minigame receives a small mental recovery bonus. It can reduce Stress, Unhappiness, Boredom and Panic. Racing gives the strongest Winner's High because it is the longest game.</p>
-<p>If the ATUM owner used FULL S3, predicted correctly and still won, Winner's High is multiplied by <b>×1.25</b>.</p>
-<p>Winner's High never restores Hunger, Thirst, Fatigue, injuries, Pain or Sickness.</p>
-<h2>MINIGAME PROTECTION</h2>
-<p>Participants are temporarily protected/phased from normal outside combat while the game is active. Visibility and protection are restored after resolution. Required minigame UI remains visible even if the player uses Minimal/Hidden Stand HUD.</p>
-<h2>PROJECT JOJO CLIENT OPTIONS</h2>
-<p>ATUM follows the Core's Stand HUD <b>Normal / Minimal / Hidden</b>, HUD Opacity/Scale, Personal Project JoJo Volume and targeting mode. Minigame UI and YES/NO interfaces remain available because they are gameplay controls, not decorative HUD.</p>
-<p><b>▶ HARVEST ADDON</b></p>
-<p><b>▶ MAIN PROJECT JOJO MOD</b></p>
-<p><b>ATUM:</b> v0.24.0.062</p>
-<p><b>Workshop ID:</b> 3811605058</p>
-<p><b>Mod ID:</b> ProjectJoJoAddonATUM</p></section></main><footer class="footer">PROJECT JOJO • ATUM</footer></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATUM — Project JoJo</title><link rel="stylesheet" href="../../assets/v237.css?v=250"><link rel="icon" type="image/png" sizes="32x32" href="../../project-jojo-favicon-32x32.png"><meta name="theme-color" content="#0b0710"></head><body><header class="topbar"><a class="brand" href="../../en/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../../en/index.html">Home</a><a href="../../en/index.html#stands">Stand</a><a href="../../en/guide.html">Full Guide</a></nav><a class="lang" href="../../th/stands/atum.html">ไทย</a></header><main><section class="stand-hero"><div class="stand-hero-art"><img src="../../assets/stands/atum.png" alt="ATUM"></div><div><a href="../index.html#stands" style="color:#64e8ff;text-decoration:none">← Back</a><div class="eyebrow" style="margin-top:15px">ADDON • Mind Reading / Soul Marks / Gambling</div><h1 class="stand-title">ATUM</h1><p class="summary">D’Arby’s mind-game Stand: read attacks, mark souls and turn contact into RPS, Baseball or Racing wagers.</p></div></section><section class="article"><p>Do you trust your instincts?</p>
+<p><b>ATUM</b> is a Project JoJo addon built around mind games, prediction, Soul Marks and gambling rather than raw physical power.</p><p><b>Singleplayer / Host / Multiplayer supported.</b></p><p><b>Use the current Project JoJo Core (v0.23.0.250 for this guide).</b></p>
+<h2>HOW TO GET ATUM</h2><p>Use the normal Stand Arrow from Project JoJo. ATUM is part of the existing Stand pool; there is no separate ATUM Arrow.</p>
+<p>If the server/world enables <b>Super Arrow</b>, ATUM appears in the Stand choice list automatically while this addon is enabled. With Super Arrow OFF, it remains part of the normal random Stand pool.</p><h2>CONTROLS</h2><p><b>CAPS LOCK</b> — Summon / Dismiss</p><p><b>1</b> — Punch</p><p><b>2</b> — Barrage</p><p><b>3</b> — Mind Read</p><p><b>4</b> — Gamble</p>
+<p>ATUM combat follows the Core's personal <b>Mouse / Pointer / Facing Direction / Controller Aim</b> targeting choice. If you do not want mouse aiming, Facing Direction makes ATUM attack where the character faces; Controller Aim follows the controller attack/aim vector. ATUM minigame controls remain normal gameplay UI and may still use the mouse where appropriate.</p>
+<h2>SKILL 3 — MIND READ</h2><p><b>Tap / release before FULL — DODGE READ</b></p><p>Costs 1 Mind Point and arms a 10-second defensive read. A supported incoming attack can trigger the dodge.</p><p>A successful DODGE READ against a <b>non-player attacker</b> applies a <b>Soul Mark for 3 minutes</b>. Players are never Soul Marked.</p><p><b>Hold until FULL — GAMBLE READ</b></p><p>Costs 1 point and prepares the YES / NO prediction route for Skill 4. It is consumed when Gamble makes real contact. The YES/NO presentation is mouse-through and does not block the minigame controls underneath it.</p><p>Cancelling an unused active read before timeout refunds the 1 Mind Point.</p>
+<h2>SOUL MARK / MULTI-SOUL GAMBLE</h2><p>Soul Marks are tracked independently per ATUM owner.</p><p>When a Gamble begins, ATUM binds every still-marked living non-player target within roughly <b>18 tiles</b> and the allowed Z range into the same wager. The minigame UI still plays against the main target only.</p><ul><li>ATUM wins → the normal target and every bound marked soul receive Soul Extraction</li><li>ATUM loses → 3-second blackout remains, while Skill Silence scales by <b>7 seconds × number of wager targets</b></li><li>The bound target count is locked when the Gamble starts</li></ul><p>Skill 4's HUD can show how many marked targets are currently eligible to be pulled into a Gamble. AUTO GAMBLE PASSIVE state is shown on the same Skill 4 area.</p>
+<h2>SKILL 4 — GAMBLE / AUTO GAMBLE</h2><p><b>Tap 4</b> lunges using the same contact reach as Punch. On real contact the server chooses one of three games with equal 1/3 odds:</p><ul><li>Rock Paper Scissors</li><li>Baseball</li><li>Racing</li></ul><p><b>Hold 4 to FULL</b> toggles AUTO GAMBLE PASSIVE. While active, normal Tap 4 is disabled. A successful Tap-S3 DODGE READ automatically challenges the exact attacker that triggered the dodge.</p><p><b>FULL S3 → Tap 4</b> is the prediction combo.</p>
+<h2>GAMES</h2><p><b>RPS</b> — challenged side has 8 seconds; zombies choose server-side. FULL-S3 prediction adds the YES/NO read phase.</p><p><b>BASEBALL</b> — Pitcher chooses HIGH / MIDDLE / LOW. If a player does not answer in time the server automatically randomizes the pitch. Correct swing wins; correct swing in the final 2 seconds guarantees HOME RUN, otherwise a correct hit has a 10% Home Run chance.</p><p><b>RACING</b> — 8.8s intro + 4.5s READY + 36s main race. Manage 100 vehicle HP with BOOST, ATTACK and BLOCK. A hidden Launch Mash can begin as soon as the Racing screen opens; 5+ rapid Skill-1 taps arm an opening speed bonus with diminishing returns and a hard cap.</p><p>Racing is longer than the other games, so its base Mind reward is higher.</p>
+<h2>MIND GAUGE & REWARDS</h2><p><b>Mind Gauge: 0 / 100</b></p><p>Skill 3 costs 1 point.</p><ul><li>RPS / Baseball ATUM win: <b>+0 to +3</b></li><li>Racing ATUM win: <b>+2 to +5</b></li><li>Correct FULL-S3 prediction + win: <b>+1 additional Mind Point</b></li></ul>
+<h2>WINNER'S HIGH</h2><p>The actual <b>human winner</b> of an ATUM minigame receives a small mental recovery bonus. It can reduce Stress, Unhappiness, Boredom and Panic. Racing gives the strongest Winner's High because it is the longest game.</p><p>If the ATUM owner used FULL S3, predicted correctly and still won, Winner's High is multiplied by <b>×1.25</b>.</p><p>Winner's High never restores Hunger, Thirst, Fatigue, injuries, Pain or Sickness.</p>
+<h2>MINIGAME PROTECTION</h2><p>Participants are temporarily protected/phased from normal outside combat while the game is active. Visibility and protection are restored after resolution. Required minigame UI remains visible even if the player uses Minimal/Hidden Stand HUD.</p>
+<h2>PROJECT JOJO CLIENT OPTIONS</h2><p>ATUM follows the Core's Stand HUD <b>Normal / Minimal / Hidden</b>, HUD Opacity/Scale, Personal Project JoJo Volume and targeting mode. Core v0.23.0.250 also includes separate reset buttons for presentation/targeting and keybinds.</p><p><b>ATUM:</b> v0.24.0.062</p><p><b>Workshop ID:</b> 3811605058</p><p><b>Mod ID:</b> ProjectJoJoAddonATUM</p></section></main><footer class="footer">PROJECT JOJO • ATUM</footer></body></html>

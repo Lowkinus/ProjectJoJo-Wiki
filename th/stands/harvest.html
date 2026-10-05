@@ -1,54 +1,10 @@
-<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HARVEST — Project JoJo</title><link rel="stylesheet" href="../../assets/v237.css?v=246"><link rel="icon" type="image/png" sizes="32x32" href="../../project-jojo-favicon-32x32.png"><meta name="theme-color" content="#0b0710"></head><body><header class="topbar"><a class="brand" href="../../th/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../../th/index.html">Home</a><a href="../../th/index.html#stands">Stand</a><a href="../../th/guide.html">Full Guide</a></nav><a class="lang" href="../../en/stands/harvest.html">EN</a></header><main><section class="stand-hero"><div class="stand-hero-art"><img src="../../assets/stands/harvest-v440.webp" alt="HARVEST"></div><div><a href="../index.html#stands" style="color:#64e8ff;text-decoration:none">← Back</a><div class="eyebrow" style="margin-top:15px">ADDON • ฝูง / Search / คุมพื้นที่</div><h1 class="stand-title">HARVEST</h1><p class="summary">บริหาร Harvest สูงสุด 500 ตัวระหว่างการต่อสู้ Needle, Search Job และ Storm คุมฝูง.</p></div></section><section class="article"><p>อยากได้อะไรตัวเล็ก ๆ ไหม... เล็กมาก... สักห้าร้อยตัว?</p>
-<p><b>HARVEST</b> เป็น Colony Stand ที่เน้นบริหารฝูง ก่อกวนระยะไกล ค้นหาไอเท็ม และคุมพื้นที่</p>
-<p><b>รองรับ Singleplayer / Host / Multiplayer</b></p>
-<p><b>ต้องใช้ Project JoJo ตัวหลัก</b></p>
-<h2>วิธีได้ HARVEST</h2>
-<p>ใช้ Stand Arrow ปกติ HARVEST อยู่ใน Stand Pool ของ Project JoJo อยู่แล้ว ไม่มี Harvest Arrow แยก</p>
-<h2>ปุ่ม</h2>
-<p><b>CAPS LOCK</b> — เรียก / เก็บ Stand</p>
-<p><b>1</b> — HARVEST SHOT</p>
-<p><b>2</b> — NEEDLE SWARM</p>
-<p><b>3</b> — SEARCH ITEM</p>
-<p><b>4</b> — HARVEST STORM</p>
-<p>สกิลต่อสู้ใช้ Targeting Mode กลางของ Core: <b>Mouse / Facing Direction / Controller Aim</b></p>
-<h2>COLONY — 0 / 500</h2>
-<p>HARVEST ใช้ Colony เดียวสูงสุด <b>500 ตัว</b> ทั้งการต่อสู้และ Search ใช้กองเดียวกัน ตัวที่ถูกส่งออกไป Search จะถูกจองไว้และลดเพดานการฟื้นจนกว่าจะกลับมาหรือถูก Recall</p>
-<p>เดิน/วิ่งจะไม่ฟื้น Colony ค่า Recovery พื้นฐานปัจจุบัน:</p>
-<ul>
-<li>ยืนนิ่ง: 0.80 / วิ หลังนิ่ง 0.65 วิ</li>
-<li>นั่ง / อยู่ในรถที่แทบไม่เคลื่อน: 4.05 / วิ</li>
-<li>Rest: 9.00 / วิ</li>
-<li>Sleep: 14.40 / วิ</li>
-</ul>
-<p>Sandbox Harvest Regeneration ปรับความเร็ว Recovery 25–500% แต่ไม่เร่ง Search และไม่สามารถฟื้นทับจำนวนที่กำลังออกงานได้</p>
-<h2>SKILL 1 — HARVEST SHOT</h2>
-<p>ใช้ 1 Harvest ยิงก่อกวนระยะไกล ดาเมจเบา + knockback/mini-CC กดค้างเพื่อส่งทีละตัวต่อเนื่อง และ Barrage Guard ป้องกันได้</p>
-<h2>SKILL 2 — NEEDLE SWARM</h2>
-<p>ขั้นต่ำ <b>7 Harvest</b> กดค้างเพื่อเพิ่มทีละ +1 จริง ๆ โดยช่วงเวลาระหว่างการเพิ่มจะสั้นลงเมื่อชาร์จนานขึ้น ฝูงเกาะเป้าหมายประมาณ 9 วิแล้วแทงพร้อมกัน ยิ่งลงทุนมากดาเมจท้ายยิ่งสูง</p>
-<p>ถ้าเป้าตาย/หาย/หลุด leash ก่อนระเบิดผล ฝูงที่ค้างจะยกเลิกและคืน Harvest</p>
-<h2>SKILL 3 — HARVEST SEARCH COMMAND</h2>
-<p>กด Skill 3 เพื่อเปิดหน้าจอ Search Command โดยตรง</p>
-<p>ระบบปัจจุบันใช้ <b>ไอเท็ม Scripted ที่รองรับและมีอยู่จริงใน Inventory เป็น Template</b> รวมของที่อยู่ในกระเป๋าซ้อนได้ ไม่ได้จำกัดเฉพาะ Bandage หรือยา</p>
-<p>เวอร์ชันล่าสุดแยก Template ตามสถานะสำคัญแทนการรวมแค่ FullType เช่น <b>Propane Tank / Fluid Container ที่เต็ม ครึ่ง หรือว่าง</b>, Condition / Used state และสถานะอาวุธที่เกี่ยวข้องสามารถแยกเป็นคนละ Template ได้เมื่อ state ต่างกัน</p>
-<p>Runtime/synthetic item ที่ฝั่ง Authority สร้างกลับไม่ได้จะไม่ถูกเอามาแสดงให้เลือก เพื่อไม่ให้กด START แล้วเงียบ</p>
-<p><b>ORDER SIZE</b></p>
-<ul>
-<li>จำนวน x1 → x500</li>
-<li>x1–x20 ใช้ขั้นต่ำ 20 Harvest</li>
-<li>x21–x500 ขั้นต่ำเท่ากับจำนวนที่สั่ง</li>
-<li>ส่งเกินขั้นต่ำช่วยเร่งช่วงค้นหา</li>
-<li>น้ำหนักรวมทั้ง Batch เพิ่มเวลาขนกลับ</li>
-</ul>
-<p><b>STAND LEVEL SEARCH SPEED</b></p>
-<p>Stand Level ช่วยลดช่วง Search Work แบบเส้นตรง: Lv1 ใช้เวลาเดิม และ Lv100 เหลือ <b>50% ของช่วงค้นหา</b> แต่เวลาเดินทางออก/กลับและช่วงส่งของไม่ถูกเร่งด้วย Level</p>
-<p><b>ACTIVE JOBS / RECALL</b></p>
-<p>หน้าเดียวกันแสดงงานทั้งหมด Phase และ ETA กด RECALL ยกเลิกเฉพาะงานนั้น คืน Harvest ที่จองทันที และของที่ยังไม่ได้ส่งของงานนั้นจะหายไป</p>
-<p>เสียง Search แยกตาม Job และตามตำแหน่งงานจริง งานหลายงานจึงเล่นเสียงพร้อมกันได้ และ Personal Project JoJo Volume มีผลกับเสียง Search 3D ด้วย</p>
-<h2>SKILL 4 — HARVEST STORM</h2>
-<p>ขั้นต่ำ <b>33 Harvest</b> ปล่อยฝูงรอบตัวเพื่อสร้างแรงกดดัน AOE ต่อเนื่อง มี repeated hit / mini knockback / crowd interruption</p>
-<p>ยิ่งส่งเยอะระยะเวลายิ่งยาวจนถึงเพดาน 38 วิเมื่อใช้เต็ม 500 Barrage Guard สามารถป้องกัน Hit ของผู้เล่นที่กำลัง Guard โดยไม่ยกเลิก Storm ต่อเป้าอื่น</p>
-<h2>PROJECT JOJO CLIENT OPTIONS</h2>
-<p>HARVEST รองรับ Stand HUD <b>Normal / Minimal / Hidden</b>, HUD Opacity/Scale, Personal Project JoJo Volume และ Targeting Mode ของ Core โดย Search Command UI จะยังแสดงเพราะเป็นหน้าจอที่จำเป็นต่อการเล่น</p>
-<p><b>HARVEST:</b> v0.4.14</p>
-<p><b>Workshop ID:</b> 3812032546</p>
-<p><b>Mod ID:</b> ProjectJoJoAddonHarvest</p></section></main><footer class="footer">PROJECT JOJO • HARVEST</footer></body></html>
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HARVEST — Project JoJo</title><link rel="stylesheet" href="../../assets/v237.css?v=250"><link rel="icon" type="image/png" sizes="32x32" href="../../project-jojo-favicon-32x32.png"><meta name="theme-color" content="#0b0710"></head><body><header class="topbar"><a class="brand" href="../../th/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../../th/index.html">Home</a><a href="../../th/index.html#stands">Stand</a><a href="../../th/guide.html">Full Guide</a></nav><a class="lang" href="../../en/stands/harvest.html">EN</a></header><main><section class="stand-hero"><div class="stand-hero-art"><img src="../../assets/stands/harvest-v440.webp" alt="HARVEST"></div><div><a href="../index.html#stands" style="color:#64e8ff;text-decoration:none">← Back</a><div class="eyebrow" style="margin-top:15px">ADDON • ฝูง / Search / คุมพื้นที่</div><h1 class="stand-title">HARVEST</h1><p class="summary">บริหาร Harvest สูงสุด 500 ตัวระหว่างการต่อสู้ Needle, Search Job และ Storm คุมฝูง</p></div></section><section class="article"><p>อยากได้อะไรตัวเล็ก ๆ ไหม... เล็กมาก... สักห้าร้อยตัว?</p><p><b>HARVEST</b> เป็น Colony Stand ที่เน้นบริหารฝูง ก่อกวนระยะไกล ค้นหาไอเท็ม และคุมพื้นที่</p><p><b>รองรับ Singleplayer / Host / Multiplayer</b></p><p><b>คู่มือนี้อิง Core ปัจจุบัน v0.23.0.250</b></p>
+<h2>วิธีได้ HARVEST</h2><p>ใช้ Stand Arrow ปกติ HARVEST อยู่ใน Stand Pool ของ Project JoJo อยู่แล้ว ไม่มี Harvest Arrow แยก</p>
+<p>ถ้าโลก/เซิร์ฟเวอร์เปิด <b>Super Arrow</b> และ Addon นี้เปิดอยู่ HARVEST จะขึ้นในรายชื่อ Stand ให้เลือกอัตโนมัติ ถ้าปิด Super Arrow ตัวนี้ยังอยู่ใน Stand Pool สำหรับการสุ่มตามปกติ</p><h2>ปุ่ม</h2><p><b>CAPS LOCK</b> — เรียก / เก็บ Stand</p><p><b>1</b> — HARVEST SHOT</p><p><b>2</b> — NEEDLE SWARM</p><p><b>3</b> — SEARCH ITEM</p><p><b>4</b> — HARVEST STORM</p><p>สกิลต่อสู้ใช้ <b>Mouse / Pointer, Facing Direction หรือ Controller Aim</b> จาก Core. ถ้าไม่อยากเห็นเมาส์ ใช้ Facing Direction ได้ ส่วน Search Command ยังเป็น UI ปกติและใช้ Pointer สำหรับกดเมนู</p>
+<h2>COLONY — 0 / 500</h2><p>HARVEST ใช้ Colony เดียวสูงสุด <b>500 ตัว</b> ทั้งการต่อสู้และ Search ใช้กองเดียวกัน ตัวที่ถูกส่งออกไป Search จะถูกจองไว้และลดเพดานการฟื้นจนกว่าจะกลับมาหรือถูก Recall</p><p>เดิน/วิ่งจะไม่ฟื้น Colony ค่า Recovery พื้นฐานปัจจุบัน:</p><ul><li>ยืนนิ่ง: 0.80 / วิ หลังนิ่ง 0.65 วิ</li><li>นั่ง / อยู่ในรถที่แทบไม่เคลื่อน: 4.05 / วิ</li><li>Rest: 9.00 / วิ</li><li>Sleep: 14.40 / วิ</li></ul><p>Sandbox Harvest Regeneration ปรับความเร็ว Recovery 25–500% แต่ไม่เร่ง Search และไม่สามารถฟื้นทับจำนวนที่กำลังออกงานได้</p>
+<h2>SKILL 1 — HARVEST SHOT</h2><p>ใช้ 1 Harvest ยิงก่อกวนระยะไกล ดาเมจเบา + knockback/mini-CC กดค้างเพื่อส่งทีละตัวต่อเนื่อง และ Barrage Guard ป้องกันได้</p>
+<h2>SKILL 2 — NEEDLE SWARM</h2><p>ขั้นต่ำ <b>7 Harvest</b> กดค้างเพื่อเพิ่มทีละ +1 จริง ๆ โดยช่วงเวลาระหว่างการเพิ่มจะสั้นลงเมื่อชาร์จนานขึ้น ฝูงเกาะเป้าหมายประมาณ 9 วิแล้วแทงพร้อมกัน ยิ่งลงทุนมากดาเมจท้ายยิ่งสูง</p><p>ถ้าเป้าตาย/หาย/หลุด leash ก่อนระเบิดผล ฝูงที่ค้างจะยกเลิกและคืน Harvest</p>
+<h2>SKILL 3 — HARVEST SEARCH COMMAND</h2><p>กด Skill 3 เพื่อเปิดหน้าจอ Search Command โดยตรง</p><p>ระบบ Search ใช้ InventoryItem ที่มีอยู่จริงใน Inventory เป็น Template รวมของที่อยู่ในกระเป๋าซ้อนได้ ไม่ได้จำกัดเฉพาะ Bandage หรือยา</p><p>Template แยกตามสถานะสำคัญแทนการรวมแค่ FullType เช่น <b>Propane Tank / Fluid Container ที่เต็ม ครึ่ง หรือว่าง</b>, Condition / Used state และสถานะอาวุธที่เกี่ยวข้องสามารถแยกเป็นคนละ Template ได้เมื่อ state ต่างกัน</p><p>เพื่อรองรับมอดที่แก้/แทน Item Script, HARVEST จะไม่ใช้ ScriptManager lookup ธรรมดาเป็น whitelist ของ UI อีก ฝั่ง Authority จะ preflight ตอนกด START SEARCH ถ้าไอเท็มจากมอดหรือ runtime item นั้นสร้างกลับอย่างปลอดภัยไม่ได้จริง จะขึ้นข้อความ compatibility limit ก่อนหัก/จอง Harvest</p><p><b>ORDER SIZE</b></p><ul><li>จำนวน x1 → x500</li><li>x1–x20 ใช้ขั้นต่ำ 20 Harvest</li><li>x21–x500 ขั้นต่ำเท่ากับจำนวนที่สั่ง</li><li>ส่งเกินขั้นต่ำช่วยเร่งช่วงค้นหา</li><li>น้ำหนักรวมทั้ง Batch เพิ่มเวลาขนกลับ</li></ul>
+<p><b>STAND LEVEL SEARCH SPEED</b></p><p>Stand Level ช่วยลดช่วง Search Work แบบเส้นตรง: Lv1 ใช้เวลาเดิม และ Lv100 เหลือ <b>50% ของช่วงค้นหา</b> แต่เวลาเดินทางออก/กลับและช่วงส่งของไม่ถูกเร่งด้วย Level</p><p><b>ACTIVE JOBS / RECALL</b></p><p>หน้าเดียวกันแสดงงานทั้งหมด Phase และ ETA กด RECALL ยกเลิกเฉพาะงานนั้น คืน Harvest ที่จองทันที และของที่ยังไม่ได้ส่งของงานนั้นจะหายไป</p><p>เสียง Search แยกตาม Job และตามตำแหน่งงานจริง งานหลายงานจึงเล่นเสียงพร้อมกันได้ และ Personal Project JoJo Volume มีผลกับเสียง Search 3D ด้วย</p>
+<h2>SKILL 4 — HARVEST STORM</h2><p>ขั้นต่ำ <b>33 Harvest</b> ปล่อยฝูงรอบตัวเพื่อสร้างแรงกดดัน AOE ต่อเนื่อง มี repeated hit / mini knockback / crowd interruption</p><p>ยิ่งส่งเยอะระยะเวลายิ่งยาวจนถึงเพดาน 38 วิเมื่อใช้เต็ม 500 Barrage Guard สามารถป้องกัน Hit ของผู้เล่นที่กำลัง Guard โดยไม่ยกเลิก Storm ต่อเป้าอื่น</p>
+<h2>PROJECT JOJO CLIENT OPTIONS</h2><p>HARVEST รองรับ Stand HUD <b>Normal / Minimal / Hidden</b>, HUD Opacity/Scale, Personal Project JoJo Volume และ Targeting Mode ของ Core โดย Search Command UI จะยังแสดงเพราะเป็นหน้าจอที่จำเป็นต่อการเล่น Core v0.23.0.250 มีปุ่ม Reset การแสดงผล/เสียง/Targeting และ Reset Keybind แยกกัน</p><p><b>HARVEST:</b> v0.4.16</p><p><b>Workshop ID:</b> 3812032546</p><p><b>Mod ID:</b> ProjectJoJoAddonHarvest</p></section></main><footer class="footer">PROJECT JOJO • HARVEST</footer></body></html>

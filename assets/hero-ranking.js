@@ -32,6 +32,45 @@
     set(2, top2);
   }
 
+  function insertSpoilerStands() {
+    if (document.getElementById("project-jojo-spoiler-stands")) return;
+
+    const standsSection = document.getElementById("stands");
+    if (!standsSection || !standsSection.parentNode) return;
+
+    const isThai = (document.documentElement.lang || "").toLowerCase().startsWith("th");
+    const section = document.createElement("section");
+    section.className = "section";
+    section.id = "project-jojo-spoiler-stands";
+
+    const cards = [
+      ["THE SUN", "the-sun.jpg"],
+      ["SEX PISTOLS", "sex-pistols.jpg"],
+      ["PEARL JAM", "pearl-jam.webp"],
+      ["TUSK ACT 4", "tusk-act-4.png"],
+      ["PURPLE HAZE", "purple-haze.png"]
+    ];
+
+    const cardHTML = cards.map(([name, file]) => `
+      <article class="card addon-card" style="position:relative;overflow:hidden">
+        <div class="addon-badge" style="background:#b32368">SPOILER</div>
+        <div class="card-img" style="background:radial-gradient(circle at center,#211326 0%,#0b0710 76%);min-height:220px;display:flex;align-items:center;justify-content:center;overflow:hidden">
+          <img src="../assets/stands/spoilers/${file}" alt="${name}" loading="lazy" style="width:100%;height:100%;max-height:300px;object-fit:contain;object-position:center">
+        </div>
+        <div class="card-body">
+          <div class="role">${isThai ? "SPOILER • อยู่ระหว่างพัฒนา" : "SPOILER • IN DEVELOPMENT"}</div>
+          <h3>${name}</h3>
+          <p>${isThai ? "แอบสปอยไว้ก่อน — ยังไม่เปิดเผยสกิลและค่าจริง รายละเอียดอาจเปลี่ยนได้ก่อนปล่อย" : "A little preview for now — final skills, numbers and mechanics are not announced yet and may change before release."}</p>
+        </div>
+      </article>`).join("");
+
+    section.innerHTML = isThai
+      ? `<div class="eyebrow">สิ่งที่กำลังมา</div><h2>SPOILER — STANDS ใหม่</h2><p class="section-lead">แอบเปิดให้ดูก่อนบางส่วน ตัวด้านล่างยังไม่ถือว่าเล่นได้ในเวอร์ชันปัจจุบัน และดีไซน์/ระบบอาจเปลี่ยนระหว่างพัฒนา</p><div class="grid">${cardHTML}</div>`
+      : `<div class="eyebrow">WHAT'S COMING</div><h2>SPOILER — NEW STANDS</h2><p class="section-lead">A small preview of what's being worked on. These Stands are not considered playable in the current release, and their design or mechanics may change during development.</p><div class="grid">${cardHTML}</div>`;
+
+    standsSection.parentNode.insertBefore(section, standsSection.nextSibling);
+  }
+
   function insertConfigGuide() {
     if (document.getElementById("project-jojo-client-options")) return;
 
@@ -82,6 +121,7 @@
 
   function apply() {
     applyRanking();
+    insertSpoilerStands();
     insertConfigGuide();
   }
 

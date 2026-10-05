@@ -1,58 +1,66 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATUM — Project JoJo</title><link rel="stylesheet" href="../../assets/v237.css?v=438"><link rel="icon" type="image/png" sizes="32x32" href="../../project-jojo-favicon-32x32.png?v=431"><link rel="icon" type="image/png" sizes="16x16" href="../../project-jojo-favicon-16x16.png?v=431"><link rel="shortcut icon" href="../../project-jojo-favicon.ico?v=431"><link rel="apple-touch-icon" sizes="180x180" href="../../project-jojo-apple-touch-icon.png?v=431"><link rel="manifest" href="../../site.webmanifest?v=431"><meta name="theme-color" content="#0b0710"></head><body><header class="topbar"><a class="brand" href="../../en/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../../en/index.html">Home</a><a href="../../en/index.html#stands">Stand</a><a href="../../en/guide.html">Full Guide</a><a href="../../en/index.html#updates">Updates</a></nav><a class="lang" href="../../th/stands/atum.html">ไทย</a></header><main>
-
-<section class="stand-hero"><div class="stand-hero-art"><img src="../../assets/stands/atum.png" alt="ATUM"></div><div><a href="../index.html#stands" style="color:#64e8ff;text-decoration:none">← Back to Stand list</a><div class="eyebrow" style="margin-top:15px">ADDON • Mind Reading / Gambling / Minigames</div><h1 class="stand-title">ATUM</h1><p class="summary">D'Arby's mind-game Stand. ATUM is not meant to win on raw punches alone: read decisions, manage Mind Gauge, and drag a target into a wager. Human winners also receive a small <b>Winner’s High</b> mood boost; if ATUM wins, the loser is subjected to ATUM's Soul Extraction finisher.</p><div class="buttons"><a class="btn gold" href="../guide.html">Full system guide</a><a class="btn purple" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058" target="_blank" rel="noopener">Addon Workshop ↗</a></div></div></section>
-
-<section class="article"><div class="kicker">Detailed Addon Stand Guide</div><h2>ATUM</h2>
-<div class="quickfacts"><div class="fact"><span>Difficulty</span><b>High</b></div><div class="fact"><span>Best for</span><b>Reading opponents, Gauge management and mind games</b></div><div class="fact"><span>Mind Gauge</span><b>0 / 100</b></div><div class="fact"><span>Skill 4 games</span><b>RPS / Baseball / Racing = equal 1/3</b></div><div class="fact"><span>Win condition effect</span><b>SOUL EXTRACTION / FINISHER</b></div><div class="fact"><span>Human winner bonus</span><b>Winner’s High — small mood relief</b></div></div>
-
-<section class="skillbox"><h3>Skill 1 — PUNCH</h3><div class="specs"><span>0.44s CD</span><span>2.80 range</span><span>0.12 damage</span><span>1.15s full charge</span></div><p>The punch follows your aim and must physically reach a target. It can lightly assist targeting around 1.35 tiles and begins checking for a hit about 0.155 seconds after the attack starts. Full charge multiplies damage by ×1.85 and impact by ×1.45.</p><p><b>Full-charge raw damage:</b> 0.12 × 1.85 = <b>0.222</b> before level, server, PvP and critical modifiers.</p></section>
-
-<section class="skillbox"><h3>Skill 2 — BARRAGE</h3><div class="specs"><span>5.1s CD</span><span>3.10 range</span><span>0.034 / hit</span><span>14 hits</span><span>1.65s full charge</span></div><p>The Barrage follows your mouse while active. Hits are spaced about 0.14 seconds apart and the rush begins about 0.12 seconds after startup.</p><p><b>Normal:</b> 14 × 0.034 = <b>0.476</b> approximate maximum total.</p><p><b>Full charge:</b> 22 hits with ×1.18 damage per hit = 0.04012 each, about <b>0.88264</b> approximate maximum total before Level / Sandbox / PvP / Crit.</p></section>
-
-<section class="skillbox"><h3>Skill 3 — MIND READ / YES–NO</h3><div class="specs"><span>0s CD</span><span>10s duration</span><span>Costs 1 Mind Point</span><span>1.0s full charge</span></div><p><b>Tap / release before FULL = DODGE READ.</b> This defensive read lasts 10 seconds, costs 1 Mind Point and can be consumed once by a supported incoming attack. The attacker is sidestepped near their own position; distant shooters are never pulled toward ATUM. This mode <b>does not enable the Skill 4 prediction combo</b>.</p><p><b>Hold until FULL = GAMBLE READ.</b> It also costs 1 point and lasts 10 seconds, but incoming monster/player attacks <b>cannot consume it</b>. It is consumed only when Skill 4 makes real contact, enabling the YES / NO prediction phase for the wager. The YES / NO cutscene is <b>mouse-through</b>, so the presentation stays visible without blocking minigame buttons or icons underneath.</p><p><b>Only one read mode can be armed at a time.</b> If either mode is active, pressing Skill 3 again—tap or hold—only cancels the current mode. Press Skill 3 once more to arm the other mode; there is no one-press hot-swap.</p><p><b>Manual cancel refund:</b> cancelling an unused active read before timeout refunds <b>+1 Mind Point</b> (up to 100). No refund is given after DODGE READ triggers, after GAMBLE READ is consumed by Skill 4, or after the 10-second timer expires.</p><p><b>Skill 4 Passive interaction:</b> while AUTO GAMBLE PASSIVE is armed, a successful tap-S3 DODGE READ automatically challenges the exact attacker that triggered the dodge. This route does <b>not</b> grant YES/NO prediction; prediction remains exclusive to FULL-charge S3.</p></section>
-
-<section class="skillbox"><h3>MIND GAUGE</h3><div class="specs"><span>Starts 0</span><span>Maximum 100</span><span>S3 costs 1</span><span>Game win +0 to +3</span></div><p>After ATUM wins Skill 4 and the result resolves, the owner rolls 0–3 Mind Points. Manually cancelling an unused active Skill 3 read before timeout refunds the 1 point spent to arm it.</p><p>If <b>FULL-charge GAMBLE READ → S4</b> predicts correctly and ATUM still wins, the normal wager reward is guaranteed to be at least +1.</p></section>
-
-<section class="skillbox"><h3>WINNER’S HIGH — WINNER REWARD</h3><div class="specs"><span>Stress −4%</span><span>Unhappiness −5</span><span>Boredom −6</span><span>Panic −5</span></div><p>When an ATUM minigame ends with a <b>human winner</b>, that player receives a small Winner’s High mood relief. This applies to RPS, Baseball and Racing.</p><p><b>Singleplayer:</b> challenge zombies as a small break from survival. Winning gives ATUM's owner a modest Stress / Panic / Boredom relief.</p><p><b>With friends:</b> play seriously and compete for the win, or keep it casual and give a stressed friend a better chance to win. The <b>actual human winner</b> receives Winner’s High, even if they are not the ATUM owner.</p><p><b>Draws give no reward.</b> Winner’s High does not change Hunger, Thirst, Fatigue, Sickness or injuries; it is a mood bonus, not free recovery.</p></section>
-
-<section class="skillbox"><h3>Skill 4 — GAMBLE / AUTO GAMBLE PASSIVE</h3><div class="specs"><span>Tap: 3s CD</span><span>2.80 range</span><span>0 contact damage</span><span>1.0s FULL hold</span></div><p><b>Tap while Passive is OFF:</b> ATUM lunges with Skill 1's 2.80-tile reach. The touch deals no damage and starts the wager only after real contact, choosing <b>Rock Paper Scissors / Baseball / Racing</b> with equal 1/3 odds.</p><p><b>Hold to FULL:</b> toggles <b>AUTO GAMBLE PASSIVE</b> without spending Mind Gauge and without throwing the invite punch. Hold to FULL again to turn the Passive OFF.</p><p><b>While Passive is ON:</b> tap-S4 is locked and will not lunge. You must FULL-hold S4 to turn Passive OFF before ordinary tap-S4 works again. The Passive stays armed after it triggers until you disable it.</p><p><b>FULL S4 + tap S3:</b> a successful DODGE READ automatically uses the exact attacker as the Gamble target. <b>FULL S3 + tap S4</b> is the YES/NO prediction combo.</p><p>Once a minigame is open, Skill 4 cannot cancel it mid-session.</p></section>
-
-<h3 class="deep-title">SOUL EXTRACTION — WHAT HAPPENS WHEN ATUM WINS?</h3>
-<div class="strategy-grid"><div class="combo"><b>Zombie / NPC loser</b><p>The target receives ATUM's 9999-damage finisher . In Stand terms, this is ATUM <b>taking the loser's soul</b>.</p></div><div class="combo"><b>Player with PvP allowed</b><p>If Project JoJo's PvP / Safety rules allow HP damage, the losing player receives the same finisher and dies.</p></div><div class="combo"><b>Safety-protected player</b><p>ATUM does not bypass PvP rules. If HP damage is blocked, the losing player is not killed and receives a 3-second blackout instead.</p></div><div class="combo"><b>If the ATUM owner loses</b><p>The owner is not killed by their own finisher. All four ATUM skills are silenced/locked for <b>7 seconds</b>, and resolution applies a <b>3-second blackout</b>.</p></div></div>
-
-<div class="updatebox"><b>What happens after the game ends</b><p>Show the win/loss result for about 0.5s → close the game UI → keep protection for 0.5s → restore the player to the world → 0.5s later resolve the loser / Soul Finisher → if ATUM won, play Finish Point and roll +0 to +3 Mind Gauge.</p></div>
-<div class="updatebox"><b>While a minigame is active</b><p>Participants are phased out of normal combat using protection/visibility behavior based on Project JoJo’s King Crimson special-state approach: damage protection, zombie aggro clearing and remote-client hiding are maintained during the game, while each local player still sees themselves on their own client. This uses the protection/hiding behavior only—<b>no Clone/Decoy</b> is created.</p></div>
-
-<h3 class="deep-title">ROCK PAPER SCISSORS</h3>
-<div class="strategy-grid"><div class="combo"><b>Choice time</b><p>The challenged side gets 8 seconds to choose Rock / Paper / Scissors. Zombies use a server-side random choice.</p></div><div class="combo"><b>ATUM owner timer</b><p>The ATUM owner also sees an 8-second countdown, but that display does not automatically make the owner lose when it reaches zero.</p></div><div class="combo"><b>FULL S3 → S4</b><p>The 5-second prediction phase only appears when Skill 3 was <b>fully charged into GAMBLE READ</b>. YES reveals the real choice; NO at minimum proves the guessed option is not the answer. Tap S3 is DODGE READ and does not enter prediction.</p></div><div class="combo"><b>Tie</b><p>A tie resolves without Soul Finisher and without a win reward.</p></div></div>
-
-<h3 class="deep-title">BASEBALL</h3>
-<div class="strategy-grid"><div class="combo"><b>Intro</b><p>About <b>6.6 seconds</b> of opening presentation before the real decision timer starts.</p></div><div class="combo"><b>HIGH / MIDDLE / LOW</b><p>During the 8-second decision window, a player target is the Pitcher and secretly chooses HIGH / MIDDLE / LOW. If the Pitcher does not answer before time expires, the server automatically randomizes a pitch and the game continues. ATUM is the Batter and must swing at the matching location. Match = Hit / ATUM wins. Wrong location = Miss / ATUM loses.</p></div><div class="combo"><b>GAMBLE READ</b><p>If GAMBLE READ is armed before Baseball starts, YES / NO reads the real locked pitch whether it came from the Pitcher’s manual choice or the server’s automatic timeout pitch.</p></div><div class="combo"><b>HOME RUN</b><p>A correct hit has a normal <b>10%</b> Home Run chance. A correct swing in the final <b>2 seconds</b> guarantees Home Run.</p></div><div class="combo"><b>What it means in play</b><p>Hit and Home Run are both ATUM wins for Soul Extraction / Gauge. Home Run is a special result presentation, not a separate extra Gauge roll.</p></div></div>
-
-<h3 class="deep-title">RACING</h3>
-<div class="quickfacts"><div class="fact"><span>Intro</span><b>8.8s</b></div><div class="fact"><span>Ready</span><b>4.5s</b></div><div class="fact"><span>Main race</span><b>36s</b></div><div class="fact"><span>Vehicle HP</span><b>100</b></div><div class="fact"><span>Base speed</span><b>5.7</b></div></div>
-<div class="strategy-grid">
-<div class="combo"><b>1 — BOOST</b><p>Hold with no cooldown. HP drain ramps from about <b>2.2 → 4.6 HP/s</b> over 2.2 seconds. Your speed scales from ×1.28 to ×1.95 while the non-boosting opponent loses relative pace. If both boost together, the relative advantage cancels while both still pay HP.</p></div>
-<div class="combo"><b>Hidden Launch Mash</b><p>Start rapidly tapping <b>1 / BOOST</b> as soon as the Racing screen opens; you do not need to wait for READY. Each tap must continue the chain within about <b>0.42s</b>. At least <b>5 taps</b> arms a 2-second launch; a correct S3 Boost/No Boost read makes it <b>4 seconds</b>. More taps increase only this launch speed with strong diminishing returns: 5 = ×1.08, 10 = ×1.13, 18 = ×1.18, 30 = ×1.23, 46 = ×1.28, 68 = ×1.32 and 100+ = ×1.35 max. Tap count is capped at 100. Once the race actually starts, 1 returns to the normal held Skill 1 BOOST, and combined speed still has a safety cap.</p></div>
-<div class="combo"><b>2 — ATTACK</b><p>1.5-second warning charge → 260 ms dash → 350 ms return. Cooldown <b>4.8s</b>. A normal hit deals <b>16 vehicle damage</b>, knocks about 0.55 distance off the opponent and applies a 1.1-second ×0.78 slow.</p></div>
-<div class="combo"><b>ATTACK vs BLOCK</b><p>A blocked Attack deals <b>12 counter damage</b> to the attacker. Two Attacks colliding deal <b>8 HP to each car</b>.</p></div>
-<div class="combo"><b>3 — BLOCK</b><p>Costs <b>4 HP</b> to activate a <b>0.75-second</b> 100% protection window. Cooldown <b>5s</b>.</p></div>
-<div class="combo"><b>Normal car contact</b><p>Mouse steering overlap deals <b>no HP damage</b>. The cars are separated; real damage comes from ATTACK / counter / HP costs / leaving the road.</p></div>
-<div class="combo"><b>Vehicle KO / leaving the road</b><p>HP reaching 0 or leaving the road makes that car lose. The destroyed car fades/slides away for about 0.7s, then the surviving car enters the Final Road alone and must actually cross the finish line before the result resolves. A simultaneous double KO/off-road is a Draw.</p></div>
-<div class="combo"><b>Final Stretch</b><p>If both cars survive, the main road runs the full <b>36 seconds</b> before the Final Road. A 0.76-second fade preserves the exact lead gap and the finish remains another <b>26 distance units</b> beyond the leader. If one car was KO’d earlier, the same transition removes the destroyed car and leaves the survivor to finish alone. Steering locks in the Final, while allowed race actions remain active until the line is crossed.</p></div>
-<div class="combo"><b>AI Difficulty</b><p>EASY 10% / MEDIUM 20% / HARD 30% / HARDCORE 40%. Higher difficulty manages HP and skill timing more aggressively.</p></div>
-</div>
-
-<h3 class="deep-title">DAMAGE / LEVEL SCALING</h3>
-<div class="updatebox"><p>Damage values shown above are the skill's base values. Project JoJo then applies Stand Level damage scaling from <b>50% at Lv.1 → 100% at Lv.100</b> linearly. Disabling Stand Level behaves as max level. Sandbox Stand Damage, PvP scaling and criticals can modify the final applied damage further.</p></div>
-
-<h3 class="deep-title">HOW TO ACTUALLY PLAY IT</h3>
-<div class="strategy-grid"><div class="combo"><b>Do not waste Mind Points</b><p>S3 has no cooldown, but the point is still a resource. Cancel an unused read before timeout to recover the point; triggered or expired reads are not refunded.</p></div><div class="combo"><b>FULL S3 → TAP S4</b><p>Fully charge S3 into GAMBLE READ → tap S4 and make real contact → use YES/NO prediction → win → Soul Extraction → roll 0–3 Gauge back.</p></div><div class="combo"><b>FULL S4 → TAP S3</b><p>FULL-hold S4 to arm AUTO GAMBLE PASSIVE → tap S3 for DODGE READ → if the dodge triggers, the attacker is challenged automatically without needing a tap-S4 reaction.</p></div><div class="combo"><b>Winner’s Tip — Solo / With Friends</b><p><b>Solo:</b> use zombies as opponents during downtime. Winning grants Winner’s High, giving a small reduction to Stress, Unhappiness, Boredom and Panic—useful after a rough survival run, but you still have to win the game for real.</p><p><b>With friends:</b> you can leave PvP enabled and compete seriously, but if you only want a fun stress-relief match, set PvP / Safety so players <b>cannot damage each other</b> first. If player damage is allowed and your friend loses, Soul Extraction can kill them. With player damage blocked, the winner still receives Winner’s High normally—so you can compete honestly or occasionally give a stressed friend a better chance to win.</p></div><div class="combo"><b>Baseball rewards nerve</b><p>Correct is more important than late, but if you are confident, landing the correct swing inside the final 2 seconds guarantees Home Run.</p></div><div class="combo"><b>Racing is HP economy</b><p>BOOST uses HP as fuel. Over-spending it leaves you one clean ATTACK away from losing the entire wager.</p></div></div>
-
-<div class="dangerbox"><b>Remember:</b> Skill 4 is a real wager. If ATUM wins, a valid hostile loser is Soul-Finished. If ATUM loses, the owner loses access to all four skills for 7 seconds.</div>
-
-<h3 class="deep-title">ADDON / MODEL CREDIT</h3>
-<div class="updatebox"><b>Project JoJo — Addon ATUM</b><p>Workshop ID <b>3811605058</b> • Mod ID <b>ProjectJoJoAddonATUM</b><br>Required Core: Project JoJo • Workshop 3807750510 • Mod ID JoJoStandSystem0183Standalone</p><p>Original ATUM model: <a href="https://models.spriters-resource.com/mobile/jojosbizarreadventurediamondrecordsreversal/asset/313882/" target="_blank" rel="noopener">The Models Resource — JoJo's Bizarre Adventure: Diamond Records Reversal</a><br>Adapted for Project Zomboid with additional rigging, animation and optimization work.</p></div>
-
-<nav class="stand-nav"><a href="echoes-act-3.html">← Base roster<br>ECHOES ACT 3</a><a href="../index.html#stands">Back to Stand list →<br>PROJECT JOJO</a></nav>
-</section></main><footer class="footer">PROJECT JOJO • ATUM ADDON<br><small>Workshop ID 3811605058 • Mod ID ProjectJoJoAddonATUM</small></footer><script src="../../assets/stand-view.js?v=443" defer></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATUM — Project JoJo</title><link rel="stylesheet" href="../../assets/v237.css?v=246"><link rel="icon" type="image/png" sizes="32x32" href="../../project-jojo-favicon-32x32.png"><meta name="theme-color" content="#0b0710"></head><body><header class="topbar"><a class="brand" href="../../en/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../../en/index.html">Home</a><a href="../../en/index.html#stands">Stand</a><a href="../../en/guide.html">Full Guide</a></nav><a class="lang" href="../../th/stands/atum.html">ไทย</a></header><main><section class="stand-hero"><div class="stand-hero-art"><img src="../../assets/stands/atum.png" alt="ATUM"></div><div><a href="../index.html#stands" style="color:#64e8ff;text-decoration:none">← Back</a><div class="eyebrow" style="margin-top:15px">ADDON • Mind Reading / Soul Marks / Gambling</div><h1 class="stand-title">ATUM</h1><p class="summary">D’Arby’s mind-game Stand: read attacks, mark souls and turn contact into RPS, Baseball or Racing wagers.</p></div></section><section class="article"><p>Do you trust your instincts?</p>
+<p><b>ATUM</b> is a Project JoJo addon built around mind games, prediction, Soul Marks and gambling rather than raw physical power.</p>
+<p><b>Singleplayer / Host / Multiplayer supported.</b></p>
+<p><b>Requires Project JoJo v0.23.0.246+</b></p>
+<h2>WIKI</h2>
+<p><b>🇹🇭 ภาษาไทย / EN English</b></p>
+<h2>HOW TO GET ATUM</h2>
+<p>Use the normal Stand Arrow from Project JoJo. ATUM is part of the existing Stand pool; there is no separate ATUM Arrow.</p>
+<h2>CONTROLS</h2>
+<p><b>CAPS LOCK</b> — Summon / Dismiss</p>
+<p><b>1</b> — Punch</p>
+<p><b>2</b> — Barrage</p>
+<p><b>3</b> — Mind Read</p>
+<p><b>4</b> — Gamble</p>
+<p>ATUM follows the Core's personal <b>Mouse / Facing Direction / Controller Aim</b> targeting mode.</p>
+<h2>SKILL 3 — MIND READ</h2>
+<p><b>Tap / release before FULL — DODGE READ</b></p>
+<p>Costs 1 Mind Point and arms a 10-second defensive read. A supported incoming attack can trigger the dodge.</p>
+<p>A successful DODGE READ against a <b>non-player attacker</b> applies a <b>Soul Mark for 3 minutes</b>. Players are never Soul Marked.</p>
+<p><b>Hold until FULL — GAMBLE READ</b></p>
+<p>Costs 1 point and prepares the YES / NO prediction route for Skill 4. It is consumed when Gamble makes real contact. The YES/NO presentation is mouse-through and does not block the minigame controls underneath it.</p>
+<p>Cancelling an unused active read before timeout refunds the 1 Mind Point.</p>
+<h2>SOUL MARK / MULTI-SOUL GAMBLE</h2>
+<p>Soul Marks are tracked independently per ATUM owner.</p>
+<p>When a Gamble begins, ATUM binds every still-marked living non-player target within roughly <b>18 tiles</b> and the allowed Z range into the same wager. The minigame UI still plays against the main target only.</p>
+<ul>
+<li>ATUM wins → the normal target and every bound marked soul receive Soul Extraction</li>
+<li>ATUM loses → 3-second blackout remains, while Skill Silence scales by <b>7 seconds × number of wager targets</b></li>
+<li>The bound target count is locked when the Gamble starts</li>
+</ul>
+<p>Skill 4's HUD can show how many marked targets are currently eligible to be pulled into a Gamble. AUTO GAMBLE PASSIVE state is shown on the same Skill 4 area.</p>
+<h2>SKILL 4 — GAMBLE / AUTO GAMBLE</h2>
+<p><b>Tap 4</b> lunges using the same contact reach as Punch. On real contact the server chooses one of three games with equal 1/3 odds:</p>
+<ul>
+<li>Rock Paper Scissors</li>
+<li>Baseball</li>
+<li>Racing</li>
+</ul>
+<p><b>Hold 4 to FULL</b> toggles AUTO GAMBLE PASSIVE. While active, normal Tap 4 is disabled. A successful Tap-S3 DODGE READ automatically challenges the exact attacker that triggered the dodge.</p>
+<p><b>FULL S3 → Tap 4</b> is the prediction combo.</p>
+<h2>GAMES</h2>
+<p><b>RPS</b> — challenged side has 8 seconds; zombies choose server-side. FULL-S3 prediction adds the YES/NO read phase.</p>
+<p><b>BASEBALL</b> — Pitcher chooses HIGH / MIDDLE / LOW. If a player does not answer in time the server automatically randomizes the pitch. Correct swing wins; correct swing in the final 2 seconds guarantees HOME RUN, otherwise a correct hit has a 10% Home Run chance.</p>
+<p><b>RACING</b> — 8.8s intro + 4.5s READY + 36s main race. Manage 100 vehicle HP with BOOST, ATTACK and BLOCK. A hidden Launch Mash can begin as soon as the Racing screen opens; 5+ rapid Skill-1 taps arm an opening speed bonus with diminishing returns and a hard cap.</p>
+<p>Racing is longer than the other games, so its base Mind reward is higher.</p>
+<h2>MIND GAUGE & REWARDS</h2>
+<p><b>Mind Gauge: 0 / 100</b></p>
+<p>Skill 3 costs 1 point.</p>
+<ul>
+<li>RPS / Baseball ATUM win: <b>+0 to +3</b></li>
+<li>Racing ATUM win: <b>+2 to +5</b></li>
+<li>Correct FULL-S3 prediction + win: <b>+1 additional Mind Point</b></li>
+<h2>WINNER'S HIGH</h2>
+</ul>
+<p>The actual <b>human winner</b> of an ATUM minigame receives a small mental recovery bonus. It can reduce Stress, Unhappiness, Boredom and Panic. Racing gives the strongest Winner's High because it is the longest game.</p>
+<p>If the ATUM owner used FULL S3, predicted correctly and still won, Winner's High is multiplied by <b>×1.25</b>.</p>
+<p>Winner's High never restores Hunger, Thirst, Fatigue, injuries, Pain or Sickness.</p>
+<h2>MINIGAME PROTECTION</h2>
+<p>Participants are temporarily protected/phased from normal outside combat while the game is active. Visibility and protection are restored after resolution. Required minigame UI remains visible even if the player uses Minimal/Hidden Stand HUD.</p>
+<h2>PROJECT JOJO CLIENT OPTIONS</h2>
+<p>ATUM follows the Core's Stand HUD <b>Normal / Minimal / Hidden</b>, HUD Opacity/Scale, Personal Project JoJo Volume and targeting mode. Minigame UI and YES/NO interfaces remain available because they are gameplay controls, not decorative HUD.</p>
+<p><b>▶ HARVEST ADDON</b></p>
+<p><b>▶ MAIN PROJECT JOJO MOD</b></p>
+<p><b>ATUM:</b> v0.24.0.062</p>
+<p><b>Workshop ID:</b> 3811605058</p>
+<p><b>Mod ID:</b> ProjectJoJoAddonATUM</p></section></main><footer class="footer">PROJECT JOJO • ATUM</footer></body></html>

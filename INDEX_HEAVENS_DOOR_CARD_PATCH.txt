@@ -1,0 +1,17 @@
+PROJECT JOJO WIKI — HEAVEN'S DOOR CARD PATCH
+
+Replace the existing HEAVEN'S DOOR addon card in BOTH en/index.html and th/index.html.
+
+=== EN — en/index.html ===
+<article class="card addon-card">
+  <div class="addon-badge">ADDON</div>
+  <a class="card-img" href="stands/heavens-door.html"><img src="../assets/stands/heavens-door-v440.webp" alt="HEAVEN'S DOOR"></a>
+  <div class="card-body"><div class="role">Book Rewrite / Commands / Scripted AI</div><h3>HEAVEN'S DOOR</h3><p>Open living targets like books, spend REWRITE on written orders, and turn zombies into guards, attackers or workers.</p><a class="more" href="stands/heavens-door.html">Open full Stand guide →</a></div>
+</article>
+
+=== TH — th/index.html ===
+<article class="card addon-card">
+  <div class="addon-badge">ADDON</div>
+  <a class="card-img" href="stands/heavens-door.html"><img src="../assets/stands/heavens-door-v440.webp" alt="HEAVEN'S DOOR"></a>
+  <div class="card-body"><div class="role">เขียนหนังสือ / คำสั่ง / Scripted AI</div><h3>HEAVEN'S DOOR</h3><p>เปิดสิ่งมีชีวิตเป็นหนังสือ ใช้ REWRITE เขียนคำสั่ง และเปลี่ยนซอมบี้ให้เป็นยาม ผู้โจมตี หรือคนงาน</p><a class="more" href="stands/heavens-door.html">อ่านแบบละเอียด →</a></div>
+</article>

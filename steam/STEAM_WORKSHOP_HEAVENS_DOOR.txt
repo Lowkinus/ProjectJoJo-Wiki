@@ -1,0 +1,180 @@
+[h1]PROJECT JOJO — ADDON: HEAVEN'S DOOR[/h1]
+
+Open them like a book.
+Write the rule.
+Make the world obey.
+
+[b]HEAVEN'S DOOR[/b] joins Project JoJo as a control / utility Stand built around Book Rewrite, delayed orders and Scripted Zombie AI.
+
+Open targets.  
+Read their book.  
+Write commands.  
+Turn zombies into guards, attackers or workers.
+
+[b]Singleplayer / Host / Multiplayer supported.[/b]
+
+[hr][/hr]
+
+[h2]REQUIRED MOD[/h2]
+
+[b]THIS IS AN ADDON FOR PROJECT JOJO.[/b]
+
+The main [b]Project JoJo[/b] mod must be installed and enabled.
+
+HEAVEN'S DOOR uses Project JoJo's Stand Arrow, Stand Levels, PvP / Safety, Combat & Targeting, Stand HUD, Client Options and Multiplayer systems.
+
+[hr][/hr]
+
+[h2]PROJECT JOJO WIKI[/h2]
+
+The Workshop page is only the quick overview.
+
+For the full [b]79-command reference[/b], exact effects, targets, durations, REWRITE costs, delayed orders, Zombie jobs and play tips:
+
+[url=https\://lowkinus.github.io/ProjectJoJo-Wiki/en/stands/heavens-door.html]
+[img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/guide-banner.png[/img]
+[/url]
+
+[b]▲ CLICK THE IMAGE TO OPEN THE FULL HEAVEN'S DOOR GUIDE ▲[/b]
+
+[b]🇹🇭 ภาษาไทย / EN English[/b]
+
+[hr][/hr]
+
+[h2]OTHER OFFICIAL ADDONS[/h2]
+
+[url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url]
+
+[b]ATUM[/b] — Mind Reading / Soul Marks / Gambling  
+[b]HARVEST[/b] — Swarm Combat / Item Search / Colony Management
+
+[hr][/hr]
+
+[h2]CONTROLS[/h2]
+
+[b]CAPS LOCK[/b] — Summon / Dismiss Stand  
+[b]1[/b] — BARRAGE  
+[b]2[/b] — PAGE OPEN BARRAGE  
+[b]3 TAP[/b] — PAGE TOUCH  
+[b]3 FULL[/b] — WRITE MYSELF  
+[b]4 TAP[/b] — Place BOOK TRAP  
+[b]4 HOLD[/b] — Collect BOOK TRAP
+
+Combat contact follows your Project JoJo Targeting Mode:
+
+• [b]Mouse / Pointer[/b]  
+• [b]Facing Direction[/b]  
+• [b]Controller Aim[/b]
+
+The Book screen is gameplay UI and still uses normal pointer interaction.
+
+[hr][/hr]
+
+[h2]HOW HEAVEN'S DOOR WORKS[/h2]
+
+[b]1 — OPEN THE BOOK[/b]
+
+Build Book hits with Heaven's Door contact, use PAGE OPEN BARRAGE, PAGE TOUCH, or let BOOK TRAP open targets for you.
+
+[b]2 — WRITE THE ORDER[/b]
+
+Choose a command the target can actually perform. Orders may execute immediately, after a delay, or when a supported target enters the trigger range.
+
+[b]3 — READ THE RESULT[/b]
+
+A green message above you confirms when an order actually succeeds. Timed effects show a red message when they end or are cancelled.
+
+A successful written command consumes the currently opened book, so open the target again before writing the next command.
+
+[hr][/hr]
+
+[h2]REWRITE — 0 / 100[/h2]
+
+REWRITE is designed as a [b]large combat reserve[/b], not a fast passive mana bar.
+
+Most commands are cheap, so a full gauge can support a long chain of orders.
+
+After a successful write, normal recovery pauses for [b]15 seconds[/b], then recovers very slowly at [b]0.02 / sec[/b]. Writing again restarts the wait.
+
+[b]READING A REAL OPEN BOOK = 6.0 / sec[/b]
+
+You do not need to finish reading anything. Keep the valid Book UI open and REWRITE begins recovering quickly immediately.
+
+Opening the Book does [b]not[/b] instantly refill the gauge.
+
+[hr][/hr]
+
+[h2]SKILL 1 — BARRAGE[/h2]
+
+Fast close-range rush that deals light damage and contributes to shared Book progress.
+
+It helps prepare the target, but does not open the Book by itself.
+
+[hr][/hr]
+
+[h2]SKILL 2 — PAGE OPEN BARRAGE[/h2]
+
+A lighter rush focused on opening the target's Book through repeated physical contact.
+
+Once shared Book progress reaches the requirement, this route opens the target.
+
+[hr][/hr]
+
+[h2]SKILL 3 — PAGE TOUCH / WRITE MYSELF[/h2]
+
+[b]Tap[/b] — zero-damage physical touch that immediately opens a valid target on real contact.
+
+[b]Full charge[/b] — open your own Book for self-buffs, knowledge and self-directed orders.
+
+[hr][/hr]
+
+[h2]SKILL 4 — BOOK TRAP[/h2]
+
+Place one persistent Book Trap at range.
+
+The trap pulses in an area and has a shared budget of [b]10 Book hits[/b]. Each valid target hit consumes one point from that budget.
+
+If seven valid targets are inside one pulse, seven hits are spent at once. When the budget is exhausted, the trap disappears and a new one can be placed.
+
+Hold Skill 4 to collect your existing trap.
+
+[hr][/hr]
+
+[h2]79 WRITTEN COMMANDS[/h2]
+
+Heaven's Door includes commands for:
+
+• Mind / Memory  
+• Movement & Orders  
+• Restrictions  
+• Body Commands  
+• Knowledge  
+• Items  
+• Zombie Work / Utility  
+• Special effects
+
+Written Zombies can guard, attack, follow, patrol, fetch items, clean corpses, work with world objects and more.
+
+The full command list is intentionally kept in the Wiki so this Workshop page stays readable.
+
+[url=https\://lowkinus.github.io/ProjectJoJo-Wiki/en/stands/heavens-door.html][b]▶ OPEN FULL HEAVEN'S DOOR COMMAND GUIDE[/b][/url]
+
+[hr][/hr]
+
+[h2]PROJECT JOJO CLIENT OPTIONS[/h2]
+
+HEAVEN'S DOOR follows the Core's:
+
+• Stand Targeting Mode  
+• Stand HUD Normal / Minimal / Hidden  
+• HUD Opacity / Scale  
+• Personal Project JoJo Volume  
+• Personal keybinds
+
+The Book / Command screen remains available because it is required gameplay UI.
+
+[hr][/hr]
+
+[b]HEAVEN'S DOOR:[/b] v0.2.09  
+[b]Workshop ID:[/b] 3817697288  
+[b]Mod ID:[/b] ProjectJoJoAddonHeavensDoor

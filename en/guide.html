@@ -1,100 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project JoJo — Full System Guide</title><link rel="stylesheet" href="../assets/v237.css?v=480"><link rel="icon" type="image/png" sizes="32x32" href="../project-jojo-favicon-32x32.png?v=431"><meta name="theme-color" content="#0b0710"></head><body><header class="topbar"><a class="brand" href="../en/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../en/index.html">Home</a><a href="../en/index.html#stands">Stands</a><a href="../en/beginner-guide.html">Beginner Guide</a><a href="../en/guide.html">Full Guide</a></nav><a class="lang" href="../th/index.html">ไทย</a></header>
-<main><section class="article">
-<p class="summary">This page explains Project JoJo's shared systems in plain language: what each rule does, what the player needs to know, and examples for the parts that can be confusing.</p>
-<h1>PROJECT JOJO — FULL SYSTEM GUIDE</h1>
-
-<div class="updatebox"><b>1) STAND ARROW — Getting a Stand</b>
-<p>Stand Arrows can appear in world loot and rarely drop from zombies. At the default 1x setting, the base zombie drop is roughly <b>1 in 250</b>. Garages, tool crates, mechanic shops and mechanic storage are good places to look; vehicle loot is intentionally rarer.</p>
-<p>The Arrow uses Project Zomboid Condition directly: <b>3/3 → 2/3 → 1/3 → gone</b>. In simple terms, one Arrow has three successful uses and Condition is spent after a successful Stand assignment.</p>
-<p><b>Example:</b> Rerolling from Star Platinum to The World does not delete Star Platinum's progression. If that character gets SP again later, the old SP progression remains.</p>
-</div>
-
-<div class="updatebox"><b>2) SUPER ARROW — Random roll or direct choice</b>
-<p><b>Super Arrow is OFF by default.</b> With it disabled, using a Stand Arrow rolls randomly from the Stand Pool currently loaded by the game.</p>
-<p>When the world/server enables Super Arrow, the same Arrow opens a choice list built from Stands that are actually registered. Core Stands and enabled official addons appear automatically; an addon that is not installed/enabled cannot be selected.</p>
-<p>The chosen Stand is still validated by authority so Singleplayer, Host and Multiplayer use the same assignment rules.</p>
-<p><b>Do not confuse it with Infinite Arrow:</b> Super Arrow changes “random” into “choose.” The Arrow still loses Condition normally unless <b>Infinite Stand Arrow</b> is enabled separately.</p>
-</div>
-
-<div class="updatebox"><b>3) BASIC CONTROLS / Tap vs Hold</b>
-<p><b>CAPS LOCK</b> summons or dismisses the Stand. Top-row <b>1 / 2 / 3 / 4</b> are Skills 1–4.</p>
-<p>Many moves have different tap and full-charge results. Star Platinum/The World Skill 4 is Time Dash on tap and Time Stop on full hold; King Crimson Skill 4 is Dash on tap and Time Erase on full hold.</p>
-<p><b>Example:</b> When you roll a new Stand, do not test each key only once and assume that is the full kit. Try both tap and hold.</p>
-</div>
-
-<div class="updatebox"><b>4) TARGETING MODE</b>
-<p>Open <b>Options → Mods → Project JoJo</b> and choose:</p>
-<ul><li><b>Mouse / Pointer</b> — attack direction follows the cursor.</li><li><b>Facing Direction</b> — attack direction follows the character's facing. Useful for controller/keyboard play and view mods where you do not want to rely on a cursor.</li><li><b>Controller Aim</b> — uses the controller aim/attack axis and falls back to Facing Direction inside the dead-zone.</li></ul>
-<p>Changing the input method does not change skill range, remove walls, or turn attacks into through-wall auto-lock.</p>
-</div>
-
-<div class="updatebox"><b>5) DIRECTIONAL FIRST-CONTACT</b>
-<p>Line/contact skills use their real authored reach, then check the first valid contact on that attack line. A nearby cursor no longer shortens a long move, but the move also cannot skip a body or wall that should block it.</p>
-<p><b>Example:</b> Star Finger reaches farther than a punch, but a zombie standing directly in front can still be the first thing hit even if the cursor is placed past it.</p>
-</div>
-
-<div class="updatebox"><b>6) BARRAGE CONTACT / CLASH / GUARD</b>
-<p><b>Barrage Contact</b> keeps a small grace window so rapid hits do not vanish because a target moves a tiny amount or a frame arrives late.</p>
-<p><b>Barrage Clash</b> lets supported offensive Barrages collide when fighters are close enough and genuinely aiming/facing into each other. Colliding hits cancel before normal damage.</p>
-<p><b>Barrage Guard</b> creates a forward defense line during supported Barrages. It can stop specific projectiles such as The World Knife, Silver Chariot Rapier Shot and Crazy Diamond Glass/Homing.</p>
-<p><b>Example:</b> Guarding the front against a knife does not mean rear shots, explosions, large fire areas or THREE FREEZE use the same rule.</p>
-</div>
-
-<div class="updatebox"><b>7) TIME STOP</b>
-<p>Star Platinum stops time for 5 seconds; The World for 9. Frozen actors are pinned, delayed damage is released when time moves again, and moving projectiles inside the stopped area pause before resuming from the same point.</p>
-<p>SP/TW users caught inside another Time Stop have their own time-power interaction; this does not mean they simply walk for free through someone else's entire Stop.</p>
-</div>
-
-<div class="updatebox"><b>8) TIME STOP vs TIME ERASE</b>
-<p>Time Stop and Time Erase do not freely run at full strength on top of each other. An active/pending Stop blocks a new full Erase. If Erase already existed, incoming Stop duration is spent against the remaining Erase time first; only excess becomes real stopped time.</p>
-<p><b>Example:</b> If Erase has 4 seconds remaining and a 9-second Stop arrives, roughly the first 4 seconds cancel against Erase and only the remaining portion becomes stopped time.</p>
-</div>
-
-<div class="updatebox"><b>9) STAND LEVEL</b>
-<p>Every Stand stores its own <b>Lv.1–100</b> progression. Lower levels start around half of full level-scaled damage and climb toward full power at Lv.100. Stand-caused zombie kills grant EXP.</p>
-<p>Switching Stands does not erase old progression. Turning the Stand Level System OFF makes Stands operate at full power while saved progression remains preserved.</p>
-</div>
-
-<div class="updatebox"><b>10) SUMMONED STAND DEFENSE</b>
-<p>While a registered Stand is summoned, the owner takes <b>33% less net damage</b>, based on actual damage after vanilla/other-mod reductions. It is damage reduction, not invulnerability.</p>
-</div>
-
-<div class="updatebox"><b>11) PvP / SAFETY</b>
-<p>HP/lethal player damage respects Project Zomboid PvP/Safety. Project JoJo also distinguishes damage from utility/crowd control, so some non-damaging interactions have their own rules.</p>
-<p>Examples that need their specific Stand rules include Time Stop, THREE FREEZE, Space Pull, Epitaph/reposition, First Bomb attachment and addon utility commands.</p>
-</div>
-
-<div class="updatebox"><b>12) VEHICLE / WORLD SAFETY</b>
-<p>Stand attacks still respect vehicles and world collision, while safeguards separate “this object blocks the attack” from “the attack should mutate this object's durability/state.” Unsupported custom objects are protected instead of being randomly damaged.</p>
-</div>
-
-<div class="updatebox"><b>13) CLIENT OPTIONS — Per-player settings</b>
-<ul>
-<li>Stand Targeting Mode: Mouse / Facing / Controller</li>
-<li>Stand HUD: Normal / Minimal / Hidden</li>
-<li>HUD Opacity: 20–100%</li>
-<li>HUD Scale: 70–150%</li>
-<li>Personal Project JoJo Volume: 0–100%</li>
-<li>Personal keybinds</li>
-</ul>
-<p><b>Reset Visual / Audio / Targeting</b> restores presentation/audio/targeting without touching keybinds. <b>Reset Keybinds</b> separately restores Caps Lock and Skills 1–4.</p>
-<p>Required gameplay UI such as ATUM minigames, HARVEST Search and Heaven's Door Book/Command stays available even if the passive Stand HUD is Hidden.</p>
-</div>
-
-<div class="updatebox"><b>14) SANDBOX SETTINGS — Shared world/server settings</b>
-<p><b>Arrow Drop Multiplier</b> — controls how rare Stand Arrows are.</p>
-<p><b>Stand Damage</b> — controls overall Stand damage.</p>
-<p><b>Stand Level System</b> — enables/disables Lv.1–100 progression scaling.</p>
-<p><b>Give Stand Arrow on Join</b> — optional starting Arrow.</p>
-<p><b>Infinite Stand Arrow</b> — prevents Condition loss after a successful Arrow use.</p>
-<p><b>Super Arrow</b> — OFF by default; when enabled, turns random rolling into a list of currently registered Stands.</p>
-<p>Some addons expose their own Sandbox settings too. For example, HARVEST has regeneration-speed tuning without turning that option into Search-speed acceleration.</p>
-</div>
-
-<h2>Official addons</h2>
-<p><a href="stands/atum.html"><b>ATUM</b></a> — attack reading, Soul Marks, Mind Gauge and RPS/Baseball/Racing wagers.</p>
-<p><a href="stands/harvest.html"><b>HARVEST</b></a> — a shared colony of up to 500 units, Search Command and area control.</p>
-<p><a href="stands/heavens-door.html"><b>HEAVEN'S DOOR</b></a> — open Books, spend REWRITE on commands, and control written-zombie behavior/jobs.</p>
-
-<div class="tipbox"><b>Simple rule:</b> if everyone in the world needs the same value, look under Sandbox. If it is your own HUD, audio or aiming method, look under Client Options.</div>
-</section></main><footer class="footer">PROJECT JOJO • FULL SYSTEM GUIDE<br><small>Workshop ID 3807750510 • Mod ID JoJoStandSystem0183Standalone</small></footer></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project JoJo — Full System Guide</title><link rel="stylesheet" href="../assets/v237.css?v=484"><link rel="icon" type="image/png" sizes="32x32" href="../project-jojo-favicon-32x32.png?v=431"><meta name="theme-color" content="#0b0710"><style>.balance-table{width:100%;border-collapse:collapse;margin:18px 0}.balance-table th,.balance-table td{padding:9px 10px;border-bottom:1px solid #41294d;text-align:left}.balance-table th{color:#ffd66b}.balance-table td:last-child{font-weight:900;color:#81f0ff}.version-pill{display:inline-block;padding:6px 10px;border:1px solid #8b5aa2;border-radius:999px;margin:3px 5px 3px 0;background:#160d1d}.note-284{padding:14px 16px;border-left:4px solid #ffd66b;background:#160d1d;margin:18px 0}</style></head><body><header class="topbar"><a class="brand" href="../en/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../en/index.html">Home</a><a href="../en/index.html#stands">Stands</a><a href="../en/guide.html">Full Guide</a><a href="../en/mastery.html">Mastery / Balance</a></nav><a class="lang" href="../th/index.html">ภาษาไทย</a></header><main>
+<section class="article"><div class="eyebrow">CORE v0.23.0.284 • BUILD 42+</div><h1>PROJECT JOJO — FULL SYSTEM GUIDE</h1><p class="summary">Shared rules for Singleplayer / Host / Multiplayer: Stand Arrows, targeting, Barrage systems, temporal systems, progression, PvP and Official Addons.</p>
+<div class="note-284"><b>New in .284:</b> LV.1 remains 50% Damage, LV.100 now reaches 120%, the new XP curve is about 1,059 Stand kills, and many skills gain level-based cooldown mastery. <a href="mastery.html">Open the full cooldown table →</a></div>
+<h2>1) STAND ARROW</h2><p>Default zombie drop is roughly 1/250. One Arrow has 3 successful uses: 3/3 → 2/3 → 1/3 → removed. Super Arrow changes random roll into a loaded-Stand selection list; Infinite Stand Arrow prevents Condition loss.</p>
+<h2>2) CONTROLS / CHARGE</h2><p>CAPS LOCK summons/dismisses. 1–4 activate skills. Many skills have Tap/Hold behavior: SP/TW Skill 4 is Time Dash / Time Stop, while KC Skill 4 is Time Dash / Time Erase.</p>
+<h2>3) TARGETING / FIRST CONTACT</h2><p>Mouse, Facing Direction and Controller Aim are supported. Input mode does not bypass collision or first-contact rules.</p>
+<h2>4) BARRAGE CLASH / GUARD</h2><p>Supported offensive Barrages can clash and consume hits against each other. SP/TW/CD/SC/KC have frontal Barrage Guard against supported projectiles such as TW Knife, SC Rapier and CD Glass. It is not 360-degree immunity.</p>
+<h2>5) TIME STOP</h2><p>SP stops time for 5 sec; TW for 9 sec. Frozen actors, animations and supported projectiles pause, while deferred damage resolves when time resumes. Core .282+ adds hard animation freeze, an incoming-damage firewall and MP projectile temporal parity.</p>
+<h2>6) TIME STOP vs TIME ERASE</h2><p>Temporal powers do not stack freely. Existing Time Erase duration is consumed by incoming Time Stop according to the temporal authority rules. KC Time Erase lasts 10 sec; at LV100 its Skill 4 cooldown reaches 20 sec.</p>
+<h2>7) STAND LEVEL / MASTERY</h2><p>Every Stand stores LV.1–100 separately. Only Stand zombie kills grant EXP. LV.1 = 50% damage and LV.100 = 120%. Authored base cooldowns gradually move toward skill-specific Mastery targets. Rerolling does not erase old Stand progress.</p>
+<h2>8) SUMMONED STAND DEFENSE</h2><p>While a registered Stand is summoned, its owner receives 33% NET damage reduction. This is not invulnerability.</p>
+<h2>9) PvP / SAFETY</h2><p>HP damage respects Project Zomboid PvP/Safety, while certain utility/CC interactions have separate rules: Time Stop, THREE FREEZE, Space Pull, Epitaph and Official Addon commands.</p>
+<h2>10) CLIENT OPTIONS / SANDBOX</h2><p>Client: Targeting Mode, HUD mode, opacity, scale, personal volume and keybinds. Sandbox: Arrow Drop, Stand Damage, Stand Level, Arrow on Join, Infinite Arrow, Super Arrow and addon-specific settings.</p>
+<h2>Official Addons</h2><p><a href="stands/atum.html"><b>ATUM .069</b></a> • <a href="stands/harvest.html"><b>HARVEST .4.26</b></a> • <a href="stands/heavens-door.html"><b>HEAVEN'S DOOR .2.20</b></a> • <a href="stands/tusk.html"><b>TUSK .248</b></a></p>
+<p><a class="more" href="mastery.html">Open Mastery / Balance Table v0.23.0.284 →</a></p></section></main><footer class="footer">PROJECT JOJO • FULL SYSTEM GUIDE<br><small>Workshop ID 3807750510 • Mod ID JoJoStandSystem0183Standalone</small></footer></body></html>

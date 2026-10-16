@@ -1,107 +1,15 @@
-<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project JoJo — คู่มือระบบเต็ม</title><link rel="stylesheet" href="../assets/v237.css?v=480"><link rel="icon" type="image/png" sizes="32x32" href="../project-jojo-favicon-32x32.png?v=431"><meta name="theme-color" content="#0b0710"></head><body><header class="topbar"><a class="brand" href="../th/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../th/index.html">หน้าแรก</a><a href="../th/index.html#stands">Stand</a><a href="../th/beginner-guide.html">คู่มือมือใหม่</a><a href="../th/guide.html">คู่มือระบบ</a></nav><a class="lang" href="../en/index.html">ENGLISH</a></header>
-<main><section class="article">
-<p class="summary">หน้านี้อธิบายระบบร่วมของ Project JoJo แบบภาษาง่าย: ระบบทำอะไร, ผู้เล่นต้องรู้อะไร และมีตัวอย่างให้เห็นภาพเมื่อกติกาดูซับซ้อน</p>
-<h1>PROJECT JOJO — คู่มือระบบเต็ม</h1>
-
-<div class="updatebox"><b>1) STAND ARROW — ได้ Stand ยังไง</b>
-<p>Stand Arrow หาได้จาก loot ในโลกและมีโอกาสดรอปจากซอมบี้ ที่ค่าเริ่มต้น 1x โอกาสดรอปจากซอมบี้อยู่ประมาณ <b>1 / 250</b> พื้นที่แนวโรงรถ กล่องเครื่องมือ ร้านช่าง หรือ mechanic storage เป็นจุดที่เหมาะกับการหา ส่วน vehicle loot ตั้งใจให้หายากกว่า</p>
-<p>Arrow ใช้ Condition ของ Project Zomboid โดยตรง: <b>3/3 → 2/3 → 1/3 → หาย</b> หรือพูดง่าย ๆ คือ 1 ดอกใช้สำเร็จได้ 3 ครั้ง และ Condition จะลดหลังการให้ Stand สำเร็จ</p>
-<p><b>ตัวอย่าง:</b> ถ้าใช้ Arrow แล้วเปลี่ยนจาก Star Platinum ไป The World เลเวลที่เคยเก็บของ Star Platinum ไม่ถูกลบ วันหลังกลับมาได้ SP อีกก็เล่นต่อจาก Progress เดิมของตัวละครนั้นได้</p>
-</div>
-
-<div class="updatebox"><b>2) SUPER ARROW — สุ่มหรือเลือกเอง</b>
-<p><b>Super Arrow ปิดเป็นค่าเริ่มต้น</b> ถ้าปิด การใช้ Stand Arrow จะสุ่มจาก Stand Pool ที่เกมโหลดอยู่ตามปกติ</p>
-<p>ถ้าเจ้าของโลก/เซิร์ฟเปิด Super Arrow การใช้ Arrow จะเปิดรายการ Stand ที่ลงทะเบียนอยู่จริงให้เลือก Core Stands และ official addons ที่เปิดใช้งานจะเข้ารายการอัตโนมัติ ส่วน Addon ที่ไม่ได้ติดตั้ง/ไม่ได้เปิดจะไม่โผล่มาให้เลือก</p>
-<p>การเลือกยังถูกตรวจจากฝั่ง authority ก่อนให้ Stand เพื่อให้ SP / Host / Multiplayer ใช้กติกาเดียวกัน</p>
-<p><b>อย่าสับสนกับ Infinite Arrow:</b> Super Arrow ทำให้ “เลือกได้” แต่ Arrow ยังเสีย Condition ตามปกติ ถ้าอยากใช้ Arrow ซ้ำไม่จำกัดต้องเปิด <b>Infinite Stand Arrow</b> แยกอีกตัวเลือก</p>
-</div>
-
-<div class="updatebox"><b>3) การควบคุมพื้นฐาน / Tap กับ Hold</b>
-<p><b>CAPS LOCK</b> เรียกหรือเก็บ Stand และปุ่มเลขแถวบน <b>1 / 2 / 3 / 4</b> คือ Skill 1–4</p>
-<p>หลายสกิลมีผลต่างกันระหว่างกดสั้นกับชาร์จเต็ม เช่น Star Platinum / The World Skill 4 กดสั้นเป็น Time Dash แต่ชาร์จเต็มเป็น Time Stop, King Crimson Skill 4 กดสั้นเป็น Dash แต่ชาร์จเต็มเป็น Time Erase</p>
-<p><b>ตัวอย่าง:</b> ถ้าเพิ่งได้ Stand ใหม่ อย่าลองแค่แตะปุ่ม 1–4 แล้วสรุปว่านั่นคือสกิลทั้งหมด ลองกดค้างด้วย เพราะบางตัวเปลี่ยนความสามารถไปอีกแบบเลย</p>
-</div>
-
-<div class="updatebox"><b>4) TARGETING MODE — เล็งแบบไหนก็ใช้กติกาการโดนเดียวกัน</b>
-<p>ไปที่ <b>Options → Mods → Project JoJo</b> แล้วเลือกได้ 3 แบบ:</p>
-<ul><li><b>Mouse / Pointer</b> — ใช้ทิศเคอร์เซอร์</li><li><b>Facing Direction</b> — ใช้ทิศที่ตัวละครหัน เหมาะกับคนที่ไม่อยากพึ่งเมาส์หรือใช้ camera/view mod</li><li><b>Controller Aim</b> — ใช้แกนเล็ง/โจมตีของจอย ถ้าสติกอยู่ใน dead-zone จะ fallback ไปทิศตัวละคร</li></ul>
-<p>การเปลี่ยนโหมดเล็งไม่ได้เปลี่ยนระยะ ไม่ทำให้ล็อกทะลุกำแพง และไม่ทำให้ projectile หักไปโดนเป้าเองโดยไม่มีแนว</p>
-<p><b>ตัวอย่าง:</b> ใช้ Facing Direction แล้วมีซอมบี้ยืนขวางหน้าตัวเป้าหมายที่ไกลกว่า ตัวหน้าอาจรับการโจมตีก่อนเหมือนเดิม เพราะระบบยังดู First-Contact</p>
-</div>
-
-<div class="updatebox"><b>5) DIRECTIONAL FIRST-CONTACT</b>
-<p>สกิลที่เป็นแนวโจมตีใช้ระยะจริงของตัวเอง แล้วตรวจสิ่งแรกที่สัมผัสแนวโจมตี ไม่เอาระยะจากตำแหน่งเมาส์มา “ตัด” ท่ายาวให้สั้น แต่ก็ไม่ให้สกิลข้ามสิ่งที่ควรขวาง</p>
-<p><b>ตัวอย่าง:</b> Star Finger ไปได้ไกลกว่าหมัดปกติ แต่ถ้ามีซอมบี้ยืนตรงแนวข้างหน้า มันไม่ควรปล่อยให้คุณชี้เมาส์เลยตัวหน้าแล้วตีตัวหลังแบบฟรี ๆ</p>
-</div>
-
-<div class="updatebox"><b>6) BARRAGE CONTACT / CLASH / GUARD</b>
-<p><b>Barrage Contact</b> มีช่วงผ่อนเล็กน้อยเพื่อไม่ให้การรัวหมัดหลุดเพราะเฟรม/เป้าขยับจิ๋ว ๆ และสามารถชดเชย hit บางส่วนเมื่อเฟรมช้า</p>
-<p><b>Barrage Clash</b> เกิดเมื่อ Barrage ฝั่งโจมตีที่รองรับชนกันในระยะ/มุมที่เหมาะสม ฮิตที่ชนจะหักล้างกันก่อนดาเมจปกติ</p>
-<p><b>Barrage Guard</b> เป็นแนวป้องกันด้านหน้าระหว่าง Barrage ของ Stand ที่รองรับ ปัด projectile บางชนิด เช่น The World Knife, Silver Chariot Rapier Shot และ Crazy Diamond Glass/Homing</p>
-<p><b>ตัวอย่าง:</b> หันหน้าแล้ว Barrage รับมีดจากด้านหน้าได้ ไม่ได้แปลว่าคุณกันมีดจากด้านหลัง, ระเบิด AOE, ไฟทั้งวง หรือ THREE FREEZE ได้ทั้งหมด</p>
-</div>
-
-<div class="updatebox"><b>7) TIME STOP</b>
-<p>Star Platinum หยุดเวลา 5 วินาที และ The World 9 วินาที เป้าที่ถูกหยุดจะถูกตรึง ดาเมจที่ต้องรอจะสะสมไว้แล้วค่อยลงตอนเวลาเดินต่อ และ projectile ที่อยู่ในพื้นที่หยุดเวลาจะค้างกลางทางก่อนเดินทางต่อภายหลัง</p>
-<p>ผู้ใช้ SP/TW ที่ติดอยู่ใน Time Stop ของอีกคนยังมีระบบตอบโต้ของ Time Stop ตัวเองตามกติกาของมอด ไม่ได้แปลว่าสามารถเดินได้ฟรีตลอด Stop ของคนอื่น</p>
-<p><b>ตัวอย่าง:</b> มีดกำลังบินไปหาเป้า แล้ว Time Stop เริ่มตอนมันอยู่กลางทาง มีดจะค้างที่จุดนั้น พอเวลาเดินต่อจึงไปต่อ ไม่ควรวาร์ปข้ามช่วงหยุด</p>
-</div>
-
-<div class="updatebox"><b>8) TIME STOP vs TIME ERASE</b>
-<p>Time Stop กับ Time Erase ไม่ได้เปิดทับกันแบบสองพลังเต็มพร้อมกัน ถ้า Time Stop กำลังเริ่ม/ทำงานอยู่ King Crimson ไม่สามารถเปิด Full Time Erase ใหม่แบบข้ามกติกาได้</p>
-<p>ถ้า Erase เริ่มก่อน เวลาของ Stop จะถูกเอาไปหักกับเวลาที่ Erase เหลือก่อน ถ้า Stop ยาวกว่า ส่วนที่เหลือจึงกลายเป็นเวลาหยุดจริง</p>
-<p><b>ตัวอย่าง:</b> Erase เหลือ 4 วิ แล้วมี Stop 9 วิชนเข้ามา 4 วิแรกใช้หัก Erase เหลือ Stop จริงประมาณ 5 วิ แทนที่จะได้ Erase 4 + Stop 9 ซ้อนเต็ม ๆ</p>
-</div>
-
-<div class="updatebox"><b>9) STAND LEVEL — Progress แยกทุก Stand</b>
-<p>Stand แต่ละตัวเก็บเลเวล <b>LV.1 → LV.100</b> แยกกัน เลเวลต่ำเริ่มที่ประมาณครึ่งหนึ่งของดาเมจเต็มและค่อย ๆ เพิ่มไปจน Full Power ที่ LV.100 การฆ่าซอมบี้ด้วย Stand ให้ EXP</p>
-<p>เปลี่ยน Stand ไม่ลบ Progress ของตัวเก่า ถ้าปิด Stand Level System ใน Sandbox ทุก Stand ใช้ Full Power แต่ Progress ที่เคยเก็บไว้ยังถูกเก็บ ไม่ได้โดนลบทิ้ง</p>
-</div>
-
-<div class="updatebox"><b>10) SUMMONED STAND DEFENSE</b>
-<p>ขณะ Stand ที่ระบบลงทะเบียนถูกเรียก เจ้าของรับ <b>NET damage ลดลง 33%</b> โดยอิงความเสียหายจริงหลังระบบเกม/มอดอื่นจัดการแล้ว</p>
-<p>นี่เป็น damage reduction ไม่ใช่ invulnerability — โดนรุม, โดนกัดหลายครั้ง หรือยืนผิดตำแหน่งก็ยังตายได้</p>
-</div>
-
-<div class="updatebox"><b>11) PvP / SAFETY</b>
-<p>ดาเมจที่ลด HP ผู้เล่นเคารพ PvP / Safety ของ Project Zomboid แต่ Project JoJo แยก “ดาเมจ” ออกจาก “Utility / Crowd Control” บางอย่าง จึงมีผลที่อาจทำงานได้โดยไม่ทำ HP damage</p>
-<p>ตัวอย่างของระบบที่ต้องดูเงื่อนไขเฉพาะ ได้แก่ Time Stop, THREE FREEZE, Space Pull, Epitaph/Reposition, First Bomb attachment และคำสั่ง utility ของ Addon</p>
-<p><b>ตัวอย่าง:</b> The Hand ดึงเพื่อนออกจากฝูงได้ในสถานการณ์ที่ระบบอนุญาต โดยการ Pull ไม่จำเป็นต้องหมายถึงทำ HP damage ใส่เพื่อน</p>
-</div>
-
-<div class="updatebox"><b>12) รถ / สิ่งของในโลก / Safeguard</b>
-<p>Stand attacks ยังมีการชนกับรถและสิ่งของตามโลก แต่ระบบพยายามแยก “การชนเพื่อหยุดท่า/projectile” ออกจาก “การทำลายสถานะวัตถุ” เพื่อไม่ให้การโจมตีถี่ ๆ ไปพังรถหรือวัตถุ custom แบบผิดเจตนา</p>
-<p>วัตถุ vanilla ที่รองรับจริง เช่นประตู หน้าต่าง barricade ต้นไม้ หรือ object ที่มี path เฉพาะ ยังสามารถใช้ interaction ที่ออกแบบไว้ได้</p>
-</div>
-
-<div class="updatebox"><b>13) CLIENT OPTIONS — ของแต่ละคน</b>
-<p>ใน <b>Options → Mods → Project JoJo</b> ผู้เล่นปรับได้เอง:</p>
-<ul>
-<li>Stand Targeting Mode: Mouse / Facing / Controller</li>
-<li>Stand HUD: Normal / Minimal / Hidden</li>
-<li>HUD Opacity: 20–100%</li>
-<li>HUD Scale: 70–150%</li>
-<li>Personal Project JoJo Volume: 0–100%</li>
-<li>Keybinds ส่วนตัว</li>
-</ul>
-<p><b>Reset Visual / Audio / Targeting</b> คืนค่าหน้าตา/เสียง/การเล็งโดยไม่แตะ keybinds และ <b>Reset Keybinds</b> ใช้คืนปุ่ม Caps Lock + 1–4 แยกต่างหาก</p>
-<p>หน้าจอที่จำเป็นต่อ gameplay เช่น ATUM minigames, HARVEST Search และ Heaven's Door Book/Command ยังใช้งานได้แม้เลือก Hidden HUD</p>
-</div>
-
-<div class="updatebox"><b>14) SANDBOX SETTINGS — ค่าร่วมของโลก/เซิร์ฟเวอร์</b>
-<p><b>Arrow Drop Multiplier</b> — ปรับความหายากของ Arrow</p>
-<p><b>Stand Damage</b> — ปรับดาเมจรวมของ Stand</p>
-<p><b>Stand Level System</b> — เปิด/ปิด Progress LV.1–100</p>
-<p><b>Give Stand Arrow on Join</b> — ให้ Arrow ตอนเข้าเกม</p>
-<p><b>Infinite Stand Arrow</b> — Arrow ไม่เสีย Condition หลังใช้สำเร็จ</p>
-<p><b>Super Arrow</b> — ปิดปกติ; เปิดแล้วเปลี่ยนจากสุ่มเป็นรายการเลือก Stand ที่โหลดอยู่จริง</p>
-<p>Addon บางตัวอาจมี Sandbox ของตัวเองด้วย เช่น HARVEST มีตัวปรับความเร็วการฟื้นฝูง โดยไม่จำเป็นต้องเปลี่ยนสูตร Search</p>
-</div>
-
-<h2>ส่วนเสริมทางการ</h2>
-<p><a href="stands/atum.html"><b>ATUM</b></a> — อ่านการโจมตี, Soul Mark, Mind Gauge และ Gamble ผ่าน RPS / Baseball / Racing</p>
-<p><a href="stands/harvest.html"><b>HARVEST</b></a> — บริหารฝูงสูงสุด 500 ตัว, Search Command และการคุมพื้นที่</p>
-<p><a href="stands/heavens-door.html"><b>HEAVEN'S DOOR</b></a> — เปิด Book, ใช้ REWRITE เขียนคำสั่ง และควบคุม AI/งานของซอมบี้ที่ถูกเขียน</p>
-
-<div class="tipbox"><b>จำง่าย ๆ:</b> ถ้าเป็นค่า “ทุกคนในโลกต้องใช้เหมือนกัน” ให้มองหา Sandbox ถ้าเป็น “หน้าจอ/เสียง/วิธีเล็งของฉัน” ให้มองหา Client Options</div>
-</section></main><footer class="footer">PROJECT JOJO • FULL SYSTEM GUIDE<br><small>Workshop ID 3807750510 • Mod ID JoJoStandSystem0183Standalone</small></footer></body></html>
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project JoJo — คู่มือระบบเต็ม</title><link rel="stylesheet" href="../assets/v237.css?v=484"><link rel="icon" type="image/png" sizes="32x32" href="../project-jojo-favicon-32x32.png?v=431"><meta name="theme-color" content="#0b0710"><style>.balance-table{width:100%;border-collapse:collapse;margin:18px 0}.balance-table th,.balance-table td{padding:9px 10px;border-bottom:1px solid #41294d;text-align:left}.balance-table th{color:#ffd66b}.balance-table td:last-child{font-weight:900;color:#81f0ff}.version-pill{display:inline-block;padding:6px 10px;border:1px solid #8b5aa2;border-radius:999px;margin:3px 5px 3px 0;background:#160d1d}.note-284{padding:14px 16px;border-left:4px solid #ffd66b;background:#160d1d;margin:18px 0}</style></head><body><header class="topbar"><a class="brand" href="../th/index.html">PROJECT <span>JOJO</span></a><nav class="topnav"><a href="../th/index.html">หน้าแรก</a><a href="../th/index.html#stands">Stand</a><a href="../th/guide.html">คู่มือระบบ</a><a href="../th/mastery.html">Mastery / Balance</a></nav><a class="lang" href="../en/index.html">ENGLISH</a></header><main>
+<section class="article"><div class="eyebrow">CORE v0.23.0.284 • BUILD 42+</div><h1>PROJECT JOJO — คู่มือระบบเต็ม</h1><p class="summary">กติกากลางของมอดสำหรับ Singleplayer / Host / Multiplayer รวม Stand Arrow, Targeting, Barrage, Time System, Stand Level, PvP และ Official Addons.</p>
+<div class="note-284"><b>ใหม่ใน .284:</b> LV.1 ยังคง 50% Damage แต่ LV.100 ตอนนี้เป็น 120%, เส้น XP ใหม่ใช้ประมาณ 1,059 Stand kills และสกิลหลายตัวลดคูลดาวน์ตาม Mastery. <a href="mastery.html">ดูตารางคูลดาวน์เต็ม →</a></div>
+<h2>1) STAND ARROW</h2><p>ค่าเริ่มต้นดรอปซอมบี้ประมาณ 1/250. Arrow หนึ่งดอกใช้สำเร็จ 3 ครั้ง: 3/3 → 2/3 → 1/3 → หาย. Super Arrow เปลี่ยนจากสุ่มเป็นเลือก Stand; Infinite Stand Arrow ทำให้ไม่เสีย Condition.</p>
+<h2>2) CONTROLS / CHARGE</h2><p>CAPS LOCK เรียก/เก็บ Stand • 1–4 ใช้สกิล. หลายสกิลมี Tap/Hold ต่างกัน เช่น SP/TW Skill 4 = Time Dash / Time Stop และ KC Skill 4 = Time Dash / Time Erase.</p>
+<h2>3) TARGETING / FIRST CONTACT</h2><p>เลือก Mouse, Facing Direction หรือ Controller Aim ได้จาก Client Options. วิธีเล็งเปลี่ยน input แต่ไม่เปลี่ยนกติกาการชน: สิ่งแรกในแนวโจมตียังสามารถรับฮิตก่อน.</p>
+<h2>4) BARRAGE CLASH / GUARD</h2><p>Barrage ที่รองรับสามารถชนกันและหัก hit กันได้. SP/TW/CD/SC/KC มี Barrage Guard ด้านหน้าเพื่อปัด projectile ที่รองรับ เช่น TW Knife, SC Rapier, CD Glass; ไม่ใช่เกราะ 360° และไม่กัน AOE ทุกชนิด.</p>
+<h2>5) TIME STOP</h2><p>SP หยุดเวลา 5 วิ, TW 9 วิ. Entity/animation/projectile ที่ถูกหยุดจะค้างและดาเมจ deferred ลงเมื่อเวลาเดินต่อ. Core .282+ เพิ่ม hard animation freeze, incoming-damage firewall และ MP projectile temporal parity.</p>
+<h2>6) TIME STOP vs TIME ERASE</h2><p>ระบบเวลาไม่ซ้อนกันฟรี. Time Erase ที่ทำงานก่อนจะถูกหักด้วยเวลาของ Time Stop ตามกติกา temporal authority. KC Time Erase ยาว 10 วิและที่ LV100 cooldown ของ Skill 4 เหลือ 20 วิ.</p>
+<h2>7) STAND LEVEL / MASTERY</h2><p>แต่ละ Stand เก็บ LV.1–100 แยกกัน. Stand kill เท่านั้นที่ให้ EXP. LV.1 = 50% damage, LV.100 = 120%. Base cooldowns ค่อย ๆ ลดไปยังค่า Mastery รายสกิล. เปลี่ยน Stand ไม่ลบ progress ของตัวเดิม; death reset ยังใช้ตามกติกาปัจจุบันของตัวละคร.</p>
+<h2>8) SUMMONED STAND DEFENSE</h2><p>ขณะ Stand ที่ลงทะเบียนถูกเรียก เจ้าของรับ NET damage ลดลง 33%. เป็น damage reduction ไม่ใช่ invulnerability.</p>
+<h2>9) PvP / SAFETY</h2><p>HP damage เคารพ PvP/Safety แต่ Utility/CC บางชนิดมีเงื่อนไขแยก เช่น Time Stop, THREE FREEZE, Space Pull, Epitaph และคำสั่งของ Official Addons.</p>
+<h2>10) CLIENT OPTIONS / SANDBOX</h2><p>Client: Targeting Mode, HUD Normal/Minimal/Hidden, opacity, scale, personal volume, keybinds. Sandbox: Arrow Drop, Stand Damage, Stand Level, Arrow on Join, Infinite Arrow, Super Arrow และตัวเลือกเฉพาะ Addon.</p>
+<h2>Official Addons</h2><p><a href="stands/atum.html"><b>ATUM .069</b></a> • <a href="stands/harvest.html"><b>HARVEST .4.26</b></a> • <a href="stands/heavens-door.html"><b>HEAVEN'S DOOR .2.20</b></a> • <a href="stands/tusk.html"><b>TUSK .248</b></a></p>
+<p><a class="more" href="mastery.html">เปิด Mastery / Balance Table v0.23.0.284 →</a></p></section></main><footer class="footer">PROJECT JOJO • FULL SYSTEM GUIDE<br><small>Workshop ID 3807750510 • Mod ID JoJoStandSystem0183Standalone</small></footer></body></html>

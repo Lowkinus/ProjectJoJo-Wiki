@@ -4,17 +4,19 @@ PROJECT JOJO MAIN — REPLACE "OFFICIAL ADDONS" SECTION WITH THIS
 
 [h2]OFFICIAL ADDONS[/h2]
 
-[url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url] [url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/heavens-door-addon-150.png[/img][/url]
+[url=https://lowkinus.github.io/ProjectJoJo-Wiki/en/stands/tusk.html][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/tusk-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/heavens-door-addon-150.png[/img][/url]
 
-[b]ATUM[/b] — Mind Reading / Soul Marks / Gambling  
-[b]HARVEST[/b] — Swarm Combat / Item Search / Colony Management  
-[b]HEAVEN'S DOOR[/b] — Book Rewrite / Commands / Scripted AI [i](Beta / Testing)[/i]
+[b]TUSK ACT 1–4[/b] — Nail / Wormhole / Infinite Rotation
+[b]ATUM[/b] — Mind Reading / Soul Marks / Gambling
+[b]HARVEST[/b] — Swarm Combat / Item Search / Colony Management
+[b]HEAVEN'S DOOR[/b] — Book Rewrite / Commands / Scripted AI
 
 Official addons require the main [b]Project JoJo[/b] mod.
 
-[url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][b]▶ ATUM ADDON[/b][/url]  
-[url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][b]▶ HARVEST ADDON[/b][/url]  
-[url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][b]▶ HEAVEN'S DOOR ADDON[/b][/url]
+[url=https://lowkinus.github.io/ProjectJoJo-Wiki/en/stands/tusk.html][b]▶ TUSK GUIDE[/b][/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][b]▶ ATUM ADDON[/b][/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][b]▶ HARVEST ADDON[/b][/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][b]▶ HEAVEN'S DOOR ADDON[/b][/url]
 
 [hr][/hr]
 
@@ -24,9 +26,10 @@ ATUM — ADD THIS "OTHER OFFICIAL ADDONS" SECTION
 
 [h2]OTHER OFFICIAL ADDONS[/h2]
 
-[url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url] [url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/heavens-door-addon-150.png[/img][/url]
+[url=https://lowkinus.github.io/ProjectJoJo-Wiki/en/stands/tusk.html][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/tusk-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/heavens-door-addon-150.png[/img][/url]
 
-[b]HARVEST[/b] — Swarm Combat / Item Search / Colony Management  
+[b]TUSK ACT 1–4[/b] — Nail / Wormhole / Infinite Rotation
+[b]HARVEST[/b] — Swarm Combat / Item Search / Colony Management
 [b]HEAVEN'S DOOR[/b] — Book Rewrite / Commands / Scripted AI
 
 [hr][/hr]
@@ -37,9 +40,10 @@ HARVEST — ADD THIS "OTHER OFFICIAL ADDONS" SECTION
 
 [h2]OTHER OFFICIAL ADDONS[/h2]
 
-[url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/heavens-door-addon-150.png[/img][/url]
+[url=https://lowkinus.github.io/ProjectJoJo-Wiki/en/stands/tusk.html][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/tusk-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/heavens-door-addon-150.png[/img][/url]
 
-[b]ATUM[/b] — Mind Reading / Soul Marks / Gambling  
+[b]TUSK ACT 1–4[/b] — Nail / Wormhole / Infinite Rotation
+[b]ATUM[/b] — Mind Reading / Soul Marks / Gambling
 [b]HEAVEN'S DOOR[/b] — Book Rewrite / Commands / Scripted AI
 
 [hr][/hr]
@@ -50,9 +54,24 @@ HEAVEN'S DOOR — OTHER OFFICIAL ADDONS SECTION
 
 [h2]OTHER OFFICIAL ADDONS[/h2]
 
-[url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https\://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https\://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url]
+[url=https://lowkinus.github.io/ProjectJoJo-Wiki/en/stands/tusk.html][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/tusk-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url]
 
-[b]ATUM[/b] — Mind Reading / Soul Marks / Gambling  
+[b]TUSK ACT 1–4[/b] — Nail / Wormhole / Infinite Rotation
+[b]ATUM[/b] — Mind Reading / Soul Marks / Gambling
 [b]HARVEST[/b] — Swarm Combat / Item Search / Colony Management
+
+[hr][/hr]
+
+============================================================
+TUSK — OTHER OFFICIAL ADDONS SECTION
+============================================================
+
+[h2]OTHER OFFICIAL ADDONS[/h2]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/heavens-door-addon-150.png[/img][/url]
+
+[b]ATUM[/b] — Mind Reading / Soul Marks / Gambling
+[b]HARVEST[/b] — Swarm Combat / Item Search / Colony Management
+[b]HEAVEN'S DOOR[/b] — Book Rewrite / Commands / Scripted AI
 
 [hr][/hr]

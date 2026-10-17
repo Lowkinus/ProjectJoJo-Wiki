@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Project JoJo — 完整系统指南</title>
+<link href="../assets/v237.css?v=480" rel="stylesheet"/>
+<link href="../project-jojo-favicon-32x32.png?v=431" rel="icon" sizes="32x32" type="image/png"/>
+</head>
+<body>
+<header class="topbar">
+<a class="brand brand-classic" href="index.html"><span class="brand-mark">PJ</span><span class="brand-copy"><b>PROJECT JOJO</b><small>系统指南</small></span></a>
+<nav class="topnav"><a href="index.html">首页</a><a href="beginner-guide.html">新手</a><a href="mastery.html">Mastery</a></nav>
+<a class="lang" href="../en/guide.html">EN</a>
+</header>
+<main>
+<section class="section"><div class="eyebrow">客户端设置</div><h2>CLIENT OPTIONS</h2>
+<div class="systems">
+<article class="system"><strong>Targeting Mode</strong><p><b>Mouse / Pointer</b>：按光标方向。<br/><b>Facing Direction</b>：按角色朝向。<br/><b>Controller Aim</b>：使用手柄攻击/瞄准轴，并在死区使用角色朝向。</p></article>
+<article class="system"><strong>HUD</strong><p>Normal / Minimal / Hidden；透明度 20–100%；缩放 70–150%。HARVEST Search、ATUM 小游戏、Heaven's Door Book/Command 等必要界面不会因为隐藏被动 HUD 而消失。</p></article>
+<article class="system"><strong>Personal Audio</strong><p>Project JoJo 个人音量 0–100%，属于玩家本地偏好，不改变服务器平衡。</p></article>
+</div></section>
+
+<section class="section"><div class="eyebrow">Sandbox</div><h2>WORLD / SERVER SETTINGS</h2>
+<div class="systems">
+<article class="system"><strong>Super Arrow</strong><p>默认关闭。关闭时随机抽取已加载 Stand Pool；开启时使用 Arrow 会打开已注册替身选择列表。它不会让 Arrow 变成无限使用。</p></article>
+<article class="system"><strong>Arrow Drop Multiplier</strong><p>默认 1x 的僵尸基础掉落率约为 1/250，同时还有世界战利品来源。</p></article>
+<article class="system"><strong>Stand Damage</strong><p>调整整个世界/服务器的替身总体伤害，不需要逐技能修改。</p></article>
+<article class="system"><strong>Stand Level System</strong><p>开启：每个替身分别保存 Lv.1–100。关闭：替身按完整强度运行，但已保存进度不会被删除。</p></article>
+<article class="system"><strong>Give Stand Arrow on Join</strong><p>可让玩家加入时直接获得 Arrow，适合不想让所有人先刷箭的服务器。</p></article>
+<article class="system"><strong>Infinite Stand Arrow</strong><p>普通 Arrow 3 次成功使用后消失；开启后成功使用不会减少 Condition。</p></article>
+</div></section>
+
+<section class="section"><div class="eyebrow">共享战斗系统</div><h2>COMBAT RULES</h2>
+<div class="systems">
+<article class="system"><strong>Directional First-Contact</strong><p>技能只在真实射程内检查攻击线上的第一个有效接触。墙、身体与前方阻挡物仍然重要。</p></article>
+<article class="system"><strong>Barrage Clash</strong><p>支持的 Barrage 在距离足够近、双方确实互相面对/瞄准时会发生碰撞；碰撞命中先互相抵消。</p></article>
+<article class="system"><strong>Barrage Guard</strong><p>支持的 Barrage 会形成前方防线，能挡下特定投射物。侧面、背面与范围效果不使用同一规则。</p></article>
+<article class="system"><strong>Time Stop</strong><p>Star Platinum 5 秒，The World 9 秒。冻结角色、移动投射物与延迟伤害在时间恢复后继续结算。</p></article>
+<article class="system"><strong>Time Stop vs Time Erase</strong><p>两者不会无条件叠加。Erase 先开始时，Stop 的持续时间会先抵消剩余 Erase 时间。</p></article>
+<article class="system"><strong>Summoned Stand Defense</strong><p>召唤已注册替身时，替身使者受到的净伤害降低 33%。</p></article>
+<article class="system"><strong>PvP / Safety</strong><p>玩家 HP 伤害尊重 Project Zomboid PvP/Safety。冻结、拉拽、位移等 Utility/CC 可能有独立限制。</p></article>
+<article class="system"><strong>Vehicle / World Safety</strong><p>攻击尊重车辆与世界碰撞，同时有保护逻辑避免高频替身命中破坏不支持的车辆/custom object 状态。</p></article>
+</div></section>
+</main>
+<footer class="footer">PROJECT JOJO • 中文系统指南</footer>
+</body></html>

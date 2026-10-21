@@ -1,4 +1,4 @@
-/* Project JoJo Wiki | Core v.350 documentation update | upload-ready vanilla JS */
+/* Project JoJo Wiki | v352 responsive power cards | upload-ready vanilla JS */
 (() => {
   'use strict';
   const ranks = {
@@ -35,6 +35,34 @@
       .pj-feature-list{margin:10px 0 0;padding-left:22px;color:#dac6df;line-height:1.75}
       #powers .card-img{background:#0b0710}
       #powers .card-img img{object-fit:contain;height:100%;width:100%}
+      /* v352 — Power cards use the same legible poster presentation as Stand cards. */
+      #powers .grid{align-items:stretch}
+      #powers .pj-power-card{position:relative;height:430px;min-height:430px;overflow:hidden;border:1px solid #51335f;
+        border-radius:16px;background:#020203;box-shadow:0 14px 34px rgba(0,0,0,.3)}
+      #powers .pj-power-card .card-img{position:absolute;inset:0;height:100%;width:100%;display:block;overflow:hidden;
+        background:radial-gradient(circle at 50% 27%,rgba(139,52,216,.13),transparent 45%),#020203}
+      #powers .pj-power-card .card-img img{display:block;width:100%;height:100%;object-fit:contain;object-position:center center}
+      #powers .pj-power-card .card-body{position:absolute;z-index:3;bottom:0;left:0;right:0;min-height:0;
+        padding:86px 18px 20px;background:linear-gradient(180deg,rgba(8,5,12,0) 0%,rgba(18,9,25,.68) 39%,rgba(14,7,20,.96) 71%,#0a050f 100%)}
+      #powers .pj-power-card .role{color:var(--gold,#ffd64a);font-size:11px;font-weight:900;letter-spacing:.9px}
+      #powers .pj-power-card .card-body h3{display:block;color:#fffdf7;font:italic 900 31px/1.1 Impact,'Arial Black',sans-serif;
+        margin:6px 0 9px;text-shadow:2px 3px 0 #351049,0 2px 9px #000}
+      #powers .pj-power-card .card-body p{display:block;color:#f0e5f4;font-size:13px;line-height:1.6;margin:0;
+        text-shadow:0 2px 8px #000;overflow-wrap:anywhere}
+      #powers .pj-power-card .future-badge{position:absolute;right:13px;left:auto;top:13px;z-index:7;
+        padding:7px 10px;border:1px solid #c68bdc;border-radius:999px;background:rgba(20,10,30,.94);color:#f8d7ff;
+        font-weight:900;font-size:10px;line-height:1.15;pointer-events:none}
+      @media(max-width:900px){#powers .pj-power-card{height:410px;min-height:410px}}
+      @media(max-width:620px){#powers .grid{grid-template-columns:minmax(0,1fr)}
+        #powers .pj-power-card{height:370px;min-height:370px}
+        #powers .pj-power-card .card-body{padding:78px 16px 18px}
+        #powers .pj-power-card .card-body h3{font-size:30px}
+        #powers .pj-power-card .card-body p{font-size:14px}
+        #powers .pj-power-card .future-badge{top:10px;right:10px}
+        .topbar .topnav{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+      }
+      .card,.card-body,.grid{min-width:0}
+      html,body{max-width:100%;overflow-x:hidden}
       @media(max-width:590px){#stands .future-card .future-badge{right:8px!important;top:8px!important;font-size:9px;padding:6px 8px}}
     `;
     document.head.appendChild(n);
@@ -99,8 +127,18 @@
       <p>${L('Hamon, Spin และ Vampire ไม่ใช่ Stand ทั้งสามระบบอยู่ระหว่างพัฒนา ยังไม่มีสกิลหรือวิธีปลดล็อกที่ยืนยันสำหรับเวอร์ชันเล่นจริง',
       'Hamon, Spin and Vampire are not Stands. These three systems are in development; no final skills or unlock requirements are promised for a playable release.')}</p></div>
       <div class="grid">
-      ${[['HAMON','hamon.jpg',L('พลังคลื่นมนตรา','Ripple energy')],['SPIN','spin.webp',L('วิชาการหมุน','Rotation technique')],['VAMPIRE','vampire.jpg',L('พลังแวมไพร์','Vampiric abilities')]].map(([name,img,role])=>
-      `<article class="card future-card"><div class="future-badge">${devLabel}</div><div class="card-img"><img alt="${name}" src="../assets/powers/${img}" loading="lazy"></div><div class="card-body"><div class="role">${role}</div><h3>${name}</h3><p>${L('กำลังพัฒนา ไม่ใช่ Stand และยังไม่เปิดให้เล่น','In development, not a Stand, and not playable yet.')}</p></div></article>`).join('')}
+      ${[
+        ['HAMON','hamon.jpg',L('พลังลมหายใจ / คลื่นมนตรา','Breathing / Ripple energy'),
+          L('ใช้การควบคุมลมหายใจสร้างพลังคล้ายแสงอาทิตย์ เพื่อต่อสู้กับศัตรูเหนือธรรมชาติ — ระบบในมอดกำลังพัฒนา',
+            'Breathing techniques generate sunlight-like Ripple energy to face supernatural enemies. Mod abilities are still in development.')],
+        ['SPIN','spin.webp',L('เทคนิคการหมุน / ลูกเหล็ก','Rotation / Steel Balls'),
+          L('ศาสตร์แห่งการหมุนที่ส่งแรงผ่านวัตถุ เช่น ลูกเหล็ก และใช้หลักการหมุนต่อสู้ — ระบบในมอดกำลังพัฒนา',
+            'A rotation technique that channels force through objects such as Steel Balls. Mod abilities are still in development.')],
+        ['VAMPIRE','vampire.jpg',L('หน้ากากศิลา / พลังแวมไพร์','Stone Mask / Vampiric power'),
+          L('พลังของผู้กลายเป็นแวมไพร์จากหน้ากากศิลา มีร่างกายเหนือมนุษย์และการฟื้นฟู — ระบบในมอดกำลังพัฒนา',
+            'Stone Mask vampires possess superhuman strength and regeneration. Mod abilities are still in development.')]
+      ].map(([name,img,role,description])=>
+      `<article class="card future-card pj-power-card"><div class="future-badge">${devLabel}</div><div class="card-img"><img alt="${name}" src="../assets/powers/${img}" loading="lazy"></div><div class="card-body"><div class="role">${role}</div><h3>${name}</h3><p>${description}</p></div></article>`).join('')}
       </div>`;
     stands.insertAdjacentElement('afterend',section);
   }
@@ -151,10 +189,10 @@
   }
   function apply(){
     [applyRanking, addMasteryNav, futureCards, powers, refreshStandCards, latestPanel, latestChangelog].forEach(fn=>{
-      try { fn(); } catch (err) { console.warn('[PJ Wiki v351] Component failed:', fn.name, err); }
+      try { fn(); } catch (err) { console.warn('[PJ Wiki v352] Component failed:', fn.name, err); }
     });
   }
   // Apply the badge style before modifying the card grid to limit layout flash.
-  try { style(); } catch(err) { console.warn('[PJ Wiki v351] CSS setup failed',err); }
+  try { style(); } catch(err) { console.warn('[PJ Wiki v352] CSS setup failed',err); }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',apply,{once:true});else apply();
 })();

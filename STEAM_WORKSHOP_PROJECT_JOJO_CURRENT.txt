@@ -1,0 +1,147 @@
+[h1]PROJECT JOJO — BUILD 42+[/h1]
+
+Want a little more color in the apocalypse?
+
+Find a [b]Stand Arrow[/b], awaken your Stand, and survive Project Zomboid with abilities inspired by JoJo.
+
+Fight hordes.
+Protect your friends.
+Stop time.
+Erase time.
+
+...or settle an argument with a Barrage Clash.
+
+[b]Singleplayer / Host / Multiplayer supported.[/b]
+
+[hr][/hr]
+
+[h2]PROJECT JOJO WIKI[/h2]
+
+This Workshop page is the quick overview. The Wiki has full Stand guides, controls, skills, cooldowns, PvP rules, Stand Levels, Sandbox settings, tactics and examples. [b]Compatible with Project Viewpoint.[/b]
+
+[url=https://lowkinus.github.io/ProjectJoJo-Wiki/]
+[img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/guide-banner.png[/img]
+[/url]
+
+[b]▲ CLICK THE IMAGE TO OPEN THE FULL WIKI ▲[/b]
+
+[b]🇹🇭 ภาษาไทย / EN English / 中文 简体中文[/b]
+
+[hr][/hr]
+
+[h2]OFFICIAL ADDONS[/h2]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/heavens-door-addon-150.png[/img][/url]
+
+[b]ATUM[/b] — Read attacks, mark souls and challenge targets to RPS / Baseball / Racing.
+[b]HARVEST[/b] — Manage a 500-unit colony for combat, item searching and area control.
+[b]HEAVEN'S DOOR[/b] — Open targets like books and write commands that change their behavior or turn zombies into workers/guards.
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][b]▶ ATUM ADDON[/b][/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][b]▶ HARVEST ADDON[/b][/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][b]▶ HEAVEN'S DOOR ADDON[/b][/url]
+
+[b]Under Development:[/b] TUSK, CREAM, D4C and more. Hamon, Spin and Vampire are planned as non-Stand powers. They are not advertised as playable in this release.
+
+[hr][/hr]
+
+[h2]HOW TO START[/h2]
+
+Find a [b]Stand Arrow[/b] from world loot or rare zombie drops.
+Use it to awaken a random Stand.
+[b]1 Arrow = 3 successful uses[/b]
+[b]3/3 → 2/3 → 1/3 → gone[/b]
+
+Using another Arrow can grant a different Stand without deleting progress earned on previous Stands. Servers can optionally enable [b]Super Arrow[/b] to choose from currently registered Stands. [b]Super Arrow is OFF by default.[/b]
+
+[hr][/hr]
+
+[h2]CONTROLS[/h2]
+
+[b]CAPS LOCK[/b] — Summon / Dismiss Stand
+[b]1–4[/b] — Stand Skills
+
+Some skill slots use Tap / Hold / Full Charge for different moves.
+Personal settings: [b]Options → Mods → Project JoJo[/b]
+
+Choose [b]Mouse / Pointer[/b], [b]Facing Direction[/b] or [b]Controller Aim[/b]. Personal HUD layout, scale, opacity, volume and keybinds can also be customized.
+
+[hr][/hr]
+
+[h2]CORE STANDS — QUICK STYLE GUIDE[/h2]
+
+[b]STAR PLATINUM[/b] — Close-range brawler. Builds critical chance with ORA hits, launches enemies on criticals, and stops time for 5 seconds.
+[b]THE WORLD[/b] — Powerful melee, rapid Barrage, throwing knives and a 9-second Time Stop.
+[b]KING CRIMSON[/b] — Counter / survival. Epitaph reacts to committed attacks, Time Erase repositions, and striking a target from behind offers a [b]77% critical chance[/b] against that target.
+[b]CRAZY DIAMOND[/b] — Melee support. Build Restore to heal allies, repair supported objects and use Glass Homing.
+[b]THE HAND[/b] — Pull and reposition enemies, then erase targets using the shared Space Gauge.
+[b]KILLER QUEEN[/b] — Set bombs, choose when to detonate and use Sheer Heart Attack for automatic pressure.
+[b]SILVER CHARIOT[/b] — Fast swordplay and Speed Gauge. Armor Off has its own cooldown and never blocks normal Summon/Dismiss.
+[b]MAGICIAN'S RED[/b] — Cross Fire/Fire Trap, Flame Spray, Fire Control/Detector and Cross Fire Bomb for ranged fire and horde control.
+[b]ECHOES ACT 3[/b] — Target-control Stand. Barrage helps set up THREE FREEZE, which holds a dangerous target for 9 seconds.
+
+Full skill details, examples and conditional rules are available in the Wiki.
+[url=https://lowkinus.github.io/ProjectJoJo-Wiki/][b]▶ VIEW FULL STAND GUIDES[/b][/url]
+
+[hr][/hr]
+
+[h2]STAND LEVELS[/h2]
+
+Each Stand has its own progression: [b]LV.1 → LV.100[/b]. Stand-caused zombie kills grant EXP. With Stand Levels enabled, LV.1 begins at [b]50% damage[/b] and LV.100 reaches [b]120% damage[/b]. Switching Stands preserves their separate progress.
+
+[url=https://lowkinus.github.io/ProjectJoJo-Wiki/en/mastery.html][b]▶ MASTERY & LV100 COOLDOWNS[/b][/url]
+
+[hr][/hr]
+
+[h2]CORE SYSTEMS[/h2]
+
+• Directional First-Contact and real attack reach
+• Stand combat, critical hits, Barrage Clash and Barrage Guard
+• Time Stop / Time Erase with collision and state safeguards
+• Stand Gauges, Tap / Hold / Full Charge abilities
+• Stand Levels and multiplayer synchronization
+• PvP / Safety and supported world / vehicle interactions
+• Ongoing improvements to rear-hit knockback and environmental material drops
+
+While a registered Stand is summoned, its owner takes [b]33% less NET damage[/b].
+
+[hr][/hr]
+
+[h2]CURRENT TEST PATCH[/h2]
+
+[b]CORE v0.23.0.350 (TEST)[/b]
+
+Ongoing compatibility work for addon attack reactions, supported environment destruction and material drops, Echoes ACT 3 animations, King Crimson directional criticals, and HUD/input behavior.
+
+[b]Notice:[/b] Some knockback, environmental drops and animated visual improvements remain under testing before a stable release.
+
+[hr][/hr]
+
+[h2]MULTIPLAYER[/h2]
+
+[b]Singleplayer / Host / Multiplayer supported.[/b]
+
+Different players may use the same Stand. Player HP damage respects Project Zomboid PvP / Safety settings in supported combat paths.
+
+[hr][/hr]
+
+[h2]SANDBOX SETTINGS[/h2]
+
+Server owners can configure Arrow Drop Rate, Stand Damage, Stand Levels, Arrow on Join, Infinite Stand Arrow, Super Arrow and shared sound settings. Personal HUD, targeting, audio and keybind options are per player.
+
+[hr][/hr]
+
+[h2]3D MODEL CREDITS[/h2]
+
+Models were adapted for Project Zomboid with rigging, optimization and custom animations.
+
+[url=https://sketchfab.com/SomeoneSae]SomeoneSae[/url]
+[url=https://sketchfab.com/20062020year]20062020year[/url]
+[url=https://sketchfab.com/NeiL]NeiL[/url]
+
+And their respective original creators. All original model rights remain with their creators.
+
+[hr][/hr]
+
+[b]Workshop ID:[/b] 3807750510
+[b]Mod ID:[/b] JoJoStandSystem0183Standalone

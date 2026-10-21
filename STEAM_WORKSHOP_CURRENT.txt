@@ -17,7 +17,7 @@ Erase time.
 
 [h2]PROJECT JOJO WIKI[/h2]
 
-This Workshop page is the quick overview. The Wiki explains the full mechanics with clear examples, exact skill behavior, cooldowns, ranges, PvP rules, Stand Levels, Sandbox settings and combos. [b]Compatible with Project Viewpoint.[/b]
+This Workshop page is the quick overview. The Wiki has full Stand guides, controls, skills, cooldowns, PvP rules, Stand Levels, Sandbox settings, tactics and examples. [b]Compatible with Project Viewpoint.[/b]
 
 [url=https://lowkinus.github.io/ProjectJoJo-Wiki/]
 [img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/guide-banner.png[/img]
@@ -25,41 +25,34 @@ This Workshop page is the quick overview. The Wiki explains the full mechanics w
 
 [b]▲ CLICK THE IMAGE TO OPEN THE FULL WIKI ▲[/b]
 
-[b]🇹🇭 ภาษาไทย / EN English[/b]
+[b]🇹🇭 ภาษาไทย / EN English / 中文 简体中文[/b]
 
 [hr][/hr]
 
 [h2]OFFICIAL ADDONS[/h2]
 
-[url=https://lowkinus.github.io/ProjectJoJo-Wiki/en/stands/tusk.html][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/tusk-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/heavens-door-addon-150.png[/img][/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/project-jojo-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/harvest-addon-150.png[/img][/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][img]https://lowkinus.github.io/ProjectJoJo-Wiki/assets/heavens-door-addon-150.png[/img][/url]
 
-[b]TUSK ACT 1–4[/b] — Progress through Nail attacks and Wormholes into ACT4 melee combat and Infinite Rotation.
 [b]ATUM[/b] — Read attacks, mark souls and challenge targets to RPS / Baseball / Racing.
 [b]HARVEST[/b] — Manage a 500-unit colony for combat, item searching and area control.
-[b]HEAVEN'S DOOR[/b] — Open targets like books and write commands that change behavior or turn zombies into workers/guards.
+[b]HEAVEN'S DOOR[/b] — Open targets like books and write commands that change their behavior or turn zombies into workers/guards.
 
-[url=https://lowkinus.github.io/ProjectJoJo-Wiki/en/stands/tusk.html][b]▶ TUSK GUIDE[/b][/url]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811605058][b]▶ ATUM ADDON[/b][/url]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812032546][b]▶ HARVEST ADDON[/b][/url]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3817697288][b]▶ HEAVEN'S DOOR ADDON[/b][/url]
+
+[b]Under Development:[/b] TUSK, CREAM, D4C and more. Hamon, Spin and Vampire are planned as non-Stand powers. They are not advertised as playable in this release.
 
 [hr][/hr]
 
 [h2]HOW TO START[/h2]
 
 Find a [b]Stand Arrow[/b] from world loot or rare zombie drops.
-
 Use it to awaken a random Stand.
-
 [b]1 Arrow = 3 successful uses[/b]
-
 [b]3/3 → 2/3 → 1/3 → gone[/b]
 
-Using another Arrow can give you a different Stand without deleting progress earned on your previous Stands.
-
-Servers may also enable [b]Super Arrow[/b] to choose directly from currently loaded Stands.
-
-[b]Super Arrow is OFF by default.[/b]
+Using another Arrow can grant a different Stand without deleting progress earned on previous Stands. Servers can optionally enable [b]Super Arrow[/b] to choose from currently registered Stands. [b]Super Arrow is OFF by default.[/b]
 
 [hr][/hr]
 
@@ -68,80 +61,59 @@ Servers may also enable [b]Super Arrow[/b] to choose directly from currently loa
 [b]CAPS LOCK[/b] — Summon / Dismiss Stand
 [b]1–4[/b] — Stand Skills
 
-Some abilities support Tap / Hold / Full Charge and may do a different move depending on how long you hold the key.
+Some skill slots use Tap / Hold / Full Charge for different moves.
+Personal settings: [b]Options → Mods → Project JoJo[/b]
 
-Personal options: [b]Options → Mods → Project JoJo[/b]
-
-Targeting Modes:
-• [b]Mouse / Pointer[/b] — attacks follow the cursor
-• [b]Facing Direction[/b] — attacks follow the direction your character is facing
-• [b]Controller Aim[/b] — attacks follow the controller aim vector
-
-You can also customize Stand HUD mode, HUD scale, opacity, personal Project JoJo volume and keybinds.
+Choose [b]Mouse / Pointer[/b], [b]Facing Direction[/b] or [b]Controller Aim[/b]. Personal HUD layout, scale, opacity, volume and keybinds can also be customized.
 
 [hr][/hr]
 
 [h2]CORE STANDS — QUICK STYLE GUIDE[/h2]
 
-[b]STAR PLATINUM[/b] — Close-range fighter. Builds Critical chance through ORA hits; Critical attacks hit extremely hard and can launch enemies into walls/other targets. Has a 5-second Time Stop.
+[b]STAR PLATINUM[/b] — Close-range brawler. Builds critical chance with ORA hits, launches enemies on criticals, and stops time for 5 seconds.
+[b]THE WORLD[/b] — Powerful melee, rapid Barrage, throwing knives and a 9-second Time Stop.
+[b]KING CRIMSON[/b] — Counter / survival. Epitaph reacts to committed attacks, Time Erase repositions, and striking a target from behind offers a [b]77% critical chance[/b] against that target.
+[b]CRAZY DIAMOND[/b] — Melee support. Build Restore to heal allies, repair supported objects and use Glass Homing.
+[b]THE HAND[/b] — Pull and reposition enemies, then erase targets using the shared Space Gauge.
+[b]KILLER QUEEN[/b] — Set bombs, choose when to detonate and use Sheer Heart Attack for automatic pressure.
+[b]SILVER CHARIOT[/b] — Fast swordplay and Speed Gauge. Armor Off has its own cooldown and never blocks normal Summon/Dismiss.
+[b]MAGICIAN'S RED[/b] — Cross Fire/Fire Trap, Flame Spray, Fire Control/Detector and Cross Fire Bomb for ranged fire and horde control.
+[b]ECHOES ACT 3[/b] — Target-control Stand. Barrage helps set up THREE FREEZE, which holds a dangerous target for 9 seconds.
 
-[b]THE WORLD[/b] — Heavy all-rounder. Strong melee, long-range knives and a 9-second Time Stop. Easy to understand, dangerous at almost any distance.
-
-[b]KING CRIMSON[/b] — Counter / survival Stand. Use Epitaph when you expect a real attack, then punish from a better angle. Time Erase is excellent for escaping bad situations.
-
-[b]CRAZY DIAMOND[/b] — Melee support. Fight to refill Restore, then spend it to heal allies, repair supported objects or use Glass Homing on a marked target.
-
-[b]THE HAND[/b] — High-risk space control. Pull enemies, reposition and ERASE targets, but all of those tools compete for the same Space Gauge.
-
-[b]KILLER QUEEN[/b] — Bomb setup / AOE. Turn a target or area into a bomb, choose when to detonate, or deploy Sheer Heart Attack to pressure enemies automatically.
-
-[b]SILVER CHARIOT[/b] — Fast sword fighter. Movement refills Speed Gauge; spend it on Rush/Sweep and use Rapier Shot when you need range. Armor Off has its own cooldown and never prevents normal Stand Summon/Dismiss.
-
-[b]MAGICIAN'S RED[/b] — Ranged fire and horde control. Cross Fire builds Fire Gauge on hit; the same skill can place Fire Trap. Spend Fire on Flame Spray / Cross Fire Bomb and use Fire Control / Detector to manage the battlefield.
-
-[b]ECHOES ACT 3[/b] — Single-target control. Not a raw-damage Stand: pick the dangerous enemy and lock it with THREE FREEZE for 9 seconds.
-
-Every Stand has a full Wiki page with exact mechanics and practical examples.
-
+Full skill details, examples and conditional rules are available in the Wiki.
 [url=https://lowkinus.github.io/ProjectJoJo-Wiki/][b]▶ VIEW FULL STAND GUIDES[/b][/url]
 
 [hr][/hr]
 
 [h2]STAND LEVELS[/h2]
 
-Every Stand has separate progression: [b]LV.1 → LV.100[/b]
+Each Stand has its own progression: [b]LV.1 → LV.100[/b]. Stand-caused zombie kills grant EXP. With Stand Levels enabled, LV.1 begins at [b]50% damage[/b] and LV.100 reaches [b]120% damage[/b]. Switching Stands preserves their separate progress.
 
-Stand-caused zombie kills grant EXP. With Stand Levels enabled, LV.1 starts at [b]50% damage[/b] and LV.100 reaches [b]120% damage[/b]. Switching Stands does not erase previous Stand progression.
-
-[hr][/hr]
-
-[h2]CURRENT RELEASE[/h2]
-
-[b]CORE v0.23.0.322[/b]
-
-[b]Mastery[/b] — LV.1 = [b]50%[/b] damage • LV.100 = [b]120%[/b] • ≈ [b]1,059 Stand kills[/b] to mastery.
-
-[url=https://lowkinus.github.io/ProjectJoJo-Wiki/en/mastery.html][b]▶ VIEW MASTERY / LV100 COOLDOWNS[/b][/url]
-
-[b]Official Addons[/b] — Tusk [b].248[/b] • Harvest [b].4.26[/b] • Heaven's Door [b].2.20[/b] • ATUM [b].069[/b]
+[url=https://lowkinus.github.io/ProjectJoJo-Wiki/en/mastery.html][b]▶ MASTERY & LV100 COOLDOWNS[/b][/url]
 
 [hr][/hr]
 
 [h2]CORE SYSTEMS[/h2]
 
-• Directional First-Contact — attacks use their real reach and hit the first valid body/contact on the attack line
-• Time Stop / Time Erase
-• Barrage Clash / Barrage Guard
-• Stand Gauges and Stand-specific resources
-• Tap / Hold / Full Charge abilities
-• PvP / Safety integration
-• Stand Levels
-• Multiplayer synchronization
-• World / vehicle collision safety
+• Directional First-Contact and real attack reach
+• Stand combat, critical hits, Barrage Clash and Barrage Guard
+• Time Stop / Time Erase with collision and state safeguards
+• Stand Gauges, Tap / Hold / Full Charge abilities
+• Stand Levels and multiplayer synchronization
+• PvP / Safety and supported world / vehicle interactions
+• Ongoing improvements to rear-hit knockback and environmental material drops
 
-While a registered Stand is summoned, its owner receives [b]33% less NET damage[/b].
+While a registered Stand is summoned, its owner takes [b]33% less NET damage[/b].
 
-Full mechanics and examples are explained in the Wiki.
+[hr][/hr]
+
+[h2]CURRENT TEST PATCH[/h2]
+
+[b]CORE v0.23.0.350 (TEST)[/b]
+
+Ongoing compatibility work for addon attack reactions, supported environment destruction and material drops, Echoes ACT 3 animations, King Crimson directional criticals, and HUD/input behavior.
+
+[b]Notice:[/b] Some knockback, environmental drops and animated visual improvements remain under testing before a stable release.
 
 [hr][/hr]
 
@@ -149,15 +121,13 @@ Full mechanics and examples are explained in the Wiki.
 
 [b]Singleplayer / Host / Multiplayer supported.[/b]
 
-Multiple players may use the same Stand. Player HP damage respects Project Zomboid's [b]PvP / Safety rules[/b].
+Different players may use the same Stand. Player HP damage respects Project Zomboid PvP / Safety settings in supported combat paths.
 
 [hr][/hr]
 
 [h2]SANDBOX SETTINGS[/h2]
 
-Server owners can customize Arrow Drop Rate, Stand Damage, Stand Levels, Arrow on Join, Infinite Stand Arrow, Super Arrow and shared sound settings.
-
-HUD, targeting, personal volume and keybinds are controlled individually by each player.
+Server owners can configure Arrow Drop Rate, Stand Damage, Stand Levels, Arrow on Join, Infinite Stand Arrow, Super Arrow and shared sound settings. Personal HUD, targeting, audio and keybind options are per player.
 
 [hr][/hr]
 
@@ -169,9 +139,7 @@ Models were adapted for Project Zomboid with rigging, optimization and custom an
 [url=https://sketchfab.com/20062020year]20062020year[/url]
 [url=https://sketchfab.com/NeiL]NeiL[/url]
 
-And their respective original creators.
-
-All original model rights remain with their creators.
+And their respective original creators. All original model rights remain with their creators.
 
 [hr][/hr]
 

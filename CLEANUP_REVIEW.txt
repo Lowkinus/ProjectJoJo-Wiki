@@ -1,0 +1,17 @@
+SAFE CLEANUP NOTES — OPTIONAL, NOT AUTOMATIC
+
+Do NOT delete: index.html, 404.html, site.webmanifest, assets/style.css, assets/v237.css, assets/guide-data.js, assets/hero-ranking.js, th/, en/, zh/, favicon files, media under assets/stands.
+
+Potential leftover backup/duplicate HTML files at repository root to review manually (not required for the site to work):
+index (1).html
+atum (3).html
+echoes-act-3 (2).html
+harvest (4).html
+heavens-door (6).html
+star-platinum (5).html
+
+Do not delete blindly: check GitHub code search and inbound links first.
+Old assets/pj-mobile-v353.css is no longer needed by the *new* JS, but may remain harmless. Delete only after no HTML references remain.
+The three languages' canonical guides live under th/, en/, zh/. Old root-level guide/stand URLs are redirected by this patch.
+
+Cache note: th/en index.html still references ../assets/hero-ranking.js?v=444. The patched file may take time to appear on devices with a cached response. The long-term solution is bumping that query in the actual canonical index files. No made-up claim of having changed them in this ZIP.
